@@ -1,0 +1,42 @@
+<div class="onl-container onl-container--xl" style="padding-block:24px">
+  <div class="onl-page-header">
+    <div><h1 class="onl-h2">Finance overview</h1><p class="onl-text-muted">FY 2026–27 · Q2 (July to September)</p></div>
+    <div class="onl-row" style="--onl-gap:8px"><button type="button" class="onl-btn"><svg data-icon="calendar"></svg> Q2 FY27</button><button type="button" class="onl-btn onl-btn--brand"><svg data-icon="download"></svg> Download report</button></div>
+  </div>
+
+  <div class="onl-bento" style="margin-top:20px">
+    <div class="onl-card onl-card--gradient-border onl-bento--wide">
+      <p class="onl-stat__label">Net profit this quarter</p>
+      <p class="onl-metric"><b>₹2,44,000</b><span><span class="onl-trend onl-trend--up">14.6%</span> vs Q1</span></p>
+      <onl-chart type="area" format="compact" legend="false" style="margin-top:auto" aria-label="Net profit by month" labels='["Apr","May","Jun","Jul","Aug","Sep"]' series='[{"name":"Profit","data":[152000,168000,171000,190000,214000,244000]}]'></onl-chart>
+    </div>
+    <div class="onl-card"><p class="onl-stat__label">Cash in bank</p><p class="onl-stat__value">₹38.2L</p><p class="onl-stat__foot">Runway 19 months</p></div>
+    <div class="onl-card"><p class="onl-stat__label">Receivables</p><p class="onl-stat__value">₹6.9L</p><p class="onl-stat__foot"><span class="onl-badge onl-badge--warning">12 overdue</span></p></div>
+  </div>
+
+  <div style="display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr))">
+    <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Profit bridge</h2><span class="onl-text-xs onl-text-muted">How revenue became profit</span></div><div class="onl-card__body">
+      <onl-chart type="waterfall" format="compact" total-label="Net profit" aria-label="Profit bridge" data='[{"label":"Revenue","value":980000},{"label":"Cost of goods","value":-410000},{"label":"Salaries","value":-220000},{"label":"Marketing","value":-90000},{"label":"Other income","value":45000},{"label":"Tax","value":-61000}]'></onl-chart>
+    </div></div>
+    <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Where the money goes</h2></div><div class="onl-card__body">
+      <onl-chart type="treemap" format="inr" height="260" aria-label="Expenses by category" data='[{"label":"Salaries","value":220000},{"label":"Cloud & tools","value":96000},{"label":"Marketing","value":90000},{"label":"Rent","value":72000},{"label":"Travel","value":31000},{"label":"Legal","value":18000},{"label":"Other","value":12000}]'></onl-chart>
+    </div></div>
+  </div>
+
+  <div style="display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr))">
+    <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Budget used</h2></div><div class="onl-card__body">
+      <onl-chart type="radial" max="100" format="percent" aria-label="Budget used by department" data='[{"label":"Engineering","value":82},{"label":"Marketing","value":64},{"label":"Sales","value":71},{"label":"Operations","value":46}]'></onl-chart>
+    </div></div>
+    <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Upcoming payments</h2><a class="onl-btn onl-btn--ghost onl-btn--sm" href="#">View all</a></div>
+      <div class="onl-table-wrap"><table class="onl-table">
+        <thead><tr><th>Payee</th><th>Due</th><th class="onl-num">Amount</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Cloud hosting</td><td>12 Oct</td><td class="onl-num">₹48,200</td><td><span class="onl-pill onl-badge" data-status="scheduled">Scheduled</span></td></tr>
+          <tr><td>Office rent</td><td>15 Oct</td><td class="onl-num">₹72,000</td><td><span class="onl-pill onl-badge" data-status="pending">Pending</span></td></tr>
+          <tr><td>GST (GSTR-3B)</td><td>20 Oct</td><td class="onl-num">₹1,12,400</td><td><span class="onl-pill onl-badge" data-status="pending">Pending</span></td></tr>
+          <tr><td>Design agency</td><td>28 Sep</td><td class="onl-num">₹65,000</td><td><span class="onl-pill onl-badge" data-status="overdue">Overdue</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</div>

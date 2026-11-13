@@ -1,0 +1,12 @@
+<div class="onlp-stage">
+  <div class="onlp-grid onlp-max" style="--onlp-min:340px;--onlp-max:1080px">
+    <section class="onlp-card onlp-chart" aria-label="Plan comparison">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Feature scores</p><div class="onlp-title">Us vs. the market average</div></div></div>
+      <div class="onlp-chart__body"><onl-chart type="radar" max="100" aria-label="Feature scores compared" labels='["Speed","Reports","Mobile","Support","Price","Integrations"]' series='[{"name":"Us","data":[92,88,84,90,78,72]},{"name":"Market","data":[64,70,58,62,74,80]}]'></onl-chart></div>
+    </section>
+    <section class="onlp-card onlp-chart" aria-label="Revenue share">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Revenue by category</p><div class="onlp-chart__value" style="font-size:24px">₹12.7L</div></div><span class="onlp-badge onlp-badge--brand">7 categories</span></div>
+      <div class="onlp-chart__body"><onl-chart type="treemap" format="inr" aria-label="Revenue by category" data='[{"label":"Electronics","value":420000},{"label":"Fashion","value":310000},{"label":"Home","value":205000},{"label":"Beauty","value":140000},{"label":"Books","value":82000},{"label":"Toys","value":64000},{"label":"Grocery","value":51000}]'></onl-chart></div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="onlp-stage">
+  <div class="onlp-max onlp-stack" style="--onlp-max:1180px;--onlp-gap:14px">
+    <div class="onlp-row onlp-row--between">
+      <div><p class="onlp-kicker">Product analytics</p><h2 style="font-size:22px;font-weight:700;letter-spacing:-0.02em">Engagement &amp; retention</h2></div>
+      <div class="onlp-row" style="--onlp-gap:8px">
+        <button type="button" class="onlp-filter" data-active><svg data-icon="smartphone"></svg>All platforms</button>
+        <button type="button" class="onlp-filter"><svg data-icon="globe"></svg>All regions</button>
+        <div class="onlp-seg" role="radiogroup" aria-label="Range"><label><input type="radio" name="can-r">7d</label><label><input type="radio" name="can-r" checked>30d</label><label><input type="radio" name="can-r">90d</label></div>
+      </div>
+    </div>
+    <div class="onlp-dash">
+      <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">Daily active users<span class="onlp-delta onlp-delta--up">6.8%</span></div><div class="onlp-kpi__value">18,420</div><onl-chart type="sparkline" aria-label="DAU trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"DAU","data":[15.2,15.8,16.1,15.9,16.7,17.2,17.0,17.8,18.1,18.4]}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">DAU / MAU<span class="onlp-delta onlp-delta--up">2.1 pts</span></div><div class="onlp-kpi__value">41%</div><onl-chart type="sparkline" aria-label="Stickiness trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Stickiness","data":[37,38,38,39,39,40,39,40,41,41],"color":"var(--onl-series-2)"}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">Avg. session<span class="onlp-delta onlp-delta--down">0:12</span></div><div class="onlp-kpi__value">6:48 <small>min</small></div><onl-chart type="sparkline" aria-label="Session length trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Minutes","data":[7.2,7.1,7.3,7.0,6.9,7.0,6.8,6.9,6.7,6.8],"color":"var(--onl-series-3)"}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi onlp-kpi--accent" style="--span:3"><div class="onlp-kpi__head">Week-4 retention<svg data-icon="trending-up" style="width:18px;height:18px"></svg></div><div class="onlp-kpi__value">34.6%</div><div class="onlp-kpi__foot">Best cohort since launch · target 32%</div><div class="onlp-bar" style="background:rgb(255 255 255 / 0.2);box-shadow:none"><i style="--v:86%;background:#fff"></i></div></div>
+
+      <section class="onlp-card onlp-chart" style="--span:8" aria-label="Sign-ups and activation">
+        <div class="onlp-chart__head"><div><p class="onlp-sub">Weekly sign-ups and activated users</p><div class="onlp-chart__value">9,812<span class="onlp-delta onlp-delta--up">12.4%</span></div></div><div class="onlp-legend"><span style="--_c:var(--onl-series-1)">Sign-ups</span><span style="--_c:var(--onl-series-2)">Activated</span></div></div>
+        <div class="onlp-chart__body"><onl-chart type="combo" format="compact" legend="false" height="240" aria-label="Weekly sign-ups with activated users line" labels='["W38","W39","W40","W41","W42","W43","W44","W45","W46"]' series='[{"name":"Sign-ups","data":[920,980,1040,1010,1120,1180,1090,1240,1232]},{"name":"Activated","type":"line","data":[540,590,640,600,700,760,690,820,830]}]'></onl-chart></div>
+      </section>
+      <section class="onlp-card onlp-chart" style="--span:4" aria-label="Feature adoption">
+        <div class="onlp-chart__head"><div><p class="onlp-sub">Feature adoption</p><p class="onlp-title">Share of weekly users</p></div></div>
+        <div class="onlp-chart__body" style="padding:8px 20px 20px">
+          <ol class="onlp-rank">
+            <li><span>Invoices</span><b>88%</b><div class="onlp-bar"><i style="--v:88%"></i></div></li>
+            <li><span>Payment links</span><b>64%</b><div class="onlp-bar"><i style="--v:64%;--_c:var(--onl-series-2)"></i></div></li>
+            <li><span>Reports</span><b>47%</b><div class="onlp-bar"><i style="--v:47%;--_c:var(--onl-series-3)"></i></div></li>
+            <li><span>Inventory</span><b>31%</b><div class="onlp-bar"><i style="--v:31%;--_c:var(--onl-series-4)"></i></div></li>
+            <li><span>Automations <span class="onlp-badge onlp-badge--brand" style="height:18px;font-size:10px;padding:0 6px">New</span></span><b>12%</b><div class="onlp-bar"><i style="--v:12%;--_c:var(--onl-series-5)"></i></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="onlp-card onlp-chart" style="--span:7" aria-label="Retention by cohort">
+        <div class="onlp-chart__head"><div><p class="onlp-sub">Retention by sign-up week</p><p class="onlp-title">% of cohort still active</p></div><span class="onlp-badge">Weeks 0–6</span></div>
+        <div class="onlp-chart__body"><onl-chart type="heatmap" format="percent" aria-label="Cohort retention heatmap" labels='["W0","W1","W2","W3","W4","W5","W6"]' series='[{"name":"W40","data":[100,58,46,39,33,31,29]},{"name":"W41","data":[100,61,48,40,34,32,0]},{"name":"W42","data":[100,63,50,42,35,0,0]},{"name":"W43","data":[100,62,51,43,0,0,0]},{"name":"W44","data":[100,66,53,0,0,0,0]},{"name":"W45","data":[100,68,0,0,0,0,0]}]'></onl-chart></div>
+      </section>
+      <section class="onlp-card onlp-chart" style="--span:5" aria-label="Plan usage vs retention">
+        <div class="onlp-chart__head"><div><p class="onlp-sub">Usage vs retention by plan</p><p class="onlp-title">Bubble size = accounts</p></div></div>
+        <div class="onlp-chart__body"><onl-chart type="bubble" format="percent" x-label="Weekly sessions" y-label="W4 retention" height="230" aria-label="Plans by weekly sessions, retention and size" series='[{"name":"Plans","data":[{"label":"Free","x":3,"y":18,"r":160},{"label":"Starter","x":7,"y":31,"r":90},{"label":"Growth","x":12,"y":46,"r":60},{"label":"Scale","x":18,"y":62,"r":25}]}]'></onl-chart></div>
+      </section>
+
+      <section class="onlp-card onlp-chart" style="--span:12" aria-label="Where users drop off">
+        <div class="onlp-chart__head"><div><p class="onlp-sub">First-week journey</p><p class="onlp-title">Where new users drop off</p></div><button type="button" class="onlp-btn onlp-btn--soft onlp-btn--sm"><svg data-icon="sparkles"></svg>Explain the drop</button></div>
+        <div class="onlp-chart__body" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px 28px;align-items:center;padding:8px 20px 20px">
+          <onl-chart type="funnel" aria-label="First-week funnel" data='[{"label":"Signed up","value":9812},{"label":"Added business","value":7640},{"label":"Created invoice","value":5120},{"label":"Sent invoice","value":3980},{"label":"Got paid","value":2410}]'></onl-chart>
+          <div class="onlp-stack" style="--onlp-gap:10px">
+            <div class="onlp-callout onlp-callout--warning"><svg data-icon="alert"></svg><div><b>33% leave before creating an invoice</b><p>Most quit on the tax setup step. Pre-filling GST from the business PIN could save ~900 users a month.</p></div></div>
+            <div class="onlp-callout onlp-callout--success"><svg data-icon="check-circle"></svg><div><b>Payment links lift "got paid" by 2.3×</b><p>Users who send a link in week one are far more likely to stay.</p></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

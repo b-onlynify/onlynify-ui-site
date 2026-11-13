@@ -1,0 +1,39 @@
+<div class="onlp-stage onlp-stage--center">
+  <form class="onlp-card onlp-max" style="--onlp-max:720px">
+    <div class="onlp-card__head"><div><h3 class="onlp-title" style="font-size:17px">Company details</h3><p class="onlp-sub">Shown on invoices and receipts.</p></div><span class="onlp-badge onlp-badge--success"><svg data-icon="check"></svg>Auto-saved</span></div>
+    <div class="onlp-card__body">
+      <div class="onlp-grid" style="--onlp-min:260px;--onlp-gap:18px">
+        <div class="onlp-field">
+          <label class="onlp-label" for="pf-name">Business name</label>
+          <div class="onlp-control"><svg data-icon="building"></svg><input class="onlp-input" id="pf-name" value="Sunrise Traders" data-valid><span class="onlp-control__end" style="color:var(--onl-success)"><svg data-icon="check-circle"></svg></span></div>
+        </div>
+        <div class="onlp-field">
+          <label class="onlp-label" for="pf-email">Billing email</label>
+          <div class="onlp-control"><svg data-icon="mail"></svg><input class="onlp-input" id="pf-email" type="email" value="accounts@sunrise" aria-invalid="true" aria-describedby="pf-email-e"></div>
+          <p class="onlp-hint onlp-hint--error" id="pf-email-e"><svg data-icon="alert-circle"></svg>Enter a full email, like name@company.com</p>
+        </div>
+        <div class="onlp-field">
+          <label class="onlp-label" for="pf-site">Website <span>Optional</span></label>
+          <div class="onlp-addon"><span>https://</span><input class="onlp-input" id="pf-site" placeholder="sunrise.in"></div>
+        </div>
+        <div class="onlp-field">
+          <label class="onlp-label" for="pf-gst">GSTIN</label>
+          <div class="onlp-addon"><input class="onlp-input" id="pf-gst" placeholder="22AAAAA0000A1Z5" style="text-transform:uppercase"><button type="button" class="onlp-btn onlp-btn--soft onlp-btn--sm">Verify</button></div>
+          <p class="onlp-hint">We check it against the GST portal.</p>
+        </div>
+        <div class="onlp-float">
+          <input class="onlp-input" id="pf-phone" placeholder=" " inputmode="tel">
+          <label for="pf-phone">Phone number</label>
+        </div>
+        <div class="onlp-field">
+          <div class="onlp-control"><svg data-icon="globe"></svg><select class="onlp-input" id="pf-country" aria-label="Country" style="appearance:none;padding-inline-end:36px"><option>India</option><option>United Arab Emirates</option><option>Singapore</option></select><span class="onlp-control__end"><svg data-icon="chevrons-up-down"></svg></span></div>
+        </div>
+        <div class="onlp-field" style="grid-column:1/-1">
+          <label class="onlp-label" for="pf-notes">Invoice footer <span>120 / 280</span></label>
+          <textarea class="onlp-input" id="pf-notes" maxlength="280">Thank you for your business. Payment is due within 15 days. Bank: HDFC · IFSC HDFC0001234.</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="onlp-card__foot"><span class="onlp-sub onlp-xs">Last changed 2 minutes ago</span><div class="onlp-row" style="--onlp-gap:8px"><button type="reset" class="onlp-btn onlp-btn--outline onlp-btn--sm">Discard</button><button type="button" class="onlp-btn onlp-btn--gradient onlp-btn--sm">Save changes</button></div></div>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+node_modules
+.next
+.next-dev
+public/ui
+data/*.json
+.env*.local
+gencheck
+
+# --- from the app (onlynify-ui-site)
+
+# --- nested apps (server/, webapp/): dependencies, build output, secrets
+node_modules/
+.next/
+.next-*/
+coverage/
+.logs/
+gencheck/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+*.log

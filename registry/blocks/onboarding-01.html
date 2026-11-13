@@ -1,0 +1,46 @@
+<div class="onl-bg-mesh" style="min-height:100vh;padding:40px 16px">
+  <div class="onl-container onl-container--md">
+    <ol class="onl-steps" aria-label="Onboarding steps">
+      <li class="onl-step" data-state="done"><span class="onl-step__label">Account</span></li>
+      <li class="onl-step" aria-current="step"><span class="onl-step__label">Workspace</span></li>
+      <li class="onl-step"><span class="onl-step__label">Team</span></li>
+      <li class="onl-step"><span class="onl-step__label">Done</span></li>
+    </ol>
+
+    <form class="onl-card onl-card--pad-lg onl-stack" style="margin-top:24px;--onl-gap:22px">
+      <div><h1 class="onl-h2">Set up your workspace</h1><p class="onl-text-muted" style="margin-top:4px">You can change all of this later in Settings.</p></div>
+
+      <div class="onl-grid onl-grid--2" style="--onl-gap:14px">
+        <div class="onl-field"><label class="onl-label onl-label--required" for="ob-name">Workspace name</label><input class="onl-input" id="ob-name" value="Saffron Studio"></div>
+        <div class="onl-field"><label class="onl-label" for="ob-url">Workspace URL</label><div class="onl-input-group"><input class="onl-input" id="ob-url" value="saffron"><span class="onl-input-group__addon">.onlynify.app</span></div><p class="onl-help" style="color:var(--onl-success)">✓ Available</p></div>
+      </div>
+
+      <fieldset class="onl-fieldset"><legend>What will you use it for?</legend>
+        <div class="onl-choices" style="--onl-min:180px">
+          <label class="onl-choice"><input type="checkbox" checked><span><span class="onl-choice__title">Client projects</span><span class="onl-choice__desc">Proposals, timelines, invoices</span></span></label>
+          <label class="onl-choice"><input type="checkbox"><span><span class="onl-choice__title">Product work</span><span class="onl-choice__desc">Roadmaps and sprints</span></span></label>
+          <label class="onl-choice"><input type="checkbox" checked><span><span class="onl-choice__title">Marketing</span><span class="onl-choice__desc">Campaigns and content</span></span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="onl-fieldset"><legend>Team size</legend>
+        <div class="onl-segmented onl-segmented--block" role="radiogroup"><label><input type="radio" name="ob-size"> Just me</label><label><input type="radio" name="ob-size" checked> 2–10</label><label><input type="radio" name="ob-size"> 11–50</label><label><input type="radio" name="ob-size"> 50+</label></div>
+      </fieldset>
+
+      <div class="onl-field"><label class="onl-label" for="ob-tags">Invite teammates</label>
+        <div class="onl-tags" data-onl-tags data-max="10"><span class="onl-tag" data-value="riya@saffron.in">riya@saffron.in<button type="button" aria-label="Remove riya@saffron.in">×</button></span><input id="ob-tags" placeholder="Type an email and press Enter"><input type="hidden" name="invites" value="riya@saffron.in"></div>
+      </div>
+
+      <div class="onl-field"><span class="onl-label">Logo</span>
+        <div class="onl-dropzone" data-onl-dropzone><span class="onl-dropzone__icon"><svg data-icon="image"></svg></span><p><b>Upload a logo</b> or drag it here</p><p class="onl-text-xs">SVG or PNG, square, up to 2 MB</p><input type="file" accept="image/*" aria-label="Upload logo"></div>
+        <div class="onl-files"></div>
+      </div>
+
+      <fieldset class="onl-fieldset"><legend>Brand colour</legend>
+        <div class="onl-swatches"><label style="--c:#1449a0"><input type="radio" name="ob-c" aria-label="Blue"></label><label style="--c:#c2410c"><input type="radio" name="ob-c" checked aria-label="Saffron"></label><label style="--c:#047857"><input type="radio" name="ob-c" aria-label="Emerald"></label><label style="--c:#6d28d9"><input type="radio" name="ob-c" aria-label="Violet"></label><label style="--c:#be123c"><input type="radio" name="ob-c" aria-label="Rose"></label></div>
+      </fieldset>
+
+      <div class="onl-row onl-row--between"><button type="button" class="onl-btn onl-btn--ghost">Back</button><button type="submit" class="onl-btn onl-btn--brand onl-btn--lg">Continue</button></div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<section class="onl-section">
+  <div class="onl-container" style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));align-items:start">
+    <form class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:18px">
+      <div><p class="onl-eyebrow">Book a visit</p><h2 class="onl-h2" style="margin-top:6px">Pick a date and time</h2></div>
+      <div data-onl-calendar data-for="#bk-date" data-min="today"></div>
+      <input type="hidden" id="bk-date" name="date">
+      <fieldset class="onl-fieldset"><legend>Available times</legend>
+        <div class="onl-choices" style="--onl-min:92px">
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time"><span class="onl-choice__title">9:30 am</span></label>
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time" checked><span class="onl-choice__title">11:00 am</span></label>
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time"><span class="onl-choice__title">12:30 pm</span></label>
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time" disabled><span class="onl-choice__title">2:00 pm</span></label>
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time"><span class="onl-choice__title">3:30 pm</span></label>
+          <label class="onl-choice onl-choice--hide-input"><input type="radio" name="bk-time"><span class="onl-choice__title">5:00 pm</span></label>
+        </div>
+      </fieldset>
+      <div class="onl-grid onl-grid--2" style="--onl-gap:12px">
+        <div class="onl-float"><input class="onl-input" id="bk-name" placeholder=" " autocomplete="name"><label for="bk-name">Your name</label></div>
+        <div class="onl-float"><input class="onl-input" id="bk-phone" type="tel" placeholder=" " autocomplete="tel"><label for="bk-phone">Mobile</label></div>
+      </div>
+      <div class="onl-field"><label class="onl-label" for="bk-guests">Guests</label><div class="onl-qty"><button type="button" data-onl-step="-1" aria-label="Fewer">−</button><input id="bk-guests" type="number" min="1" max="12" value="2"><button type="button" data-onl-step="1" aria-label="More">+</button></div></div>
+      <button type="submit" class="onl-btn onl-btn--brand onl-btn--lg onl-btn--block">Confirm booking</button>
+    </form>
+    <aside class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:14px">
+      <span class="onl-badge onl-badge--success" style="align-self:flex-start"><span class="onl-dot onl-dot--pulse"></span> Open today</span>
+      <h3 class="onl-h3">Consultation · 45 minutes</h3>
+      <p class="onl-text-muted">Meet our team, talk through your requirements and leave with a written plan and estimate.</p>
+      <dl class="onl-kv">
+        <dt>Where</dt><dd>12 MG Road, Bengaluru</dd>
+        <dt>Price</dt><dd>Free</dd>
+        <dt>Cancel</dt><dd>Up to 2 hours before</dd>
+      </dl>
+      <figure class="onl-testimonial" style="padding:0"><span class="onl-stars" style="--v:5" aria-label="5 out of 5"></span><blockquote class="onl-text-sm">"Clear, friendly and on time. We signed the same week."</blockquote><figcaption><span class="onl-avatar onl-avatar--sm" style="--hue:120">AN</span><div><b>Arjun Nair</b><span>Founder, Leafy</span></div></figcaption></figure>
+    </aside>
+  </div>
+</section>

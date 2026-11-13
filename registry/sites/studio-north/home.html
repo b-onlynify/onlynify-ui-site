@@ -1,0 +1,74 @@
+<main>
+  <section class="onl-hero">
+    <div class="onl-container onl-container--xl">
+      <span class="onl-announce"><b>Booking</b> 2 slots open for January</span>
+      <h1 class="onl-hero__title" style="margin-top:20px;font-size:clamp(2.8rem,1.4rem + 6vw,6.5rem);max-width:13ch">Brands and products people remember.</h1>
+      <div class="onl-row onl-row--between" style="margin-top:28px;align-items:flex-end">
+        <p class="onl-hero__lead" style="margin:0">We're a 14-person design and engineering studio. Strategy, identity, websites and apps for founders who want to stand out.</p>
+        <div class="onl-hero__actions" style="margin:0"><a class="onl-btn onl-btn--brand onl-btn--lg" href="#brief">Start a project</a><a class="onl-btn onl-btn--lg" href="{{page:work}}">See our work</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" style="padding-top:0">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-bento">
+        <a class="onl-card onl-bento--big onl-card--lift" href="{{page:work}}" style="padding:0;color:inherit;text-decoration:none"><img data-ph="Ledgerly · fintech identity|250" alt="Ledgerly brand identity" style="width:100%;height:100%;min-height:320px;object-fit:cover"></a>
+        <a class="onl-card onl-bento--wide onl-card--lift" href="{{page:work}}" style="padding:0;color:inherit;text-decoration:none"><img data-ph="Saffron · ecommerce|20" alt="Saffron ecommerce site" style="width:100%;height:100%;min-height:160px;object-fit:cover"></a>
+        <a class="onl-card onl-card--lift" href="{{page:work}}" style="padding:0"><img data-ph="Leafy app|120" alt="Leafy mobile app" style="width:100%;height:100%;min-height:160px;object-fit:cover"></a>
+        <a class="onl-card onl-card--lift" href="{{page:work}}" style="padding:0"><img data-ph="Quanta|280" alt="Quanta dashboard" style="width:100%;height:100%;min-height:160px;object-fit:cover"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" id="services">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-section-head"><p class="onl-eyebrow">What we do</p><h2>Four things, done properly</h2></div>
+      <div class="onl-grid onl-grid--4">
+        <div class="onl-card onl-card--pad onl-feature"><span class="onl-feature__icon"><svg data-icon="compass"></svg></span><h3>Strategy</h3><p>Positioning, naming and the story your team can tell in one breath.</p></div>
+        <div class="onl-card onl-card--pad onl-feature"><span class="onl-feature__icon"><svg data-icon="palette"></svg></span><h3>Identity</h3><p>Logos, type, colour and a brand system that scales.</p></div>
+        <div class="onl-card onl-card--pad onl-feature"><span class="onl-feature__icon"><svg data-icon="layers"></svg></span><h3>Websites</h3><p>Fast marketing sites your team can update without us.</p></div>
+        <div class="onl-card onl-card--pad onl-feature"><span class="onl-feature__icon"><svg data-icon="code"></svg></span><h3>Products</h3><p>Web and mobile apps, from first prototype to launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section onl-section--muted" id="results">
+    <div class="onl-container onl-container--xl" style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));align-items:center">
+      <div>
+        <p class="onl-eyebrow">Results</p>
+        <h2 class="onl-h1" style="margin-top:8px;letter-spacing:-0.03em">Design that moves numbers</h2>
+        <div class="onl-grid onl-grid--2" style="margin-top:24px">
+          <div class="onl-metric"><b data-onl-count="62">62</b><span>launches since 2018</span></div>
+          <div class="onl-metric"><b>+38%</b><span>average conversion lift</span></div>
+          <div class="onl-metric"><b>₹480 Cr</b><span>raised by clients after launch</span></div>
+          <div class="onl-metric"><b>9</b><span>design awards</span></div>
+        </div>
+      </div>
+      <div class="onl-card"><div class="onl-card__header"><h3 class="onl-card__title">Saffron: sign-ups after the redesign</h3></div><div class="onl-card__body"><onl-chart type="combo" format="compact" aria-label="Sign-ups before and after redesign" labels='["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug"]' series='[{"name":"Sign-ups","data":[2100,2200,2150,2300,3400,3900,4300,4700]},{"name":"Forecast","type":"line","data":[2400,2450,2400,2500,3200,3500,3700,3900]}]'></onl-chart></div></div>
+    </div>
+  </section>
+
+  <section class="onl-section" id="brief">
+    <div class="onl-container onl-container--md">
+      <div class="onl-section-head"><p class="onl-eyebrow">Start a project</p><h2>Tell us about it</h2><p>Two minutes. We reply within a day with next steps and a rough estimate.</p></div>
+      <form class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:18px">
+        <div class="onl-grid onl-grid--2" style="--onl-gap:12px">
+          <div class="onl-float"><input class="onl-input" id="sn-name" placeholder=" " autocomplete="name"><label for="sn-name">Your name</label></div>
+          <div class="onl-float"><input class="onl-input" id="sn-co" placeholder=" " autocomplete="organization"><label for="sn-co">Company</label></div>
+        </div>
+        <div class="onl-float"><input class="onl-input" id="sn-email" type="email" placeholder=" " autocomplete="email"><label for="sn-email">Email</label></div>
+        <fieldset class="onl-fieldset"><legend>What do you need?</legend><div class="onl-choices" style="--onl-min:150px">
+          <label class="onl-choice"><input type="checkbox"><span class="onl-choice__title">Brand identity</span></label>
+          <label class="onl-choice"><input type="checkbox" checked><span class="onl-choice__title">Website</span></label>
+          <label class="onl-choice"><input type="checkbox"><span class="onl-choice__title">Mobile app</span></label>
+          <label class="onl-choice"><input type="checkbox"><span class="onl-choice__title">Product design</span></label>
+        </div></fieldset>
+        <div class="onl-slider"><div class="onl-slider__head"><label for="sn-budget">Budget</label><output>₹8,00,000</output></div><input type="range" class="onl-range" id="sn-budget" min="200000" max="5000000" step="100000" value="800000" data-onl-output data-prefix="₹"></div>
+        <fieldset class="onl-fieldset"><legend>When do you want to launch?</legend><div class="onl-segmented onl-segmented--block"><label><input type="radio" name="sn-when"> ASAP</label><label><input type="radio" name="sn-when" checked> 1–3 months</label><label><input type="radio" name="sn-when"> Later</label></div></fieldset>
+        <div class="onl-float"><textarea class="onl-textarea" id="sn-msg" placeholder=" " rows="4"></textarea><label for="sn-msg">What are you building?</label></div>
+        <button type="submit" class="onl-btn onl-btn--brand onl-btn--lg">Send brief</button>
+      </form>
+    </div>
+  </section>
+</main>

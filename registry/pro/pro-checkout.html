@@ -1,0 +1,53 @@
+<div class="onlp-stage">
+  <div class="onlp-max onlp-stack" style="--onlp-max:1040px;--onlp-gap:20px">
+    <ol class="onlp-hsteps" aria-label="Checkout progress">
+      <li data-state="done"><span></span><b>Cart</b></li>
+      <li aria-current="step"><span></span><b>Delivery &amp; payment</b></li>
+      <li><span></span><b>Confirmation</b></li>
+    </ol>
+    <div class="onlp-checkout">
+      <form class="onlp-stack" style="--onlp-gap:16px" action="#">
+        <section class="onlp-card onlp-card--pad onlp-stack" style="--onlp-gap:14px">
+          <div class="onlp-row onlp-row--between"><h3 class="onlp-title">Delivery address</h3><a class="onlp-link onlp-xs" href="#">Use a saved address</a></div>
+          <div class="onlp-grid" style="--onlp-min:200px;--onlp-gap:12px">
+            <div class="onlp-field"><label class="onlp-label" for="pc-name">Full name</label><input id="pc-name" class="onlp-input" value="Riya Shah" autocomplete="name"></div>
+            <div class="onlp-field"><label class="onlp-label" for="pc-phone">Phone</label><div class="onlp-addon"><span>+91</span><input id="pc-phone" class="onlp-input" value="98450 12345" autocomplete="tel-national"></div></div>
+          </div>
+          <div class="onlp-field"><label class="onlp-label" for="pc-addr">Address <span>House, street, area</span></label><input id="pc-addr" class="onlp-input" value="14, 2nd Cross, Indiranagar" autocomplete="street-address"></div>
+          <div class="onlp-grid" style="--onlp-min:140px;--onlp-gap:12px">
+            <div class="onlp-field"><label class="onlp-label" for="pc-city">City</label><input id="pc-city" class="onlp-input" value="Bengaluru"></div>
+            <div class="onlp-field"><label class="onlp-label" for="pc-pin">PIN code</label><input id="pc-pin" class="onlp-input" value="560038" inputmode="numeric" data-valid></div>
+          </div>
+          <p class="onlp-hint onlp-hint--ok"><svg data-icon="truck"></svg>Delivers by Thursday, 19 Nov · free over ₹999</p>
+        </section>
+        <section class="onlp-card onlp-card--pad onlp-stack" style="--onlp-gap:14px">
+          <h3 class="onlp-title">Payment method</h3>
+          <div class="onlp-pay" role="radiogroup" aria-label="Payment method">
+            <label><input type="radio" name="pc-pay" value="upi" checked><span class="onlp-tile onlp-tile--sm"><svg data-icon="qr-code"></svg></span><span class="onlp-grow"><b style="font-size:14px">UPI</b><small>Pay from any UPI app · instant</small></span><span class="onlp-badge onlp-badge--success">2% back</span></label>
+            <label><input type="radio" name="pc-pay" value="card"><span class="onlp-tile onlp-tile--sm"><svg data-icon="credit-card"></svg></span><span class="onlp-grow"><b style="font-size:14px">Credit or debit card</b><small>All major cards · EMI from ₹540/mo</small></span></label>
+            <label><input type="radio" name="pc-pay" value="bank"><span class="onlp-tile onlp-tile--sm"><svg data-icon="landmark"></svg></span><span class="onlp-grow"><b style="font-size:14px">Net banking</b><small>60+ banks</small></span></label>
+            <label><input type="radio" name="pc-pay" value="cod"><span class="onlp-tile onlp-tile--sm"><svg data-icon="banknote"></svg></span><span class="onlp-grow"><b style="font-size:14px">Cash on delivery</b><small>₹40 handling fee</small></span></label>
+          </div>
+        </section>
+      </form>
+      <aside class="onlp-card onlp-summary" aria-label="Order summary">
+        <div class="onlp-card__head"><h3 class="onlp-title">Order summary</h3><span class="onlp-badge">3 items</span></div>
+        <div class="onlp-card__body onlp-stack" style="--onlp-gap:14px">
+          <div class="onlp-line"><span class="onlp-thumb" style="--hue:200"><svg data-icon="headphones"></svg><i>1</i></span><div><span>Studio headphones</span><small>Midnight · wireless</small></div><b>₹4,499</b></div>
+          <div class="onlp-line"><span class="onlp-thumb" style="--hue:30"><svg data-icon="coffee"></svg><i>2</i></span><div><span>Ceramic mug set</span><small>Sand · 350 ml</small></div><b>₹1,198</b></div>
+          <div class="onlp-line"><span class="onlp-thumb" style="--hue:140"><svg data-icon="leaf"></svg><i>1</i></span><div><span>Desk planter</span><small>Matte green</small></div><b>₹649</b></div>
+          <div class="onlp-addon"><input class="onlp-input" aria-label="Coupon code" value="FESTIVE10"><button type="button" class="onlp-btn onlp-btn--soft onlp-btn--sm">Applied</button></div>
+          <dl class="onlp-totals">
+            <div><dt>Subtotal</dt><dd>₹6,346</dd></div>
+            <div data-save><dt>Coupon FESTIVE10</dt><dd>−₹635</dd></div>
+            <div><dt>Delivery</dt><dd>Free</dd></div>
+            <div><dt>GST (incl.)</dt><dd>₹871</dd></div>
+            <div data-total><dt>Total</dt><dd>₹5,711</dd></div>
+          </dl>
+          <button type="submit" class="onlp-btn onlp-btn--gradient onlp-btn--lg onlp-btn--shine" style="width:100%"><svg data-icon="lock"></svg>Pay ₹5,711</button>
+          <p class="onlp-hint" style="justify-content:center"><svg data-icon="shield-check"></svg>Secure checkout · easy 7-day returns</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>

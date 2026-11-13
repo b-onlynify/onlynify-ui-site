@@ -1,0 +1,49 @@
+<div class="onl-container" style="padding-block:28px" data-brand="emerald">
+  <div class="onl-page-header">
+    <div>
+      <nav aria-label="Breadcrumb"><ol class="onl-breadcrumb"><li><a href="#">Green Valley School</a></li><li><span aria-current="page">Dashboard</span></li></ol></nav>
+      <h1 class="onl-page-header__title" style="margin-top:6px">Good morning, Principal</h1>
+      <p class="onl-page-header__subtitle">Wednesday, 5 November · Term 2, week 9</p>
+    </div>
+    <div class="onl-row"><button class="onl-btn"><svg data-icon="download"></svg>Daily report</button><button class="onl-btn onl-btn--brand"><svg data-icon="bell"></svg>Send notice</button></div>
+  </div>
+  <div class="onl-grid onl-grid--4">
+    <div class="onl-card onl-stat"><div class="onl-stat__head"><p class="onl-stat__label">Students present</p><span class="onl-ring" style="--value:94;--size:44px"><span>94%</span></span></div><p class="onl-stat__value">1,173 / 1,248</p><p class="onl-stat__foot">75 absent · 12 on leave</p></div>
+    <div class="onl-card onl-stat"><p class="onl-stat__label">Fees collected (term)</p><p class="onl-stat__value">₹42.6L</p><div class="onl-progress" style="margin-top:10px"><div class="onl-progress__bar" style="--value:78%"></div></div><p class="onl-stat__foot">78% of ₹54.6L target</p></div>
+    <div class="onl-card onl-stat"><p class="onl-stat__label">Fee defaulters</p><p class="onl-stat__value">38</p><p class="onl-stat__foot"><span class="onl-pill onl-badge" data-status="overdue">₹6.2L overdue</span></p></div>
+    <div class="onl-card onl-stat"><p class="onl-stat__label">New enquiries</p><p class="onl-stat__value">24</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">9</span> this week</p></div>
+  </div>
+  <div class="onl-grid onl-grid--3" style="margin-top:16px">
+    <div class="onl-card onl-widget onl-span-2">
+      <div class="onl-card__header"><div><h2 class="onl-card__title">Attendance by class</h2><p class="onl-card__subtitle">Last 10 school days</p></div></div>
+      <div class="onl-widget__body"><onl-chart type="line" format="percent" aria-label="Attendance by class" labels='["23 Oct","24","27","28","29","30","31","3 Nov","4","5"]' series='[{"name":"Primary","data":[96,95,93,94,96,97,95,94,96,97]},{"name":"Middle","data":[92,93,90,91,94,93,92,95,94,95]},{"name":"Secondary","data":[88,90,87,89,91,90,92,91,93,92]}]'></onl-chart></div>
+    </div>
+    <div class="onl-card onl-widget">
+      <div class="onl-card__header"><h2 class="onl-card__title">Collection by mode</h2></div>
+      <div class="onl-widget__body"><onl-chart type="donut" format="compact" center-label="Collected" aria-label="Fees by payment mode" data='[{"label":"UPI","value":2140000},{"label":"Card","value":860000},{"label":"Cash","value":740000},{"label":"Cheque","value":520000}]'></onl-chart></div>
+    </div>
+  </div>
+  <div class="onl-grid onl-grid--2" style="margin-top:16px">
+    <div class="onl-card">
+      <div class="onl-card__header"><h2 class="onl-card__title">Today's timetable · 10-A</h2><span class="onl-badge onl-badge--brand">Period 3 now</span></div>
+      <ol class="onl-timeline" style="padding:16px">
+        <li class="onl-timeline__item"><span class="onl-timeline__dot onl-timeline__dot--success"></span><div class="onl-grow"><div class="onl-timeline__head"><span class="onl-timeline__title">Mathematics · Mr. Iyer</span><time class="onl-timeline__time">8:30</time></div></div></li>
+        <li class="onl-timeline__item"><span class="onl-timeline__dot onl-timeline__dot--success"></span><div class="onl-grow"><div class="onl-timeline__head"><span class="onl-timeline__title">Physics lab · Ms. Fernandes</span><time class="onl-timeline__time">9:20</time></div></div></li>
+        <li class="onl-timeline__item"><span class="onl-timeline__dot onl-timeline__dot--brand"></span><div class="onl-grow"><div class="onl-timeline__head"><span class="onl-timeline__title">English · Mrs. Reddy</span><time class="onl-timeline__time">10:30</time></div><p class="onl-timeline__text">Unit test: Poetry</p></div></li>
+        <li class="onl-timeline__item"><span class="onl-timeline__dot"></span><div class="onl-grow"><div class="onl-timeline__head"><span class="onl-timeline__title">Computer science · Mr. Khan</span><time class="onl-timeline__time">11:20</time></div></div></li>
+      </ol>
+    </div>
+    <div class="onl-card">
+      <div class="onl-card__header"><h2 class="onl-card__title">Top fee defaulters</h2><a href="#" class="onl-btn onl-btn--sm">Remind all</a></div>
+      <div class="onl-table-wrap"><table class="onl-table onl-table--dense">
+        <thead><tr><th>Student</th><th class="onl-hide-sm">Class</th><th class="onl-num">Due</th><th>Since</th></tr></thead>
+        <tbody>
+          <tr><td>Arjun Menon</td><td class="onl-hide-sm">9-B</td><td class="onl-num">₹38,400</td><td><span class="onl-pill onl-badge" data-status="overdue">62 days</span></td></tr>
+          <tr><td>Kavya Pillai</td><td class="onl-hide-sm">11-A</td><td class="onl-num">₹27,000</td><td><span class="onl-pill onl-badge" data-status="overdue">45 days</span></td></tr>
+          <tr><td>Rohan Das</td><td class="onl-hide-sm">7-C</td><td class="onl-num">₹14,250</td><td><span class="onl-pill onl-badge" data-status="late">21 days</span></td></tr>
+          <tr><td>Meera Joshi</td><td class="onl-hide-sm">10-A</td><td class="onl-num">₹9,000</td><td><span class="onl-pill onl-badge" data-status="late">12 days</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</div>

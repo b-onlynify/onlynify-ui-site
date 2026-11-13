@@ -1,0 +1,72 @@
+<main class="onl-bg-mesh">
+  <section class="onl-hero onl-hero--center">
+    <div class="onl-container onl-container--xl">
+      <span class="onl-announce"><b>New</b> Funnels now update in real time →</span>
+      <h1 class="onl-hero__title" style="margin-top:20px">Know what your users <span class="onl-gradient-text">actually do</span></h1>
+      <p class="onl-hero__lead">Nova turns product events into dashboards, funnels and retention curves your whole team can read. Set up in ten minutes, no SQL needed.</p>
+      <div class="onl-hero__actions"><a class="onl-btn onl-btn--gradient onl-btn--lg" href="{{page:pricing}}">Start free for 14 days</a><a class="onl-btn onl-btn--lg" href="#product">See it in action</a></div>
+      <p class="onl-text-xs onl-text-muted" style="margin-top:14px">No card needed · GDPR and DPDP ready · Data stored in India</p>
+
+      <div class="onl-card" id="product" style="margin-top:48px;text-align:left;padding:16px">
+        <div class="onl-grid onl-grid--4">
+          <div class="onl-card onl-stat"><p class="onl-stat__label">Active users</p><p class="onl-stat__value" data-onl-count="18420">18,420</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">12.4%</span> this week</p></div>
+          <div class="onl-card onl-stat"><p class="onl-stat__label">Activation</p><p class="onl-stat__value">61.8%</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">3.2 pts</span></p></div>
+          <div class="onl-card onl-stat"><p class="onl-stat__label">Week-4 retention</p><p class="onl-stat__value">42%</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--down">0.8 pts</span></p></div>
+          <div class="onl-card onl-stat"><p class="onl-stat__label">MRR</p><p class="onl-stat__value">₹24.8L</p><onl-chart type="sparkline" aria-label="MRR trend" labels='["1","2","3","4","5","6","7","8"]' series='[{"name":"MRR","data":[16,17.2,18,19.4,20.1,21.8,23.1,24.8]}]'></onl-chart></div>
+        </div>
+        <div style="display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr))">
+          <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Weekly active users</h2></div><div class="onl-card__body"><onl-chart type="combo" format="compact" aria-label="Weekly active users and new signups" labels='["W1","W2","W3","W4","W5","W6","W7","W8"]' series='[{"name":"Active users","data":[11200,12100,12800,13900,14800,16100,17200,18420]},{"name":"New signups","type":"line","data":[1800,2100,1900,2600,2500,3100,2900,3400]}]'></onl-chart></div></div>
+          <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Onboarding funnel</h2></div><div class="onl-card__body"><onl-chart type="funnel" aria-label="Onboarding funnel" data='[{"label":"Signed up","value":3400},{"label":"Created project","value":2620},{"label":"Sent first event","value":2100},{"label":"Built a dashboard","value":1420},{"label":"Invited team","value":980}]'></onl-chart></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" id="customers" style="padding-top:0">
+    <div class="onl-container onl-container--xl">
+      <p class="onl-text-sm onl-text-muted" style="text-align:center;margin-bottom:18px">Trusted by 1,200+ product teams</p>
+      <div class="onl-logos"><div class="onl-logos__track"><span class="onl-logos__item">Ledgerly</span><span class="onl-logos__item">Classboard</span><span class="onl-logos__item">Saffron</span><span class="onl-logos__item">Quanta</span><span class="onl-logos__item">Northwind</span><span class="onl-logos__item">Bluebird</span></div><div class="onl-logos__track" aria-hidden="true"><span class="onl-logos__item">Ledgerly</span><span class="onl-logos__item">Classboard</span><span class="onl-logos__item">Saffron</span><span class="onl-logos__item">Quanta</span><span class="onl-logos__item">Northwind</span><span class="onl-logos__item">Bluebird</span></div></div>
+    </div>
+  </section>
+
+  <section class="onl-section">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-section-head onl-section-head--center"><p class="onl-eyebrow">Product</p><h2>Everything you need to understand usage</h2><p>From the first event to the board report, without a data team.</p></div>
+      <div class="onl-bento">
+        <div class="onl-card onl-bento--big"><span class="onl-feature__icon"><svg data-icon="chart"></svg></span><h3 class="onl-h3">Retention you can act on</h3><p class="onl-text-muted">See which features bring people back, cohort by cohort.</p><onl-chart type="heatmap" style="margin-top:auto" legend="false" aria-label="Retention by cohort" labels='["W0","W1","W2","W3","W4","W5"]' series='[{"name":"Jan","data":[100,68,55,48,44,42]},{"name":"Feb","data":[100,71,58,51,47,45]},{"name":"Mar","data":[100,74,62,55,51,49]},{"name":"Apr","data":[100,76,65,58,54,0]},{"name":"May","data":[100,79,68,0,0,0]}]'></onl-chart></div>
+        <div class="onl-card onl-bento--wide"><span class="onl-feature__icon"><svg data-icon="layers"></svg></span><h3 class="onl-h4">Funnels in seconds</h3><p class="onl-text-sm onl-text-muted">Pick the steps, see drop-off and the users behind every number.</p></div>
+        <div class="onl-card"><div class="onl-metric"><b>10 min</b><span>average setup time</span></div></div>
+        <div class="onl-card"><div class="onl-metric"><b data-onl-count="2.4" data-suffix="B">2.4B</b><span>events a month</span></div></div>
+        <div class="onl-card onl-bento--wide"><span class="onl-feature__icon"><svg data-icon="users"></svg></span><h3 class="onl-h4">Shared with the whole team</h3><p class="onl-text-sm onl-text-muted">Dashboards anyone can read, with alerts in email and chat.</p></div>
+        <div class="onl-card onl-bento--wide"><span class="onl-feature__icon"><svg data-icon="code"></svg></span><h3 class="onl-h4">One-line install</h3><p class="onl-text-sm onl-text-muted">SDKs for web, iOS, Android and every major backend.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-grid" style="--onl-min:280px">
+        <figure class="onl-card onl-testimonial"><span class="onl-stars" style="--v:5" aria-label="5 out of 5"></span><blockquote>"We found the step where 40% of new users gave up, fixed it in a sprint and activation jumped 11 points."</blockquote><figcaption><span class="onl-avatar" style="--hue:250">IK</span><div><b>Isha Kapoor</b><span>PM, Ledgerly</span></div></figcaption></figure>
+        <figure class="onl-card onl-testimonial"><span class="onl-stars" style="--v:5" aria-label="5 out of 5"></span><blockquote>"Our founders open Nova every morning. It replaced three tools and a weekly spreadsheet."</blockquote><figcaption><span class="onl-avatar" style="--hue:320">AR</span><div><b>Aditya Rao</b><span>COO, Classboard</span></div></figcaption></figure>
+        <figure class="onl-card onl-testimonial"><span class="onl-stars" style="--v:4.5" aria-label="4.5 out of 5"></span><blockquote>"Setup took one afternoon. The retention heatmap alone paid for the year."</blockquote><figcaption><span class="onl-avatar" style="--hue:30">NS</span><div><b>Neha Shah</b><span>Growth lead, Saffron</span></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" id="faq">
+    <div class="onl-container onl-container--md">
+      <div class="onl-section-head onl-section-head--center"><h2>Frequently asked</h2></div>
+      <div class="onl-faq">
+        <details open><summary>Where is my data stored?</summary><p>In data centres in Mumbai and Hyderabad, encrypted at rest and in transit. You can export or delete it at any time.</p></details>
+        <details><summary>Do I need engineers to set it up?</summary><p>One script tag or SDK call. After that, events, funnels and dashboards are point-and-click.</p></details>
+        <details><summary>What happens after the trial?</summary><p>Pick a plan or stay on Free with 10,000 events a month. Nothing is deleted.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" style="padding-top:0">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-cta"><div class="onl-row onl-row--between"><div><h2>See your product clearly</h2><p>Start free in ten minutes. Bring your team when you're ready.</p></div><a class="onl-btn onl-btn--lg" href="{{page:pricing}}">Start free trial</a></div></div>
+    </div>
+  </section>
+</main>

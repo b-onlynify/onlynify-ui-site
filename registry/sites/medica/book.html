@@ -1,0 +1,49 @@
+<main class="onl-bg-mesh">
+  <section class="onl-section">
+    <div class="onl-container onl-container--xl">
+      <ol class="onl-steps" aria-label="Booking steps" style="max-width:640px">
+        <li class="onl-step" data-state="done"><span class="onl-step__label">Doctor</span></li>
+        <li class="onl-step" aria-current="step"><span class="onl-step__label">Date &amp; time</span></li>
+        <li class="onl-step"><span class="onl-step__label">Details</span></li>
+        <li class="onl-step"><span class="onl-step__label">Confirm</span></li>
+      </ol>
+
+      <div style="display:grid;gap:24px;margin-top:24px;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:start">
+        <form class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:20px">
+          <div><h1 class="onl-h2">Choose a date and time</h1><p class="onl-text-muted" style="margin-top:4px">Consultation with Dr. Divya Rao, Family Medicine</p></div>
+          <fieldset class="onl-fieldset"><legend>Visit type</legend><div class="onl-segmented onl-segmented--block"><label><input type="radio" name="md-type" checked> In clinic</label><label><input type="radio" name="md-type"> Video call</label><label><input type="radio" name="md-type"> Home visit</label></div></fieldset>
+          <div data-onl-calendar data-for="#md-date" data-min="today"></div>
+          <input type="hidden" id="md-date" name="date">
+          <fieldset class="onl-fieldset"><legend>Morning</legend><div class="onl-choices" style="--onl-min:88px">
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot" disabled><span class="onl-choice__title">9:00</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot"><span class="onl-choice__title">9:20</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot"><span class="onl-choice__title">10:40</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot"><span class="onl-choice__title">11:20</span></label>
+          </div></fieldset>
+          <fieldset class="onl-fieldset"><legend>Evening</legend><div class="onl-choices" style="--onl-min:88px">
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot" checked><span class="onl-choice__title">4:30</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot"><span class="onl-choice__title">5:10</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot" disabled><span class="onl-choice__title">5:50</span></label>
+            <label class="onl-choice onl-choice--hide-input"><input type="radio" name="md-slot"><span class="onl-choice__title">6:30</span></label>
+          </div></fieldset>
+          <div class="onl-grid onl-grid--2" style="--onl-gap:12px">
+            <div class="onl-float"><input class="onl-input" id="md-name" placeholder=" " autocomplete="name"><label for="md-name">Patient name</label></div>
+            <div class="onl-float"><input class="onl-input" id="md-phone" type="tel" placeholder=" " autocomplete="tel"><label for="md-phone">Mobile</label></div>
+          </div>
+          <div class="onl-field"><label class="onl-label" for="md-symptoms">Symptoms (optional)</label><div class="onl-tags" data-onl-tags><input id="md-symptoms" placeholder="Fever, cough…"><input type="hidden" name="symptoms"></div></div>
+          <div class="onl-field"><span class="onl-label">Previous reports (optional)</span><div class="onl-dropzone" data-onl-dropzone><span class="onl-dropzone__icon"><svg data-icon="download"></svg></span><p><b>Upload reports</b> or drag them here</p><p class="onl-text-xs">PDF or images · encrypted and only shared with your doctor</p><input type="file" multiple accept="application/pdf,image/*" aria-label="Upload reports"></div><div class="onl-files"></div></div>
+          <button type="submit" class="onl-btn onl-btn--brand onl-btn--lg onl-btn--block">Continue</button>
+        </form>
+
+        <aside class="onl-stack" style="--onl-gap:16px">
+          <div class="onl-card onl-card--pad onl-stack" style="--onl-gap:12px">
+            <div class="onl-row onl-row--nowrap" style="--onl-gap:12px"><span class="onl-avatar onl-avatar--lg" style="--hue:200">DR</span><div><b>Dr. Divya Rao</b><p class="onl-text-sm onl-text-muted">MD, Family Medicine · 14 years</p><span class="onl-stars" style="--v:4.9"></span></div></div>
+            <dl class="onl-kv"><dt>Fee</dt><dd>₹600</dd><dt>Duration</dt><dd>20 minutes</dd><dt>Languages</dt><dd>English, Telugu, Hindi</dd><dt>Cancel</dt><dd>Free up to 2 h before</dd></dl>
+          </div>
+          <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Usually busy</h2></div><div class="onl-card__body"><onl-chart type="heatmap" legend="false" aria-label="Clinic busy hours" labels='["9","10","11","12","4","5","6","7"]' series='[{"name":"Mon","data":[6,9,8,5,4,7,9,8]},{"name":"Tue","data":[5,7,7,4,3,6,8,7]},{"name":"Wed","data":[5,8,7,5,4,6,8,8]},{"name":"Thu","data":[4,7,6,4,3,6,7,7]},{"name":"Fri","data":[6,8,8,6,4,7,9,9]},{"name":"Sat","data":[9,10,10,8,6,8,9,8]}]'></onl-chart><p class="onl-text-xs onl-text-muted" style="margin-top:8px">Tip: Tuesday and Thursday afternoons are quietest.</p></div></div>
+          <div class="onl-alert onl-alert--brand"><div class="onl-alert__content"><p class="onl-alert__title">Cashless available</p><p class="onl-alert__body">Bring your insurance card and a photo ID. We handle the paperwork.</p></div></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>

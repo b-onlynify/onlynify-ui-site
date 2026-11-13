@@ -1,0 +1,34 @@
+<div class="onlp-stage">
+  <section class="onlp-card onlp-table-card onlp-max" style="--onlp-max:1040px" aria-labelledby="ptm-title">
+    <div class="onlp-card__head" style="padding-bottom:14px;flex-wrap:wrap">
+      <div><h2 id="ptm-title" class="onlp-title" style="font-size:18px">Team members</h2><p class="onlp-sub">Manage who can see and change things in Sunrise Traders.</p></div>
+      <button type="button" class="onlp-btn onlp-btn--outline onlp-btn--sm"><svg data-icon="download"></svg>Export</button>
+    </div>
+    <div style="padding:0 20px 16px" class="onlp-stack">
+      <form class="onlp-addon" action="#" aria-label="Invite people">
+        <span><svg data-icon="user-plus" style="width:16px;height:16px"></svg></span>
+        <input class="onlp-input" type="email" placeholder="name@company.com, add several with commas" aria-label="Email addresses">
+        <select class="onlp-role" aria-label="Role for invited people" style="border:0;border-inline-start:1px solid var(--onl-line);border-radius:0;height:auto"><option>Member</option><option>Admin</option><option>Viewer</option></select>
+        <button type="submit" class="onlp-btn onlp-btn--gradient">Send invite</button>
+      </form>
+      <div class="onlp-seats"><span class="onlp-tile onlp-tile--sm"><svg data-icon="users"></svg></span><b>11 of 14 seats used</b><div class="onlp-bar"><i style="--v:78%"></i></div><a class="onlp-link onlp-xs" href="#">Add seats</a></div>
+    </div>
+    <div class="onlp-toolbar" style="border-top:1px solid var(--onl-line)">
+      <div class="onlp-control"><svg data-icon="search"></svg><input class="onlp-input" type="search" placeholder="Search by name or email" aria-label="Search members"></div>
+      <button type="button" class="onlp-filter" data-active><svg data-icon="shield"></svg>Role: any</button>
+      <button type="button" class="onlp-filter"><svg data-icon="clock"></svg>Pending only</button>
+    </div>
+    <div class="onlp-scroll-x">
+      <table class="onlp-table">
+        <thead><tr><th>Member</th><th>Role</th><th>Two-step</th><th>Last active</th><th aria-label="Actions"></th></tr></thead>
+        <tbody>
+          <tr><td><div class="onlp-person"><span class="onlp-av" style="--hue:12" data-presence="online">RS</span><div><b>Riya Shah <span class="onlp-badge" style="height:18px;font-size:10px;padding:0 6px">You</span></b><small>riya@sunrise.in</small></div></div></td><td><span class="onlp-badge onlp-badge--gradient"><svg data-icon="crown"></svg>Owner</span></td><td><span class="onlp-status onlp-status--live">On</span></td><td class="onlp-muted">Now</td><td></td></tr>
+          <tr><td><div class="onlp-person"><span class="onlp-av" style="--hue:262" data-presence="online">AN</span><div><b>Ananya Nair</b><small>ananya@sunrise.in</small></div></div></td><td><select class="onlp-role" aria-label="Role for Ananya Nair"><option selected>Admin</option><option>Member</option><option>Viewer</option></select></td><td><span class="onlp-status onlp-status--live">On</span></td><td class="onlp-muted">12 min ago</td><td><button type="button" class="onlp-x" aria-label="More for Ananya Nair"><svg data-icon="more-horizontal"></svg></button></td></tr>
+          <tr><td><div class="onlp-person"><span class="onlp-av" style="--hue:30" data-presence="busy">VK</span><div><b>Vikram Kulkarni</b><small>vikram@sunrise.in</small></div></div></td><td><select class="onlp-role" aria-label="Role for Vikram Kulkarni"><option>Admin</option><option selected>Member</option><option>Viewer</option></select></td><td><span class="onlp-status onlp-status--warn">Off</span></td><td class="onlp-muted">Yesterday</td><td><button type="button" class="onlp-x" aria-label="More for Vikram Kulkarni"><svg data-icon="more-horizontal"></svg></button></td></tr>
+          <tr><td><div class="onlp-person"><span class="onlp-av" style="--hue:340">MK</span><div><b>Meera Krishnan</b><small>meera@coastline.in</small></div></div></td><td><select class="onlp-role" aria-label="Role for Meera Krishnan"><option>Admin</option><option>Member</option><option selected>Viewer</option></select></td><td><span class="onlp-status onlp-status--live">On</span></td><td class="onlp-muted">3 days ago</td><td><button type="button" class="onlp-x" aria-label="More for Meera Krishnan"><svg data-icon="more-horizontal"></svg></button></td></tr>
+          <tr><td><div class="onlp-person"><span class="onlp-av onlp-av--more" style="--hue:200">?</span><div><b>arjun@sunrise.in</b><small>Invited 2 days ago · expires in 5 days</small></div></div></td><td><span class="onlp-badge onlp-badge--warning"><svg data-icon="clock"></svg>Pending</span></td><td class="onlp-muted">—</td><td class="onlp-muted">—</td><td><div class="onlp-row" style="--onlp-gap:4px;flex-wrap:nowrap"><button type="button" class="onlp-btn onlp-btn--soft onlp-btn--sm">Resend</button><button type="button" class="onlp-x" aria-label="Revoke invite"><svg data-icon="x"></svg></button></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

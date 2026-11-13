@@ -1,0 +1,42 @@
+<div class="onlp-stage">
+  <div class="onlp-row onlp-row--between" style="margin-bottom:18px">
+    <div><p class="onlp-kicker">Analytics</p><h2 style="font-size:24px;font-weight:720;letter-spacing:-0.03em;margin-top:4px">Store performance</h2></div>
+    <div class="onlp-row" style="--onlp-gap:8px">
+      <div class="onlp-seg" role="radiogroup" aria-label="Range"><label><input type="radio" name="cd-r">7D</label><label><input type="radio" name="cd-r" checked>30D</label><label><input type="radio" name="cd-r">90D</label><label><input type="radio" name="cd-r">12M</label></div>
+      <button type="button" class="onlp-btn onlp-btn--outline onlp-btn--sm"><svg data-icon="download"></svg>Export</button>
+      <button type="button" class="onlp-btn onlp-btn--gradient onlp-btn--sm"><svg data-icon="share"></svg>Share</button>
+    </div>
+  </div>
+  <div class="onlp-dash">
+    <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">Revenue<span class="onlp-delta onlp-delta--up">12.5%</span></div><div class="onlp-kpi__value">₹8.42L</div><onl-chart type="sparkline" aria-label="Revenue trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Revenue","data":[5.1,5.6,5.4,6.2,6.0,6.8,7.1,7.6,8.1,8.4]}]'></onl-chart></div>
+    <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">Orders<span class="onlp-delta onlp-delta--up">4.1%</span></div><div class="onlp-kpi__value">892</div><onl-chart type="sparkline" aria-label="Orders trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Orders","data":[70,74,72,80,78,84,86,88,90,92]}]'></onl-chart></div>
+    <div class="onlp-card onlp-kpi" style="--span:3"><div class="onlp-kpi__head">Avg. order<span class="onlp-delta onlp-delta--down">1.2%</span></div><div class="onlp-kpi__value">₹944</div><onl-chart type="sparkline" aria-label="Average order trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"AOV","data":[960,958,970,955,950,948,952,946,945,944]}]'></onl-chart></div>
+    <div class="onlp-card onlp-kpi onlp-kpi--accent" style="--span:3"><div class="onlp-kpi__head">Conversion<svg data-icon="target" style="width:18px;height:18px"></svg></div><div class="onlp-kpi__value">3.8%</div><div class="onlp-kpi__foot">Goal 4.0% · 95% there</div><div class="onlp-bar" style="background:rgb(255 255 255 / 0.2);box-shadow:none"><i style="--v:95%;background:#fff"></i></div></div>
+
+    <section class="onlp-card onlp-chart" style="--span:8" aria-label="Revenue trend">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Revenue</p><div class="onlp-chart__value" style="font-size:24px">₹84.2L<span class="onlp-delta onlp-delta--up">18.2%</span></div></div><div class="onlp-legend"><span style="--_c:var(--onl-series-1)">This year</span><span style="--_c:var(--onl-series-2)">Last year</span></div></div>
+      <div class="onlp-chart__body"><onl-chart type="area" format="compact" legend="false" height="240" aria-label="Monthly revenue" labels='["Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"]' series='[{"name":"This year","data":[520000,560000,540000,610000,650000,690000,720000,700000,760000,820000,960000,880000]},{"name":"Last year","data":[480000,470000,500000,530000,540000,560000,590000,600000,610000,640000,720000,690000]}]'></onl-chart></div>
+    </section>
+    <section class="onlp-card onlp-chart" style="--span:4" aria-label="Sales by channel">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Sales by channel</p></div></div>
+      <div class="onlp-chart__body"><onl-chart type="donut" format="percent" center-label="Web" aria-label="Sales by channel" data='[{"label":"Web","value":46},{"label":"App","value":28},{"label":"Store","value":16},{"label":"Partners","value":10}]'></onl-chart></div>
+    </section>
+
+    <section class="onlp-card onlp-chart" style="--span:5" aria-label="Top products">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Top products</p></div><a class="onlp-sub onlp-xs" href="#">See all</a></div>
+      <div class="onlp-chart__body" style="padding:8px 20px 20px">
+        <ol class="onlp-rank">
+          <li><span>Kaju Katli 500g</span><b>₹1.24L</b><div class="onlp-bar"><i style="--v:100%"></i></div></li>
+          <li><span>Mango Pickle</span><b>₹98k</b><div class="onlp-bar"><i style="--v:79%"></i></div></li>
+          <li><span>Rose Bouquet</span><b>₹81k</b><div class="onlp-bar"><i style="--v:65%"></i></div></li>
+          <li><span>Cotton Kurta</span><b>₹64k</b><div class="onlp-bar"><i style="--v:52%"></i></div></li>
+          <li><span>Gongura Pickle</span><b>₹49k</b><div class="onlp-bar"><i style="--v:40%"></i></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="onlp-card onlp-chart" style="--span:7" aria-label="Orders by hour">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Orders by weekday and hour</p></div><span class="onlp-badge onlp-badge--brand">Peak Fri 8 pm</span></div>
+      <div class="onlp-chart__body"><onl-chart type="heatmap" legend="false" aria-label="Orders by weekday and hour" labels='["8am","10am","12pm","2pm","4pm","6pm","8pm","10pm"]' series='[{"name":"Mon","data":[120,260,310,280,240,300,380,290]},{"name":"Tue","data":[130,270,300,290,250,320,360,270]},{"name":"Wed","data":[140,280,330,300,260,330,400,300]},{"name":"Thu","data":[135,290,320,310,270,340,420,320]},{"name":"Fri","data":[150,300,340,320,300,380,520,480]},{"name":"Sat","data":[110,200,260,280,300,360,420,410]},{"name":"Sun","data":[100,180,240,260,280,330,380,350]}]'></onl-chart></div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<section class="onl-section">
+  <div class="onl-container" style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:start">
+    <div>
+      <p class="onl-eyebrow">Contact</p>
+      <h2 class="onl-h1" style="font-size:2.25rem;margin-top:8px;letter-spacing:-0.03em">Let's talk about your project</h2>
+      <p class="onl-lead" style="margin-top:12px">Tell us what you're building. We usually reply within one working day.</p>
+      <div class="onl-stack" style="margin-top:28px;--onl-gap:16px">
+        <div class="onl-row onl-row--nowrap" style="--onl-gap:12px"><span class="onl-icon-tile"><svg data-icon="inbox"></svg></span><div><b>Email</b><p class="onl-text-sm onl-text-muted">hello@northwind.studio</p></div></div>
+        <div class="onl-row onl-row--nowrap" style="--onl-gap:12px"><span class="onl-icon-tile"><svg data-icon="compass"></svg></span><div><b>Studio</b><p class="onl-text-sm onl-text-muted">4th floor, 12 MG Road, Bengaluru 560001</p></div></div>
+        <div class="onl-row onl-row--nowrap" style="--onl-gap:12px"><span class="onl-icon-tile"><svg data-icon="calendar"></svg></span><div><b>Hours</b><p class="onl-text-sm onl-text-muted">Monday to Friday, 10 am to 7 pm</p></div></div>
+      </div>
+    </div>
+    <form class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:16px">
+      <div class="onl-grid onl-grid--2" style="--onl-gap:14px">
+        <div class="onl-float"><input class="onl-input" id="ct-first" placeholder=" " autocomplete="given-name"><label for="ct-first">First name</label></div>
+        <div class="onl-float"><input class="onl-input" id="ct-last" placeholder=" " autocomplete="family-name"><label for="ct-last">Last name</label></div>
+      </div>
+      <div class="onl-float"><input class="onl-input" id="ct-email" type="email" placeholder=" " autocomplete="email"><label for="ct-email">Work email</label></div>
+      <fieldset class="onl-fieldset"><legend>What do you need?</legend>
+        <div class="onl-segmented onl-segmented--block" role="radiogroup">
+          <label><input type="radio" name="ct-need" checked> Website</label>
+          <label><input type="radio" name="ct-need"> App</label>
+          <label><input type="radio" name="ct-need"> Branding</label>
+        </div>
+      </fieldset>
+      <div class="onl-slider"><div class="onl-slider__head"><label for="ct-budget">Budget</label><output>₹3,00,000</output></div><input type="range" class="onl-range" id="ct-budget" min="50000" max="2000000" step="50000" value="300000" data-onl-output data-prefix="₹"><div class="onl-slider__ticks"><span>₹50K</span><span>₹20L+</span></div></div>
+      <div class="onl-float"><textarea class="onl-textarea" id="ct-msg" placeholder=" " rows="4"></textarea><label for="ct-msg">Tell us about the project</label></div>
+      <label class="onl-check"><input type="checkbox"> Send me the studio newsletter</label>
+      <button type="submit" class="onl-btn onl-btn--brand onl-btn--lg onl-btn--block">Send message</button>
+    </form>
+  </div>
+</section>

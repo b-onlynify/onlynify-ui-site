@@ -1,0 +1,56 @@
+<main>
+  <section class="onl-hero onl-hero--center">
+    <div class="onl-container onl-container--xl">
+      <span class="onl-announce"><b>4,820</b> verified homes listed this month</span>
+      <h1 class="onl-hero__title" style="margin-top:18px;max-width:18ch">Find a home you'll <span class="onl-gradient-text">love coming back to</span></h1>
+      <p class="onl-hero__lead">Every listing is visited and verified by a Haven agent. Real photos, real prices, no brokerage surprises.</p>
+
+      <form class="onl-card onl-card--glass" style="margin:32px auto 0;max-width:920px;padding:10px;text-align:left">
+        <div class="onl-segmented" role="radiogroup" aria-label="Looking to" style="margin-bottom:10px"><label><input type="radio" name="hv-mode" checked> Buy</label><label><input type="radio" name="hv-mode"> Rent</label><label><input type="radio" name="hv-mode"> New projects</label></div>
+        <div style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))">
+          <div class="onl-search"><svg data-icon="search"></svg><input class="onl-input" placeholder="Locality, project or landmark" aria-label="Location"></div>
+          <select class="onl-select" aria-label="Property type"><option>Apartment</option><option>Villa</option><option>Plot</option><option>Independent house</option></select>
+          <select class="onl-select" aria-label="Bedrooms"><option>Any BHK</option><option>1 BHK</option><option selected>2 BHK</option><option>3 BHK</option><option>4+ BHK</option></select>
+          <a class="onl-btn onl-btn--brand" href="{{page:listings}}">Search homes</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="onl-section" style="padding-top:12px">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-row onl-row--between" style="margin-bottom:18px"><div class="onl-section-head" style="margin:0"><h2>Featured homes</h2></div><a class="onl-btn" href="{{page:listings}}">See all</a></div>
+      <div class="onl-grid" style="--onl-min:280px">
+        <article class="onl-card onl-card--lift"><div class="onl-card__media" style="position:relative"><img data-ph="Lake-view 3 BHK|150" alt="Lake-view apartment"><span class="onl-badge onl-badge--success" style="position:absolute;top:10px;left:10px">Verified</span></div><div class="onl-card__body"><p class="onl-price onl-price--lg">₹1.42 Cr</p><h3 class="onl-h4" style="margin-top:4px">3 BHK · Kondapur, Hyderabad</h3><p class="onl-text-sm onl-text-muted">1,860 sq ft · 12th floor · Lake view</p></div></article>
+        <article class="onl-card onl-card--lift"><div class="onl-card__media" style="position:relative"><img data-ph="Garden villa|120" alt="Garden villa"><span class="onl-badge onl-badge--brand" style="position:absolute;top:10px;left:10px">New</span></div><div class="onl-card__body"><p class="onl-price onl-price--lg">₹2.85 Cr</p><h3 class="onl-h4" style="margin-top:4px">4 BHK villa · Whitefield, Bengaluru</h3><p class="onl-text-sm onl-text-muted">3,200 sq ft · Private garden</p></div></article>
+        <article class="onl-card onl-card--lift"><div class="onl-card__media" style="position:relative"><img data-ph="Studio near IT park|190" alt="Studio apartment"><span class="onl-badge" style="position:absolute;top:10px;left:10px">For rent</span></div><div class="onl-card__body"><p class="onl-price onl-price--lg">₹28,000<span class="onl-text-sm onl-text-muted"> / month</span></p><h3 class="onl-h4" style="margin-top:4px">1 BHK · Hinjewadi, Pune</h3><p class="onl-text-sm onl-text-muted">640 sq ft · Fully furnished</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section onl-section--muted" id="market">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-section-head"><p class="onl-eyebrow">Market insights</p><h2>Prices, honestly</h2><p>Average price per sq ft from registered sales, updated monthly.</p></div>
+      <div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr))">
+        <div class="onl-card"><div class="onl-card__header"><h3 class="onl-card__title">Price per sq ft</h3><span class="onl-text-xs onl-text-muted">Last 8 quarters</span></div><div class="onl-card__body"><onl-chart type="line" format="inr" aria-label="Price per square foot by city" labels='["Q1 25","Q2","Q3","Q4","Q1 26","Q2","Q3","Q4"]' series='[{"name":"Hyderabad","data":[6200,6350,6480,6600,6790,6950,7120,7310]},{"name":"Bengaluru","data":[7800,7920,8100,8260,8400,8610,8750,8940]},{"name":"Pune","data":[6900,6980,7050,7160,7230,7380,7460,7590]}]'></onl-chart></div></div>
+        <div class="onl-card"><div class="onl-card__header"><h3 class="onl-card__title">What buyers want</h3></div><div class="onl-card__body"><onl-chart type="radar" max="100" aria-label="Buyer priorities" labels='["Commute","Schools","Price","Greenery","Safety","Amenities"]' series='[{"name":"Families","data":[70,92,68,74,95,62]},{"name":"Young professionals","data":[94,30,82,55,78,86]}]'></onl-chart></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" id="agents">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-section-head onl-section-head--center"><h2>Talk to an agent who knows the street</h2></div>
+      <div class="onl-grid" style="--onl-min:220px">
+        <div class="onl-card onl-card--pad onl-stack" style="--onl-gap:8px;align-items:center;text-align:center"><span class="onl-avatar onl-avatar--xl" style="--hue:150">RK</span><b>Ravi Kumar</b><span class="onl-text-sm onl-text-muted">Gachibowli · 9 years</span><span class="onl-stars" style="--v:4.9"></span><a class="onl-btn onl-btn--soft onl-btn--sm" href="#">Message</a></div>
+        <div class="onl-card onl-card--pad onl-stack" style="--onl-gap:8px;align-items:center;text-align:center"><span class="onl-avatar onl-avatar--xl" style="--hue:330">AS</span><b>Ananya Sen</b><span class="onl-text-sm onl-text-muted">Whitefield · 6 years</span><span class="onl-stars" style="--v:4.8"></span><a class="onl-btn onl-btn--soft onl-btn--sm" href="#">Message</a></div>
+        <div class="onl-card onl-card--pad onl-stack" style="--onl-gap:8px;align-items:center;text-align:center"><span class="onl-avatar onl-avatar--xl" style="--hue:40">MP</span><b>Mahesh Patil</b><span class="onl-text-sm onl-text-muted">Baner · 11 years</span><span class="onl-stars" style="--v:5"></span><a class="onl-btn onl-btn--soft onl-btn--sm" href="#">Message</a></div>
+        <div class="onl-card onl-card--pad onl-stack" style="--onl-gap:8px;align-items:center;text-align:center"><span class="onl-avatar onl-avatar--xl" style="--hue:210">ZK</span><b>Zoya Khan</b><span class="onl-text-sm onl-text-muted">Kondapur · 4 years</span><span class="onl-stars" style="--v:4.7"></span><a class="onl-btn onl-btn--soft onl-btn--sm" href="#">Message</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="onl-section" style="padding-top:0">
+    <div class="onl-container onl-container--xl"><div class="onl-cta"><div class="onl-row onl-row--between"><div><h2>Selling your home?</h2><p>Free valuation within 48 hours and a dedicated agent until the keys change hands.</p></div><a class="onl-btn onl-btn--lg" href="#">Get a free valuation</a></div></div></div>
+  </section>
+</main>

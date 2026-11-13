@@ -1,0 +1,37 @@
+<section class="onl-section onl-section--muted">
+  <div class="onl-container onl-container--sm">
+    <form class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:22px">
+      <div>
+        <div class="onl-row onl-row--between"><p class="onl-eyebrow">Feedback</p><span class="onl-text-xs onl-text-muted">2 of 3</span></div>
+        <div class="onl-progress onl-progress--sm" style="margin-top:8px"><div class="onl-progress__bar" style="--value:66%"></div></div>
+        <h1 class="onl-h2" style="margin-top:16px">How was your stay?</h1>
+      </div>
+
+      <fieldset class="onl-fieldset"><legend>Overall rating</legend>
+        <div class="onl-rating" style="--onl-rating-size:32px"><input type="radio" name="sv-rate" id="sv5" value="5" checked><label for="sv5">5 stars</label><input type="radio" name="sv-rate" id="sv4" value="4"><label for="sv4">4 stars</label><input type="radio" name="sv-rate" id="sv3" value="3"><label for="sv3">3 stars</label><input type="radio" name="sv-rate" id="sv2" value="2"><label for="sv2">2 stars</label><input type="radio" name="sv-rate" id="sv1" value="1"><label for="sv1">1 star</label></div>
+      </fieldset>
+
+      <fieldset class="onl-fieldset"><legend>How likely are you to recommend us? (0–10)</legend>
+        <div class="onl-segmented onl-segmented--block" role="radiogroup" style="flex-wrap:wrap">
+          <label><input type="radio" name="sv-nps"> 0</label><label><input type="radio" name="sv-nps"> 1</label><label><input type="radio" name="sv-nps"> 2</label><label><input type="radio" name="sv-nps"> 3</label><label><input type="radio" name="sv-nps"> 4</label><label><input type="radio" name="sv-nps"> 5</label><label><input type="radio" name="sv-nps"> 6</label><label><input type="radio" name="sv-nps"> 7</label><label><input type="radio" name="sv-nps"> 8</label><label><input type="radio" name="sv-nps" checked> 9</label><label><input type="radio" name="sv-nps"> 10</label>
+        </div>
+        <div class="onl-slider__ticks" style="margin-top:4px"><span>Not likely</span><span>Very likely</span></div>
+      </fieldset>
+
+      <fieldset class="onl-fieldset"><legend>What did you enjoy most?</legend>
+        <div class="onl-choices" style="--onl-min:150px">
+          <label class="onl-choice"><input type="checkbox" checked><span class="onl-choice__title">Room</span></label>
+          <label class="onl-choice"><input type="checkbox"><span class="onl-choice__title">Food</span></label>
+          <label class="onl-choice"><input type="checkbox" checked><span class="onl-choice__title">Staff</span></label>
+          <label class="onl-choice"><input type="checkbox"><span class="onl-choice__title">Location</span></label>
+        </div>
+      </fieldset>
+
+      <div class="onl-slider"><div class="onl-slider__head"><label for="sv-value">Value for money</label><output>8 / 10</output></div><input type="range" class="onl-range" id="sv-value" min="0" max="10" value="8" data-onl-output data-suffix=" / 10"></div>
+
+      <div class="onl-float"><textarea class="onl-textarea" id="sv-note" placeholder=" " rows="3"></textarea><label for="sv-note">Anything we could do better?</label></div>
+
+      <div class="onl-row onl-row--between"><button type="button" class="onl-btn onl-btn--ghost">Back</button><button type="submit" class="onl-btn onl-btn--brand">Next question</button></div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+<div class="onl-container onl-container--md" style="padding-block:28px">
+  <div class="onl-page-header"><div><h1 class="onl-page-header__title">Settings</h1><p class="onl-page-header__subtitle">Manage your profile, notifications and team.</p></div></div>
+  <div class="onl-tabs" role="tablist" data-onl-tabs aria-label="Settings">
+    <button class="onl-tab" role="tab" aria-selected="true" aria-controls="set-profile" id="set-profile-t">Profile</button>
+    <button class="onl-tab" role="tab" aria-selected="false" tabindex="-1" aria-controls="set-notify" id="set-notify-t">Notifications</button>
+    <button class="onl-tab" role="tab" aria-selected="false" tabindex="-1" aria-controls="set-team" id="set-team-t">Team <span class="onl-badge">4</span></button>
+  </div>
+
+  <section class="onl-tabpanel" role="tabpanel" id="set-profile" aria-labelledby="set-profile-t" style="padding-top:20px">
+    <div class="onl-card">
+      <div class="onl-card__body onl-stack" style="--onl-gap:18px">
+        <div class="onl-row" style="--onl-gap:16px"><span class="onl-avatar onl-avatar--xl" style="--hue:210">PS</span><div class="onl-stack" style="--onl-gap:6px"><div class="onl-row" style="--onl-gap:8px"><button class="onl-btn onl-btn--sm">Upload photo</button><button class="onl-btn onl-btn--ghost onl-btn--sm">Remove</button></div><p class="onl-help">PNG or JPG, at least 256×256.</p></div></div>
+        <div class="onl-grid onl-grid--2" style="--onl-gap:14px">
+          <div class="onl-field"><label class="onl-label" for="set-name">Full name</label><input class="onl-input" id="set-name" value="Priya Sharma"></div>
+          <div class="onl-field"><label class="onl-label" for="set-email">Email</label><input class="onl-input" id="set-email" type="email" value="priya@almondhouse.in"></div>
+          <div class="onl-field"><label class="onl-label" for="set-lang">Language</label><select class="onl-select" id="set-lang"><option selected>English</option><option>हिन्दी</option><option>తెలుగు</option><option>தமிழ்</option></select></div>
+          <div class="onl-field"><label class="onl-label" for="set-tz">Time zone</label><select class="onl-select" id="set-tz"><option selected>Asia/Kolkata (IST)</option><option>Asia/Dubai (GST)</option></select></div>
+          <div class="onl-field onl-span-2"><label class="onl-label" for="set-bio">About <span class="onl-label__optional">Optional</span></label><textarea class="onl-textarea" id="set-bio">Third-generation sweet maker. Orders before 4 pm are delivered the same day.</textarea></div>
+        </div>
+      </div>
+      <div class="onl-card__footer"><button class="onl-btn">Cancel</button><button class="onl-btn onl-btn--brand">Save changes</button></div>
+    </div>
+  </section>
+
+  <section class="onl-tabpanel" role="tabpanel" id="set-notify" aria-labelledby="set-notify-t" style="padding-top:20px" hidden>
+    <div class="onl-card onl-card--pad">
+      <div class="onl-switch-row"><label for="n1"><b>New orders</b><div class="onl-text-xs onl-text-muted">Chat and push as soon as an order is placed</div></label><input type="checkbox" role="switch" class="onl-switch" id="n1" checked></div>
+      <div class="onl-switch-row"><label for="n2"><b>Low stock</b><div class="onl-text-xs onl-text-muted">When a product drops below its reorder level</div></label><input type="checkbox" role="switch" class="onl-switch" id="n2" checked></div>
+      <div class="onl-switch-row"><label for="n3"><b>Daily summary</b><div class="onl-text-xs onl-text-muted">Email at 9 pm with sales and payouts</div></label><input type="checkbox" role="switch" class="onl-switch" id="n3"></div>
+      <div class="onl-switch-row"><label for="n4"><b>Product updates</b><div class="onl-text-xs onl-text-muted">New features from Onlynify, about once a month</div></label><input type="checkbox" role="switch" class="onl-switch" id="n4"></div>
+    </div>
+  </section>
+
+  <section class="onl-tabpanel" role="tabpanel" id="set-team" aria-labelledby="set-team-t" style="padding-top:20px" hidden>
+    <div class="onl-card">
+      <div class="onl-card__header"><div><h2 class="onl-card__title">Team members</h2><p class="onl-card__subtitle">4 of 5 seats used</p></div><button class="onl-btn onl-btn--brand onl-btn--sm"><svg data-icon="plus"></svg>Invite</button></div>
+      <ul class="onl-list">
+        <li class="onl-list__item"><span class="onl-avatar onl-avatar--sm" style="--hue:210">PS</span><div class="onl-grow"><b>Priya Sharma</b><div class="onl-text-xs onl-text-muted">priya@almondhouse.in</div></div><span class="onl-pill onl-badge" data-status="owner">Owner</span></li>
+        <li class="onl-list__item"><span class="onl-avatar onl-avatar--sm" style="--hue:140">RK</span><div class="onl-grow"><b>Ravi Kumar</b><div class="onl-text-xs onl-text-muted">ravi@almondhouse.in</div></div><span class="onl-pill onl-badge" data-status="admin">Admin</span></li>
+        <li class="onl-list__item"><span class="onl-avatar onl-avatar--sm" style="--hue:35">FD</span><div class="onl-grow"><b>Front desk</b><div class="onl-text-xs onl-text-muted">desk@almondhouse.in</div></div><span class="onl-badge">Reception</span></li>
+        <li class="onl-list__item"><span class="onl-avatar onl-avatar--sm" style="--hue:300">AN</span><div class="onl-grow"><b>Anil N.</b><div class="onl-text-xs onl-text-muted">Invited 2 days ago</div></div><span class="onl-pill onl-badge" data-status="pending">Pending</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="onl-card onl-card--pad" style="margin-top:24px;border-color:color-mix(in srgb, var(--onl-danger) 35%, var(--onl-line))">
+    <div class="onl-row onl-row--between">
+      <div><h2 class="onl-h4" style="color:var(--onl-danger)">Delete store</h2><p class="onl-text-sm onl-text-muted">Permanently removes products, orders and customers. This can't be undone.</p></div>
+      <button class="onl-btn onl-btn--danger" data-onl-open="#set-delete">Delete store</button>
+    </div>
+  </div>
+  <dialog class="onl-modal onl-modal--sm" id="set-delete" aria-labelledby="set-delete-t">
+    <div class="onl-modal__header"><div><h2 class="onl-modal__title" id="set-delete-t">Delete Almond House?</h2><p class="onl-modal__desc">Type the store name to confirm.</p></div></div>
+    <div class="onl-modal__body"><input class="onl-input" placeholder="Almond House" aria-label="Store name"></div>
+    <div class="onl-modal__footer"><button class="onl-btn" data-onl-close>Cancel</button><button class="onl-btn onl-btn--danger-solid" data-onl-close>Delete forever</button></div>
+  </dialog>
+</div>

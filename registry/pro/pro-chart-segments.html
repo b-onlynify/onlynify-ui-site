@@ -1,0 +1,12 @@
+<div class="onlp-stage">
+  <div class="onlp-grid onlp-max" style="--onlp-min:340px;--onlp-max:1080px">
+    <section class="onlp-card onlp-chart" aria-label="Segments">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Product lines</p><div class="onlp-title">Margin vs customers</div></div><span class="onlp-badge">Bubble = revenue</span></div>
+      <div class="onlp-chart__body"><onl-chart type="bubble" format="percent" x-label="Customers" y-label="Margin" aria-label="Product lines by margin and size" series='[{"name":"Product lines","data":[{"label":"Starter","x":1200,"y":18,"r":40},{"label":"Growth","x":680,"y":32,"r":90},{"label":"Business","x":240,"y":44,"r":120},{"label":"Enterprise","x":60,"y":58,"r":160}]}]'></onl-chart></div>
+    </section>
+    <section class="onlp-card onlp-chart" aria-label="Spend vs orders">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Ad spend vs orders</p><div class="onlp-title">Search returns 18% more per rupee</div></div></div>
+      <div class="onlp-chart__body"><onl-chart type="scatter" x-label="Ad spend (₹)" y-label="Orders" aria-label="Ad spend vs orders" series='[{"name":"Search","data":[{"x":12000,"y":140},{"x":18000,"y":190},{"x":25000,"y":260},{"x":31000,"y":300},{"x":40000,"y":352}]},{"name":"Social","data":[{"x":9000,"y":80},{"x":15000,"y":120},{"x":22000,"y":150},{"x":30000,"y":210},{"x":38000,"y":230}]}]'></onl-chart></div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="onlp-stage" style="background:var(--onl-surface)">
+  <div class="onlp-max onlp-article" style="--onlp-max:960px">
+    <article class="onlp-doc">
+      <div class="onlp-row" style="--onlp-gap:8px"><span class="onlp-badge onlp-badge--brand">Engineering</span><span class="onlp-sub">8 min read · 12 Nov 2026</span></div>
+      <h1 style="margin-top:14px;font-size:clamp(1.9rem,1.4rem + 2vw,2.8rem);font-weight:750;letter-spacing:-0.035em;line-height:1.1">How we made invoices <span class="onlp-gradient-text">ten times faster</span></h1>
+      <div class="onlp-person" style="margin:20px 0 28px"><span class="onlp-av" style="--hue:210">VK</span><div><b>Vikram Kumar</b><small>Staff engineer</small></div></div>
+      <p>Generating a PDF used to take <mark>1.8 seconds</mark> on a busy day. Customers noticed. Here is how we brought it under 200 milliseconds without changing a single template.</p>
+      <h2 id="pa-1">Measure before you guess</h2>
+      <p>We added timing around every step and found most of the time went to loading fonts on each request, not drawing the page.</p>
+      <blockquote>The slowest part of the system was the part nobody thought about.</blockquote>
+      <div class="onlp-code" role="region" aria-label="Code example">
+        <div class="onlp-code__bar"><i></i><i></i><i></i><span style="margin-inline-start:6px">pdf.ts</span></div>
+<pre><code><span class="onlp-tc">// Load fonts once, reuse for every invoice</span>
+<span class="onlp-tk">const</span> fonts = <span class="onlp-tk">await</span> <span class="onlp-tf">loadFonts</span>([<span class="onlp-ts">"Inter"</span>, <span class="onlp-ts">"Noto Sans"</span>]);
+<span data-line-hl><span class="onlp-tk">export function</span> <span class="onlp-tf">renderInvoice</span>(inv) {</span>
+  <span class="onlp-tk">return</span> <span class="onlp-tf">draw</span>(inv, { fonts, dpi: <span class="onlp-tn">144</span> });
+}</code></pre>
+      </div>
+      <h2 id="pa-2">Cache what never changes</h2>
+      <p>Logos, fonts and tax tables now live in memory. Only the numbers are drawn per request.</p>
+    </article>
+    <nav class="onlp-toc onlp-hide-sm" aria-label="On this page">
+      <b style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--onl-muted-2);padding-bottom:6px">On this page</b>
+      <a href="#pa-1" aria-current="true">Measure before you guess</a>
+      <a href="#pa-2">Cache what never changes</a>
+      <a href="#">Results</a>
+      <a href="#">What's next</a>
+    </nav>
+  </div>
+</div>

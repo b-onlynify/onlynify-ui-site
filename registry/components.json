@@ -1,0 +1,694 @@
+[
+  {
+    "slug": "buttons",
+    "title": "Buttons",
+    "group": "Actions",
+    "description": "Use .onl-btn on a <button> or an <a>. Set aria-busy=\"true\" to show the loading state.",
+    "demos": [
+      {
+        "title": "Variants",
+        "muted": false,
+        "html": "<div class=\"onl-row\">\r\n      <button class=\"onl-btn onl-btn--brand\">Brand</button>\r\n      <button class=\"onl-btn onl-btn--primary\">Primary</button>\r\n      <button class=\"onl-btn\">Secondary</button>\r\n      <button class=\"onl-btn onl-btn--soft\">Soft</button>\r\n      <button class=\"onl-btn onl-btn--ghost\">Ghost</button>\r\n      <button class=\"onl-btn onl-btn--danger\">Danger</button>\r\n      <button class=\"onl-btn onl-btn--danger-solid\">Delete</button>\r\n      <a class=\"onl-btn onl-btn--link\" href=\"#buttons\">Link button</a>\r\n    </div>"
+      },
+      {
+        "title": "Sizes, icons & states",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n      <div class=\"onl-row\">\r\n        <button class=\"onl-btn onl-btn--brand onl-btn--sm\">Small</button>\r\n        <button class=\"onl-btn onl-btn--brand\">Medium</button>\r\n        <button class=\"onl-btn onl-btn--brand onl-btn--lg\">Large</button>\r\n        <button class=\"onl-btn onl-btn--brand onl-btn--pill\">Pill</button>\r\n      </div>\r\n      <div class=\"onl-row\">\r\n        <button class=\"onl-btn onl-btn--brand\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>New student</button>\r\n        <button class=\"onl-btn\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Export CSV</button>\r\n        <button class=\"onl-btn onl-btn--icon\" aria-label=\"Edit\" data-tooltip=\"Edit\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg></button>\r\n        <button class=\"onl-btn onl-btn--ghost onl-btn--icon\" aria-label=\"Delete\" data-tooltip=\"Delete\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg></button>\r\n        <button class=\"onl-btn onl-btn--brand\" aria-busy=\"true\">Saving</button>\r\n        <button class=\"onl-btn\" disabled>Disabled</button>\r\n      </div>\r\n      <div class=\"onl-btn-group\" role=\"group\" aria-label=\"Range\" data-onl-toggle-group>\r\n        <button class=\"onl-btn\" data-onl-toggle aria-pressed=\"false\">Day</button>\r\n        <button class=\"onl-btn\" data-onl-toggle aria-pressed=\"true\">Week</button>\r\n        <button class=\"onl-btn\" data-onl-toggle aria-pressed=\"false\">Month</button>\r\n        <button class=\"onl-btn\" data-onl-toggle aria-pressed=\"false\">Year</button>\r\n      </div>\r\n      <button class=\"onl-btn onl-btn--brand onl-btn--block onl-btn--lg\" style=\"max-width:360px\">Full-width (block)</button>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "badges",
+    "title": "Badges, pills & chips",
+    "group": "Display",
+    "description": "Status pills take their colour from data-status, using the same vocabulary across school, shop, hospital and billing apps.",
+    "demos": [
+      {
+        "title": "Badges",
+        "muted": false,
+        "html": "<div class=\"onl-row\" style=\"--onl-gap:8px\">\r\n      <span class=\"onl-badge\">Neutral</span>\r\n      <span class=\"onl-badge onl-badge--brand\">Brand</span>\r\n      <span class=\"onl-badge onl-badge--success\">Success</span>\r\n      <span class=\"onl-badge onl-badge--warning\">Warning</span>\r\n      <span class=\"onl-badge onl-badge--danger\">Danger</span>\r\n      <span class=\"onl-badge onl-badge--info\">Info</span>\r\n      <span class=\"onl-badge onl-badge--solid\">New</span>\r\n      <span class=\"onl-badge onl-badge--count onl-badge--danger\">12</span>\r\n      <span class=\"onl-badge onl-badge--pill onl-badge--brand\">Pro plan</span>\r\n    </div>"
+      },
+      {
+        "title": "Status pills",
+        "muted": false,
+        "html": "<div class=\"onl-row\" style=\"--onl-gap:8px\">\r\n      <span class=\"onl-pill onl-badge\" data-status=\"paid\">Paid</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"pending\">Pending</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"overdue\">Overdue</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"shipped\">Shipped</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"low_stock\">Low stock</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"out_of_stock\">Out of stock</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"present\">Present</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"absent\">Absent</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"admitted\">Admitted</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"super_admin\">Super admin</span>\r\n      <span class=\"onl-pill onl-badge\" data-status=\"draft\">Draft</span>\r\n    </div>"
+      },
+      {
+        "title": "Filter chips",
+        "muted": false,
+        "html": "<div class=\"onl-filters\" data-onl-toggle-group=\"multi\" role=\"group\" aria-label=\"Category\">\r\n      <button class=\"onl-chip\" data-onl-toggle aria-pressed=\"true\">Sweets</button>\r\n      <button class=\"onl-chip\" data-onl-toggle aria-pressed=\"false\">Pickles</button>\r\n      <button class=\"onl-chip\" data-onl-toggle aria-pressed=\"true\">Clothing</button>\r\n      <button class=\"onl-chip\" data-onl-toggle aria-pressed=\"false\">Bouquets</button>\r\n      <span class=\"onl-chip\">Class 10-A <button class=\"onl-chip__remove\" data-onl-dismiss aria-label=\"Remove Class 10-A\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button></span>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "cards",
+    "title": "Cards & stats",
+    "group": "Display",
+    "description": "Cards have header, body, footer and media slots. Add --interactive to cards that work as links.",
+    "demos": [
+      {
+        "title": "KPI tiles",
+        "muted": true,
+        "html": "<div class=\"onl-grid onl-grid--4\">\r\n      <div class=\"onl-card onl-stat\">\r\n        <div class=\"onl-stat__head\"><p class=\"onl-stat__label\">Revenue</p><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h12M6 8h12M6 13l8.5 8M6 13h3a5 5 0 0 0 0-10\"/></svg></span></div>\r\n        <p class=\"onl-stat__value\">₹8.4L</p>\r\n        <p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--up\">12.5%</span> vs last month</p>\r\n      </div>\r\n      <div class=\"onl-card onl-stat\">\r\n        <div class=\"onl-stat__head\"><p class=\"onl-stat__label\">Students</p><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 3.1a4 4 0 0 1 0 7.8M21 21v-2a4 4 0 0 0-3-3.9\"/></svg></span></div>\r\n        <p class=\"onl-stat__value\">1,248</p>\r\n        <p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--up\">3.1%</span> new admissions</p>\r\n      </div>\r\n      <div class=\"onl-card onl-stat\">\r\n        <div class=\"onl-stat__head\"><p class=\"onl-stat__label\">Orders</p><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 8 12 3 3 8v8l9 5 9-5Z\"/><path d=\"m3 8 9 5 9-5M12 13v8\"/></svg></span></div>\r\n        <p class=\"onl-stat__value\">392</p>\r\n        <p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--down\">4.2%</span> vs last week</p>\r\n      </div>\r\n      <div class=\"onl-card onl-stat\">\r\n        <div class=\"onl-stat__head\"><p class=\"onl-stat__label\">Collection rate</p><span class=\"onl-ring\" style=\"--value:86;--size:44px\"><span>86%</span></span></div>\r\n        <p class=\"onl-stat__value\">86%</p>\r\n        <onl-chart type=\"sparkline\" labels='[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\"]' series='[{\"name\":\"Rate\",\"data\":[62,70,68,74,79,77,83,86]}]' aria-label=\"Collection rate trend\"></onl-chart>\r\n      </div>\r\n    </div>"
+      },
+      {
+        "title": "Content cards",
+        "muted": true,
+        "html": "<div class=\"onl-grid onl-grid--3\">\r\n      <div class=\"onl-card\">\r\n        <div class=\"onl-card__header\">\r\n          <div><h3 class=\"onl-card__title\">Upcoming exams</h3><p class=\"onl-card__subtitle\">Term 2 · Class 10</p></div>\r\n          <details class=\"onl-dropdown\"><summary class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"More\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg></summary>\r\n            <div class=\"onl-menu\" role=\"menu\"><button class=\"onl-menu__item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>Edit</button><button class=\"onl-menu__item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Download</button><div class=\"onl-menu__sep\"></div><button class=\"onl-menu__item onl-menu__item--danger\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg>Remove</button></div>\r\n          </details>\r\n        </div>\r\n        <div class=\"onl-card__body\"><ul class=\"onl-list\">\r\n          <li class=\"onl-list__item\" style=\"padding-inline:0\"><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg></span><div class=\"onl-grow\"><b>Mathematics</b><div class=\"onl-text-xs onl-text-muted\">Mon, 10 Nov · 9:30</div></div><span class=\"onl-pill onl-badge\" data-status=\"scheduled\">Scheduled</span></li>\r\n          <li class=\"onl-list__item\" style=\"padding-inline:0\"><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg></span><div class=\"onl-grow\"><b>Science</b><div class=\"onl-text-xs onl-text-muted\">Wed, 12 Nov · 9:30</div></div><span class=\"onl-pill onl-badge\" data-status=\"scheduled\">Scheduled</span></li>\r\n        </ul></div>\r\n        <div class=\"onl-card__footer\"><button class=\"onl-btn onl-btn--sm\">View timetable</button></div>\r\n      </div>\r\n\r\n      <a class=\"onl-card onl-card--interactive\" href=\"#cards\">\r\n        <div class=\"onl-card__media\"><img data-ph=\"Interior · Living room|200\" alt=\"Living room design\"></div>\r\n        <div class=\"onl-card__body\">\r\n          <p class=\"onl-eyebrow\">Interior design</p>\r\n          <h3 class=\"onl-h4\" style=\"margin-top:4px\">Warm minimal living room</h3>\r\n          <p class=\"onl-text-muted\" style=\"margin-top:6px\">Book a 30-minute consultation with a designer near you.</p>\r\n        </div>\r\n      </a>\r\n\r\n      <div class=\"onl-card onl-card--brand onl-card--pad-lg\">\r\n        <span class=\"onl-icon-tile onl-icon-tile--lg\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 14 4-4\"/><path d=\"M3.3 19a10 10 0 1 1 17.4 0\"/></svg></span>\r\n        <h3 class=\"onl-h3\" style=\"margin-top:14px\">AI support assistant</h3>\r\n        <p class=\"onl-text-muted\" style=\"margin-top:6px\">It answers parent and customer questions from your own data, around the clock.</p>\r\n        <div class=\"onl-row\" style=\"margin-top:16px\"><button class=\"onl-btn onl-btn--brand\">Enable</button><button class=\"onl-btn onl-btn--ghost\">Learn more</button></div>\r\n      </div>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "charts",
+    "title": "Charts",
+    "group": "Data",
+    "description": "<onl-chart> is a zero-dependency SVG Web Component. It draws 17 chart types: bar, stacked, horizontal, line, area, sparkline, donut, pie, combo, radar, scatter, bubble, gauge, radial, heatmap, funnel, treemap and waterfall. Colours follow the theme, tooltips work on hover, and an accessible data table renders behind every chart. Pass data as JSON attributes or as JS properties.",
+    "demos": [
+      {
+        "title": "Bar · two series",
+        "muted": false,
+        "html": "<onl-chart type=\"bar\" format=\"compact\" aria-label=\"Fees collected vs due by month\"\r\n        labels='[\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\"]'\r\n        series='[{\"name\":\"Collected\",\"data\":[420000,515000,480000,610000,575000,642000]},{\"name\":\"Due\",\"data\":[120000,90000,140000,70000,95000,60000]}]'></onl-chart>"
+      },
+      {
+        "title": "Stacked bar",
+        "muted": false,
+        "html": "<onl-chart type=\"bar\" stacked format=\"number\" aria-label=\"Orders by channel\"\r\n        labels='[\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\",\"Sun\"]'\r\n        series='[{\"name\":\"Web\",\"data\":[42,51,48,61,57,88,74]},{\"name\":\"App\",\"data\":[30,34,29,40,44,63,58]},{\"name\":\"Walk-in\",\"data\":[12,9,14,11,16,25,21]}]'></onl-chart>"
+      },
+      {
+        "title": "Line",
+        "muted": false,
+        "html": "<onl-chart type=\"line\" format=\"percent\" aria-label=\"Attendance by week\"\r\n        labels='[\"W1\",\"W2\",\"W3\",\"W4\",\"W5\",\"W6\",\"W7\",\"W8\",\"W9\",\"W10\"]'\r\n        series='[{\"name\":\"Class 9\",\"data\":[91,93,88,92,95,94,90,93,96,95]},{\"name\":\"Class 10\",\"data\":[86,88,90,87,89,92,93,91,94,96]}]'></onl-chart>"
+      },
+      {
+        "title": "Area · currency",
+        "muted": false,
+        "html": "<onl-chart type=\"area\" format=\"inr\" aria-label=\"Daily revenue\"\r\n        labels='[\"1 Nov\",\"2 Nov\",\"3 Nov\",\"4 Nov\",\"5 Nov\",\"6 Nov\",\"7 Nov\",\"8 Nov\",\"9 Nov\",\"10 Nov\",\"11 Nov\",\"12 Nov\"]'\r\n        series='[{\"name\":\"Revenue\",\"data\":[18200,21400,19800,24600,27900,26100,31200,29800,33400,36100,34700,39200]}]'></onl-chart>"
+      },
+      {
+        "title": "Donut",
+        "muted": false,
+        "html": "<onl-chart type=\"donut\" format=\"inr\" center-label=\"This month\" aria-label=\"Revenue by category\"\r\n        data='[{\"label\":\"Sweets\",\"value\":184000},{\"label\":\"Pickles\",\"value\":92000},{\"label\":\"Clothing\",\"value\":146000},{\"label\":\"Bouquets\",\"value\":51000},{\"label\":\"Other\",\"value\":23000}]'></onl-chart>"
+      },
+      {
+        "title": "Horizontal bars (ranking)",
+        "muted": false,
+        "html": "<onl-chart type=\"hbar\" format=\"number\" aria-label=\"Top selling products\"\r\n        data='[{\"label\":\"Kaju Katli 500g\",\"value\":412},{\"label\":\"Mango Pickle\",\"value\":356},{\"label\":\"Rose Bouquet\",\"value\":281},{\"label\":\"Cotton Kurta\",\"value\":198},{\"label\":\"Gongura Pickle\",\"value\":164}]'></onl-chart>"
+      },
+      {
+        "title": "Combo · bars with a line",
+        "description": "Give a series \"type\":\"line\" to draw it over the bars.",
+        "muted": false,
+        "html": "<onl-chart type=\"combo\" format=\"compact\" aria-label=\"Revenue and orders\"\r\n        labels='[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\"]'\r\n        series='[{\"name\":\"Revenue\",\"data\":[320000,410000,385000,470000,520000,610000]},{\"name\":\"Target\",\"type\":\"line\",\"data\":[350000,380000,410000,440000,470000,500000]}]'></onl-chart>"
+      },
+      {
+        "title": "Radar",
+        "muted": false,
+        "html": "<onl-chart type=\"radar\" max=\"100\" aria-label=\"Skills compared\"\r\n        labels='[\"Design\",\"Frontend\",\"Backend\",\"Testing\",\"DevOps\",\"Writing\"]'\r\n        series='[{\"name\":\"Asha\",\"data\":[90,82,60,74,55,88]},{\"name\":\"Vikram\",\"data\":[62,78,92,70,84,58]}]'></onl-chart>"
+      },
+      {
+        "title": "Scatter",
+        "muted": false,
+        "html": "<onl-chart type=\"scatter\" x-label=\"Ad spend (₹)\" y-label=\"Orders\" aria-label=\"Ad spend vs orders\"\r\n        series='[{\"name\":\"Search\",\"data\":[{\"x\":12000,\"y\":140},{\"x\":18000,\"y\":190},{\"x\":25000,\"y\":260},{\"x\":31000,\"y\":300},{\"x\":40000,\"y\":352}]},{\"name\":\"Social\",\"data\":[{\"x\":9000,\"y\":80},{\"x\":15000,\"y\":120},{\"x\":22000,\"y\":150},{\"x\":30000,\"y\":210},{\"x\":38000,\"y\":230}]}]'></onl-chart>"
+      },
+      {
+        "title": "Bubble",
+        "muted": false,
+        "html": "<onl-chart type=\"bubble\" format=\"percent\" x-label=\"Customers\" y-label=\"Margin\" aria-label=\"Product lines by margin and size\"\r\n        series='[{\"name\":\"Product lines\",\"data\":[{\"label\":\"Starter\",\"x\":1200,\"y\":18,\"r\":40},{\"label\":\"Growth\",\"x\":680,\"y\":32,\"r\":90},{\"label\":\"Business\",\"x\":240,\"y\":44,\"r\":120},{\"label\":\"Enterprise\",\"x\":60,\"y\":58,\"r\":160}]}]'></onl-chart>"
+      },
+      {
+        "title": "Gauge",
+        "muted": false,
+        "html": "<onl-chart type=\"gauge\" value=\"72\" max=\"100\" format=\"percent\" center-label=\"Monthly target\" aria-label=\"Monthly target reached\"></onl-chart>"
+      },
+      {
+        "title": "Radial bars",
+        "muted": false,
+        "html": "<onl-chart type=\"radial\" max=\"100\" format=\"percent\" aria-label=\"Goals progress\"\r\n        data='[{\"label\":\"Sales\",\"value\":86},{\"label\":\"Signups\",\"value\":64},{\"label\":\"Retention\",\"value\":48},{\"label\":\"NPS\",\"value\":72}]'></onl-chart>"
+      },
+      {
+        "title": "Heatmap",
+        "muted": false,
+        "html": "<onl-chart type=\"heatmap\" aria-label=\"Orders by weekday and hour\"\r\n        labels='[\"8am\",\"10am\",\"12pm\",\"2pm\",\"4pm\",\"6pm\",\"8pm\",\"10pm\"]'\r\n        series='[{\"name\":\"Mon\",\"data\":[4,9,14,11,8,15,22,9]},{\"name\":\"Tue\",\"data\":[5,10,13,12,9,16,20,8]},{\"name\":\"Wed\",\"data\":[3,8,16,13,10,18,24,11]},{\"name\":\"Thu\",\"data\":[6,11,15,10,12,19,26,12]},{\"name\":\"Fri\",\"data\":[7,12,18,14,15,24,31,18]},{\"name\":\"Sat\",\"data\":[10,16,22,20,21,28,34,25]},{\"name\":\"Sun\",\"data\":[9,14,20,18,17,23,27,15]}]'></onl-chart>"
+      },
+      {
+        "title": "Funnel",
+        "muted": false,
+        "html": "<onl-chart type=\"funnel\" aria-label=\"Checkout funnel\"\r\n        data='[{\"label\":\"Visited\",\"value\":12400},{\"label\":\"Viewed product\",\"value\":7420},{\"label\":\"Added to cart\",\"value\":2980},{\"label\":\"Checkout\",\"value\":1650},{\"label\":\"Paid\",\"value\":1210}]'></onl-chart>"
+      },
+      {
+        "title": "Treemap",
+        "muted": false,
+        "html": "<onl-chart type=\"treemap\" format=\"inr\" aria-label=\"Revenue by category\"\r\n        data='[{\"label\":\"Electronics\",\"value\":420000},{\"label\":\"Fashion\",\"value\":310000},{\"label\":\"Home\",\"value\":205000},{\"label\":\"Beauty\",\"value\":140000},{\"label\":\"Books\",\"value\":82000},{\"label\":\"Toys\",\"value\":64000},{\"label\":\"Grocery\",\"value\":51000}]'></onl-chart>"
+      },
+      {
+        "title": "Waterfall",
+        "muted": false,
+        "html": "<onl-chart type=\"waterfall\" format=\"compact\" total-label=\"Net profit\" aria-label=\"Profit bridge\"\r\n        data='[{\"label\":\"Revenue\",\"value\":980000},{\"label\":\"Cost of goods\",\"value\":-410000},{\"label\":\"Salaries\",\"value\":-220000},{\"label\":\"Marketing\",\"value\":-90000},{\"label\":\"Other income\",\"value\":45000},{\"label\":\"Tax\",\"value\":-61000}]'></onl-chart>"
+      }
+    ]
+  },
+  {
+    "slug": "forms",
+    "title": "Forms",
+    "group": "Inputs",
+    "description": "These are native controls styled through classes, so framework form bindings like v-model, ngModel, formControlName and React state work unchanged. Set aria-invalid=\"true\" to show the error state.",
+    "demos": [
+      {
+        "title": "Fields",
+        "muted": false,
+        "html": "<form class=\"onl-grid onl-grid--2\" onsubmit=\"event.preventDefault();Onlynify.toast({title:'Student saved',text:'Admission number ON-1249'})\">\r\n      <div class=\"onl-field\"><label class=\"onl-label onl-label--required\" for=\"f-name\">Student name</label><input class=\"onl-input\" id=\"f-name\" placeholder=\"e.g. Ananya Rao\" required></div>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"f-class\">Class</label><select class=\"onl-select\" id=\"f-class\"><option>Class 9</option><option selected>Class 10</option><option>Class 11</option></select></div>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"f-phone\">Parent phone</label><div class=\"onl-input-group\"><span class=\"onl-input-group__addon\">+91</span><input class=\"onl-input\" id=\"f-phone\" inputmode=\"tel\" placeholder=\"98765 43210\"></div><p class=\"onl-help\">We send fee reminders by SMS and chat.</p></div>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"f-email\">Email <span class=\"onl-label__optional\">Optional</span></label><input class=\"onl-input\" id=\"f-email\" type=\"email\" value=\"parent@\" aria-invalid=\"true\" aria-describedby=\"f-email-e\"><p class=\"onl-error\" id=\"f-email-e\">Enter a valid email address.</p></div>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"f-search\">Search</label><div class=\"onl-input-group\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"onl-input\" id=\"f-search\" type=\"search\" placeholder=\"Search students, invoices…\"></div></div>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"f-fee\">Monthly fee</label><div class=\"onl-input-group\"><span class=\"onl-input-group__addon\">₹</span><input class=\"onl-input\" id=\"f-fee\" inputmode=\"decimal\" value=\"4,500\"></div></div>\r\n      <div class=\"onl-field onl-span-2\"><label class=\"onl-label\" for=\"f-notes\">Notes</label><textarea class=\"onl-textarea\" id=\"f-notes\" placeholder=\"Allergies, transport stop, anything the teacher should know\"></textarea></div>\r\n      <div class=\"onl-row onl-span-2 onl-row--end\"><button type=\"reset\" class=\"onl-btn\">Reset</button><button type=\"submit\" class=\"onl-btn onl-btn--brand\">Save student</button></div>\r\n    </form>"
+      },
+      {
+        "title": "Checkbox & radio",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <label class=\"onl-check\"><input type=\"checkbox\" checked> Send SMS receipt</label>\r\n        <label class=\"onl-check\"><input type=\"checkbox\"><span class=\"onl-check__text\">Email invoice<span class=\"onl-check__hint\">PDF attached, signed link</span></span></label>\r\n        <label class=\"onl-check\"><input type=\"checkbox\" disabled> Disabled option</label>\r\n        <fieldset class=\"onl-fieldset\"><legend>Payment method</legend>\r\n          <div class=\"onl-row\" style=\"--onl-gap:16px\">\r\n            <label class=\"onl-check\"><input type=\"radio\" name=\"pay\" checked> UPI</label>\r\n            <label class=\"onl-check\"><input type=\"radio\" name=\"pay\"> Card</label>\r\n            <label class=\"onl-check\"><input type=\"radio\" name=\"pay\"> Cash</label>\r\n          </div>\r\n        </fieldset>\r\n      </div>"
+      },
+      {
+        "title": "Switches & range",
+        "muted": false,
+        "html": "\r\n        <div class=\"onl-switch-row\"><label for=\"s1\"><b>Chat notifications</b><div class=\"onl-text-xs onl-text-muted\">Fee due, attendance and results</div></label><input type=\"checkbox\" role=\"switch\" class=\"onl-switch\" id=\"s1\" checked></div>\r\n        <div class=\"onl-switch-row\"><label for=\"s2\"><b>Two-factor login</b><div class=\"onl-text-xs onl-text-muted\">Required for admins</div></label><input type=\"checkbox\" role=\"switch\" class=\"onl-switch\" id=\"s2\"></div>\r\n        <div class=\"onl-field\" style=\"margin-top:12px\"><label class=\"onl-label\" for=\"r1\">Late fee grace (days)</label><input type=\"range\" class=\"onl-range\" id=\"r1\" min=\"0\" max=\"30\" value=\"7\"></div>"
+      }
+    ]
+  },
+  {
+    "slug": "inputs",
+    "title": "Rich inputs",
+    "group": "Inputs",
+    "description": "Modern form controls built on native elements: segmented controls, choice cards, floating labels, OTP, tags, file drop, rating, password strength, sliders, swatches and a calendar. Behaviour comes from data-onl-* attributes; the CSS uses :has(), so selection styling needs no JavaScript.",
+    "demos": [
+      {
+        "title": "Segmented control",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <div class=\"onl-segmented\" role=\"radiogroup\" aria-label=\"Billing period\">\r\n          <label><input type=\"radio\" name=\"seg-bill\" checked> Monthly</label>\r\n          <label><input type=\"radio\" name=\"seg-bill\"> Quarterly</label>\r\n          <label><input type=\"radio\" name=\"seg-bill\"> Yearly <span class=\"onl-badge onl-badge--success\">−20%</span></label>\r\n        </div>\r\n        <div class=\"onl-segmented onl-segmented--block\" role=\"radiogroup\" aria-label=\"View\">\r\n          <label><input type=\"radio\" name=\"seg-view\" checked><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M3 15h18M9 3v18\"/></svg> Table</label>\r\n          <label><input type=\"radio\" name=\"seg-view\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"9\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"5\" rx=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"7\" height=\"9\" rx=\"1.5\"/><rect x=\"3\" y=\"16\" width=\"7\" height=\"5\" rx=\"1.5\"/></svg> Cards</label>\r\n          <label><input type=\"radio\" name=\"seg-view\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg> Calendar</label>\r\n        </div>\r\n      </div>"
+      },
+      {
+        "title": "Floating labels",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <div class=\"onl-float\"><input class=\"onl-input\" id=\"fl-name\" placeholder=\" \"><label for=\"fl-name\">Full name</label></div>\r\n        <div class=\"onl-float\"><input class=\"onl-input\" id=\"fl-email\" type=\"email\" placeholder=\" \" value=\"asha@studio.in\"><label for=\"fl-email\">Work email</label></div>\r\n        <div class=\"onl-float\"><select class=\"onl-select\" id=\"fl-team\"><option>Design</option><option>Engineering</option><option>Sales</option></select><label for=\"fl-team\">Team</label></div>\r\n      </div>"
+      },
+      {
+        "title": "Choice cards",
+        "description": "Radio or checkbox inputs inside .onl-choice; the checked card highlights itself.",
+        "muted": false,
+        "html": "<div class=\"onl-choices\" role=\"radiogroup\" aria-label=\"Plan\" style=\"--onl-min:200px\">\r\n      <label class=\"onl-choice\"><input type=\"radio\" name=\"plan-c\"><span><span class=\"onl-choice__title\">Starter</span><span class=\"onl-choice__desc\">1 site · community support</span></span><span class=\"onl-choice__aside\">₹0</span></label>\r\n      <label class=\"onl-choice\"><input type=\"radio\" name=\"plan-c\" checked><span><span class=\"onl-choice__title\">Pro</span><span class=\"onl-choice__desc\">Unlimited sites · themes</span></span><span class=\"onl-choice__aside\">₹2,999</span></label>\r\n      <label class=\"onl-choice\"><input type=\"radio\" name=\"plan-c\"><span><span class=\"onl-choice__title\">Team</span><span class=\"onl-choice__desc\">5 seats · client work</span></span><span class=\"onl-choice__aside\">₹9,999</span></label>\r\n    </div>"
+      },
+      {
+        "title": "One-time code",
+        "description": "Auto-advances, handles paste and backspace, and fires onl-complete.",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:10px\">\r\n        <div class=\"onl-otp\" data-onl-otp aria-label=\"Verification code\">\r\n          <input inputmode=\"numeric\" maxlength=\"6\" autocomplete=\"one-time-code\" placeholder=\" \" aria-label=\"Digit 1\"><input inputmode=\"numeric\" maxlength=\"1\" placeholder=\" \" aria-label=\"Digit 2\"><input inputmode=\"numeric\" maxlength=\"1\" placeholder=\" \" aria-label=\"Digit 3\"><span class=\"onl-otp__sep\">–</span><input inputmode=\"numeric\" maxlength=\"1\" placeholder=\" \" aria-label=\"Digit 4\"><input inputmode=\"numeric\" maxlength=\"1\" placeholder=\" \" aria-label=\"Digit 5\"><input inputmode=\"numeric\" maxlength=\"1\" placeholder=\" \" aria-label=\"Digit 6\">\r\n        </div>\r\n        <p class=\"onl-help\">We sent a code to +91 98••• ••210.</p>\r\n      </div>"
+      },
+      {
+        "title": "Tags",
+        "description": "Enter or comma adds a tag, Backspace removes the last one. The hidden input holds a,b,c.",
+        "muted": false,
+        "html": "<div class=\"onl-field\"><label class=\"onl-label\" for=\"tag-in\">Skills</label>\r\n        <div class=\"onl-tags\" data-onl-tags data-max=\"8\"><span class=\"onl-tag\" data-value=\"Figma\">Figma<button type=\"button\" aria-label=\"Remove Figma\">×</button></span><span class=\"onl-tag\" data-value=\"React\">React<button type=\"button\" aria-label=\"Remove React\">×</button></span><input id=\"tag-in\" placeholder=\"Add a skill…\"><input type=\"hidden\" name=\"skills\" value=\"Figma,React\"></div>\r\n      </div>"
+      },
+      {
+        "title": "File drop zone",
+        "muted": false,
+        "html": "<div class=\"onl-dropzone\" data-onl-dropzone>\r\n        <span class=\"onl-dropzone__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg></span>\r\n        <p><b>Click to upload</b> or drag and drop</p>\r\n        <p class=\"onl-text-xs\">PDF, PNG or JPG up to 10 MB</p>\r\n        <input type=\"file\" multiple aria-label=\"Upload files\">\r\n      </div><div class=\"onl-files\">\r\n        <div class=\"onl-file\"><span class=\"onl-file__type\">pdf</span><div><div class=\"onl-truncate\">Brand-guidelines-2026.pdf</div><div class=\"onl-file__meta\">2.4 MB · uploading 64%</div><div class=\"onl-progress onl-progress--sm\"><div class=\"onl-progress__bar\" style=\"--value:64%\"></div></div></div><button type=\"button\" class=\"onl-btn onl-btn--ghost onl-btn--sm\" data-onl-file-remove aria-label=\"Remove file\">×</button></div>\r\n      </div>"
+      },
+      {
+        "title": "Password strength, rating & slider",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:16px\">\r\n        <div class=\"onl-field\"><label class=\"onl-label\" for=\"pw-new\">New password</label><input class=\"onl-input\" id=\"pw-new\" type=\"password\" data-onl-strength=\"#pw-meter\" autocomplete=\"new-password\"><div class=\"onl-strength\" id=\"pw-meter\" data-score=\"0\"><i></i><i></i><i></i><i></i><span class=\"onl-strength__label\"></span></div></div>\r\n        <fieldset class=\"onl-rating\" aria-label=\"Rating\"><input type=\"radio\" name=\"rate\" id=\"r5\" value=\"5\"><label for=\"r5\">5 stars</label><input type=\"radio\" name=\"rate\" id=\"r4\" value=\"4\" checked><label for=\"r4\">4 stars</label><input type=\"radio\" name=\"rate\" id=\"r3\" value=\"3\"><label for=\"r3\">3 stars</label><input type=\"radio\" name=\"rate\" id=\"r2\" value=\"2\"><label for=\"r2\">2 stars</label><input type=\"radio\" name=\"rate\" id=\"r1\" value=\"1\"><label for=\"r1\">1 star</label></fieldset>\r\n        <div class=\"onl-slider\"><div class=\"onl-slider__head\"><label for=\"budget\">Budget</label><output>₹45,000</output></div><input type=\"range\" class=\"onl-range\" id=\"budget\" min=\"5000\" max=\"200000\" step=\"5000\" value=\"45000\" data-onl-output data-prefix=\"₹\"><div class=\"onl-slider__ticks\"><span>₹5K</span><span>₹2L</span></div></div>\r\n      </div>"
+      },
+      {
+        "title": "Colour swatches",
+        "muted": false,
+        "html": "<fieldset class=\"onl-swatches\" aria-label=\"Accent colour\">\r\n        <label style=\"--c:#1449a0\"><input type=\"radio\" name=\"sw\" checked aria-label=\"Blue\"></label><label style=\"--c:#047857\"><input type=\"radio\" name=\"sw\" aria-label=\"Emerald\"></label><label style=\"--c:#6d28d9\"><input type=\"radio\" name=\"sw\" aria-label=\"Violet\"></label><label style=\"--c:#be123c\"><input type=\"radio\" name=\"sw\" aria-label=\"Rose\"></label><label style=\"--c:#c2410c\"><input type=\"radio\" name=\"sw\" aria-label=\"Orange\"></label><label style=\"--c:#0f766e\"><input type=\"radio\" name=\"sw\" aria-label=\"Teal\"></label><label style=\"--c:#334155\"><input type=\"radio\" name=\"sw\" aria-label=\"Slate\"></label>\r\n      </fieldset>"
+      },
+      {
+        "title": "Calendar & date range",
+        "description": "data-onl-calendar renders a month; data-range picks two dates into the linked input.",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:10px\"><input class=\"onl-input\" id=\"cal-range\" placeholder=\"YYYY-MM-DD/YYYY-MM-DD\" style=\"max-width:280px\"><div data-onl-calendar data-range data-for=\"#cal-range\" data-min=\"today\"></div></div>"
+      },
+      {
+        "title": "Search with shortcut",
+        "muted": false,
+        "html": "<div class=\"onl-search\" style=\"max-width:360px\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"onl-input\" type=\"search\" placeholder=\"Search projects…\" aria-label=\"Search\"><kbd class=\"onl-kbd\">⌘K</kbd></div>"
+      }
+    ]
+  },
+  {
+    "slug": "feedback",
+    "title": "Feedback",
+    "group": "Feedback",
+    "description": "This covers alerts, toasts, progress, spinners, skeletons, empty states and tooltips.",
+    "demos": [
+      {
+        "title": "Alerts",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:10px\">\r\n      <div class=\"onl-alert\" role=\"status\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 16v-4M12 8h.01\"/></svg><div class=\"onl-alert__content\"><p class=\"onl-alert__title\">New term starts 1 December</p><p class=\"onl-alert__body\">Fee plans for Term 3 are now published.</p></div></div>\r\n      <div class=\"onl-alert onl-alert--success\" role=\"status\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg><div class=\"onl-alert__content\"><p class=\"onl-alert__title\">Payment gateway connected</p><p class=\"onl-alert__body\">Payment links will now be sent with invoices.</p></div><button class=\"onl-toast__close\" data-onl-dismiss aria-label=\"Dismiss\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button></div>\r\n      <div class=\"onl-alert onl-alert--warning\" role=\"status\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg><div class=\"onl-alert__content\"><p class=\"onl-alert__title\">12 products are low on stock</p><div class=\"onl-row\" style=\"margin-top:8px\"><button class=\"onl-btn onl-btn--sm\">Review stock</button></div></div></div>\r\n      <div class=\"onl-alert onl-alert--danger\" role=\"alert\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg><div class=\"onl-alert__content\"><p class=\"onl-alert__title\">SMTP authentication failed</p><p class=\"onl-alert__body\">Check the username and app password in Integrations.</p></div></div>\r\n    </div>"
+      },
+      {
+        "title": "Toasts",
+        "muted": false,
+        "html": "<div class=\"onl-row\">\r\n      <button class=\"onl-btn\" onclick=\"Onlynify.toast({title:'Invoice sent',text:'INV-2048 emailed to the parent.'})\">Success</button>\r\n      <button class=\"onl-btn\" onclick=\"Onlynify.toast({kind:'info',title:'Sync running',text:'This takes about a minute.'})\">Info</button>\r\n      <button class=\"onl-btn onl-btn--danger\" onclick=\"Onlynify.toast({kind:'error',title:'Payment failed',text:'The card was declined.',action:{label:'Retry',onClick:()=>Onlynify.toast('Retrying…')}})\">Error with action</button>\r\n    </div>"
+      },
+      {
+        "title": "Progress",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:14px\">\r\n        <div><div class=\"onl-row onl-row--between onl-text-xs\" style=\"margin-bottom:6px\"><span class=\"onl-text-muted\">Syllabus covered</span><b>72%</b></div>\r\n          <div class=\"onl-progress\" role=\"progressbar\" aria-valuenow=\"72\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-label=\"Syllabus covered\"><div class=\"onl-progress__bar\" style=\"--value:72%\"></div></div></div>\r\n        <div class=\"onl-progress onl-progress--success\" role=\"progressbar\" aria-valuenow=\"100\" aria-label=\"Upload\"><div class=\"onl-progress__bar\" style=\"--value:100%\"></div></div>\r\n        <div class=\"onl-progress onl-progress--warning onl-progress--sm\" role=\"progressbar\" aria-valuenow=\"45\" aria-label=\"Storage\"><div class=\"onl-progress__bar\" style=\"--value:45%\"></div></div>\r\n        <div class=\"onl-progress onl-progress--indeterminate\" role=\"progressbar\" aria-label=\"Loading\"><div class=\"onl-progress__bar\"></div></div>\r\n        <div class=\"onl-row\" style=\"--onl-gap:16px\"><span class=\"onl-ring\" style=\"--value:64\"><span>64%</span></span><span class=\"onl-ring\" style=\"--value:92;--size:72px\"><span>92%</span></span><span class=\"onl-spinner onl-spinner--sm\" role=\"status\" aria-label=\"Loading\"></span><span class=\"onl-spinner\" role=\"status\" aria-label=\"Loading\"></span><span class=\"onl-spinner onl-spinner--lg\" role=\"status\" aria-label=\"Loading\"></span></div>\r\n      </div>"
+      },
+      {
+        "title": "Skeleton & empty state",
+        "muted": false,
+        "html": "\r\n        <div class=\"onl-row onl-row--nowrap\" style=\"--onl-gap:12px\"><span class=\"onl-skeleton onl-skeleton--circle\" style=\"width:40px;height:40px;flex:none\"></span><div class=\"onl-stack onl-grow\" style=\"--onl-gap:8px\"><span class=\"onl-skeleton onl-skeleton--text\" style=\"width:60%\"></span><span class=\"onl-skeleton onl-skeleton--text\" style=\"width:85%\"></span></div></div>\r\n        <div class=\"onl-empty\"><span class=\"onl-empty__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 12h-6l-2 3h-4l-2-3H2\"/><path d=\"M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1Z\"/></svg></span><p class=\"onl-empty__title\">No enquiries yet</p><p class=\"onl-empty__text\">New enquiries from your website and chat will appear here.</p><button class=\"onl-btn onl-btn--brand onl-btn--sm\" style=\"margin-top:8px\">Add enquiry</button></div>"
+      }
+    ]
+  },
+  {
+    "slug": "overlays",
+    "title": "Overlays",
+    "group": "Feedback",
+    "description": "Modals and drawers are native <dialog> elements, so focus trapping, Escape to close and the top layer come from the browser. Dropdowns and accordions use <details>.",
+    "demos": [
+      {
+        "title": "Modal, confirm & drawer",
+        "muted": false,
+        "html": "<div class=\"onl-row\">\r\n      <button class=\"onl-btn onl-btn--brand\" data-onl-open=\"#demo-modal\">Open modal</button>\r\n      <button class=\"onl-btn onl-btn--danger\" data-onl-open=\"#demo-confirm\">Delete student</button>\r\n      <button class=\"onl-btn\" data-onl-open=\"#demo-drawer\">Open drawer</button>\r\n    </div>\r\n\r\n    <dialog class=\"onl-modal\" id=\"demo-modal\" aria-labelledby=\"demo-modal-t\">\r\n      <div class=\"onl-modal__header\"><div><h2 class=\"onl-modal__title\" id=\"demo-modal-t\">Schedule a demo</h2><p class=\"onl-modal__desc\">Our team will call within one working day.</p></div><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" data-onl-close aria-label=\"Close\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button></div>\r\n      <div class=\"onl-modal__body\"><div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <div class=\"onl-field\"><label class=\"onl-label\" for=\"m-org\">Organisation</label><input class=\"onl-input\" id=\"m-org\" placeholder=\"Green Valley School\"></div>\r\n        <div class=\"onl-field\"><label class=\"onl-label\" for=\"m-app\">Product</label><select class=\"onl-select\" id=\"m-app\"><option>School management</option><option>Multi-vendor ecommerce</option><option>Hospital management</option><option>Billing &amp; inventory</option></select></div>\r\n      </div></div>\r\n      <div class=\"onl-modal__footer\"><button class=\"onl-btn\" data-onl-close>Cancel</button><button class=\"onl-btn onl-btn--brand\" data-onl-close onclick=\"Onlynify.toast('Demo requested')\">Request demo</button></div>\r\n    </dialog>\r\n\r\n    <dialog class=\"onl-modal onl-modal--sm\" id=\"demo-confirm\" aria-labelledby=\"demo-confirm-t\">\r\n      <div class=\"onl-modal__header\"><div><h2 class=\"onl-modal__title\" id=\"demo-confirm-t\">Delete Ananya Rao?</h2><p class=\"onl-modal__desc\">This removes the student and their fee history. You can't undo this.</p></div></div>\r\n      <div class=\"onl-modal__footer\"><button class=\"onl-btn\" data-onl-close>Cancel</button><button class=\"onl-btn onl-btn--danger-solid\" data-onl-close onclick=\"Onlynify.toast({kind:'info',title:'Student deleted'})\">Delete</button></div>\r\n    </dialog>\r\n\r\n    <dialog class=\"onl-drawer\" id=\"demo-drawer\" aria-labelledby=\"demo-drawer-t\">\r\n      <div class=\"onl-modal__header\"><div><h2 class=\"onl-modal__title\" id=\"demo-drawer-t\">Order #ON-2048</h2><p class=\"onl-modal__desc\">Placed 5 Nov, 4:12 pm</p></div><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" data-onl-close aria-label=\"Close\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button></div>\r\n      <div class=\"onl-modal__body\">\r\n        <dl class=\"onl-kv\"><div><dt>Customer</dt><dd>Priya Sharma</dd></div><div><dt>Status</dt><dd><span class=\"onl-pill onl-badge\" data-status=\"packed\">Packed</span></dd></div><div><dt>Store</dt><dd>Banjara Hills</dd></div><div><dt>Total</dt><dd>₹1,015</dd></div></dl>\r\n        <hr class=\"onl-divider\">\r\n        <ol class=\"onl-timeline\">\r\n          <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot onl-timeline__dot--brand\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Packed</span><time class=\"onl-timeline__time\">4:40 pm</time></div></div></li>\r\n          <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot onl-timeline__dot--success\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Payment received</span><time class=\"onl-timeline__time\">4:13 pm</time></div><p class=\"onl-timeline__text\">UPI · Online payment</p></div></li>\r\n          <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Order placed</span><time class=\"onl-timeline__time\">4:12 pm</time></div></div></li>\r\n        </ol>\r\n      </div>\r\n      <div class=\"onl-modal__footer\"><button class=\"onl-btn\" data-onl-close>Close</button><button class=\"onl-btn onl-btn--brand\">Mark shipped</button></div>\r\n    </dialog>"
+      },
+      {
+        "title": "Dropdown menu & tooltip",
+        "muted": false,
+        "html": "<div class=\"onl-row\">\r\n        <details class=\"onl-dropdown onl-dropdown--start\">\r\n          <summary class=\"onl-btn\">Actions ▾</summary>\r\n          <div class=\"onl-menu\" role=\"menu\">\r\n            <p class=\"onl-menu__label\">Invoice</p>\r\n            <button class=\"onl-menu__item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>Edit</button>\r\n            <button class=\"onl-menu__item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Download PDF</button>\r\n            <div class=\"onl-menu__sep\" role=\"separator\"></div>\r\n            <button class=\"onl-menu__item onl-menu__item--danger\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg>Void invoice</button>\r\n          </div>\r\n        </details>\r\n        <button class=\"onl-btn\" data-tooltip=\"Copies a signed payment link\">Hover me</button>\r\n      </div>"
+      },
+      {
+        "title": "Accordion",
+        "muted": false,
+        "html": "\r\n        <details class=\"onl-accordion\" open><summary>Can each school use its own domain?</summary><div>Yes. Every client gets <b>name.onlynify.com</b> and can point a custom domain at it.</div></details>\r\n        <details class=\"onl-accordion\"><summary>Which payment gateways are supported?</summary><div>Online payments by UPI, cards and net banking through our secure payment gateway.</div></details>\r\n        <details class=\"onl-accordion\" style=\"border:0\"><summary>Is there a mobile app?</summary><div>Yes. React Native apps for parents, teachers and admins share these tokens.</div></details>"
+      }
+    ]
+  },
+  {
+    "slug": "navigation",
+    "title": "Navigation",
+    "group": "Navigation",
+    "description": "This covers tabs, segmented controls, breadcrumbs, pagination, steps and the sidebar used by this page.",
+    "demos": [
+      {
+        "title": "Tabs (keyboard: ← →)",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-tabs\" role=\"tablist\" data-onl-tabs aria-label=\"Orders\">\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"true\" aria-controls=\"tp-all\" id=\"tp-all-t\">All <span class=\"onl-badge\">392</span></button>\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\" aria-controls=\"tp-new\" id=\"tp-new-t\">New <span class=\"onl-badge\">18</span></button>\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\" aria-controls=\"tp-ship\" id=\"tp-ship-t\">Shipped</button>\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\" disabled>Archived</button>\r\n      </div>\r\n      <div class=\"onl-tabpanel\" role=\"tabpanel\" id=\"tp-all\" aria-labelledby=\"tp-all-t\" tabindex=\"0\" style=\"padding-top:14px\">All 392 orders across 4 stores.</div>\r\n      <div class=\"onl-tabpanel\" role=\"tabpanel\" id=\"tp-new\" aria-labelledby=\"tp-new-t\" tabindex=\"0\" style=\"padding-top:14px\" hidden>18 new orders need confirmation.</div>\r\n      <div class=\"onl-tabpanel\" role=\"tabpanel\" id=\"tp-ship\" aria-labelledby=\"tp-ship-t\" tabindex=\"0\" style=\"padding-top:14px\" hidden>Shipped orders with tracking links.</div>\r\n      <div class=\"onl-tabs onl-tabs--pill\" role=\"tablist\" data-onl-tabs aria-label=\"View\" style=\"margin-top:20px\">\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"true\">Day</button>\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Week</button>\r\n        <button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Month</button>\r\n      </div>"
+      },
+      {
+        "title": "Breadcrumb, steps & pagination",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:22px\">\r\n      <nav aria-label=\"Breadcrumb\"><ol class=\"onl-breadcrumb\"><li><a href=\"#navigation\">Dashboard</a></li><li><a href=\"#navigation\">Students</a></li><li><span aria-current=\"page\">Ananya Rao</span></li></ol></nav>\r\n      <ol class=\"onl-steps\"><li class=\"onl-step\" data-state=\"done\"><span class=\"onl-step__label\">Cart</span></li><li class=\"onl-step\" data-state=\"done\"><span class=\"onl-step__label\">Address</span></li><li class=\"onl-step\" aria-current=\"step\"><span class=\"onl-step__label\">Payment</span></li><li class=\"onl-step\"><span class=\"onl-step__label\">Done</span></li></ol>\r\n      <nav class=\"onl-pagination\" aria-label=\"Pagination\"><span class=\"onl-tabular\">41–60 of 392</span><div class=\"onl-pagination__pages\"><button class=\"onl-page\" aria-label=\"Previous page\">‹</button><button class=\"onl-page\">1</button><span class=\"onl-page onl-page--gap\">…</span><button class=\"onl-page\">2</button><button class=\"onl-page\" aria-current=\"page\">3</button><button class=\"onl-page\">4</button><span class=\"onl-page onl-page--gap\">…</span><button class=\"onl-page\">20</button><button class=\"onl-page\" aria-label=\"Next page\">›</button></div></nav>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "data",
+    "title": "Data display",
+    "group": "Data",
+    "description": "Add data-onl-sortable to a table and aria-sort to its headers for client-side sorting. Use data-sort-value on a cell when its visible text isn't sortable.",
+    "demos": [
+      {
+        "title": "Table with toolbar",
+        "muted": true,
+        "html": "<div class=\"onl-card\">\r\n      <div class=\"onl-toolbar\">\r\n        <div class=\"onl-input-group onl-toolbar__search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"onl-input onl-input--sm\" type=\"search\" placeholder=\"Search invoices\" aria-label=\"Search invoices\"></div>\r\n        <select class=\"onl-select onl-select--sm\" style=\"width:auto\" aria-label=\"Status\"><option>All statuses</option><option>Paid</option><option>Overdue</option></select>\r\n        <span class=\"onl-grow\"></span>\r\n        <button class=\"onl-btn onl-btn--sm\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Export</button>\r\n      </div>\r\n      <div class=\"onl-table-wrap\"><table class=\"onl-table onl-table--hover\" data-onl-sortable>\r\n        <thead><tr><th scope=\"col\" aria-sort=\"none\">Student</th><th scope=\"col\" class=\"onl-hide-sm\">Class</th><th scope=\"col\" aria-sort=\"none\" class=\"onl-num\">Amount</th><th scope=\"col\" aria-sort=\"none\" class=\"onl-hide-sm\">Due</th><th scope=\"col\">Status</th><th scope=\"col\"><span class=\"onl-sr-only\">Actions</span></th></tr></thead>\r\n        <tbody>\r\n          <tr><td><div class=\"onl-cell-user\"><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:12\">AR</span><div><div class=\"onl-cell-user__name\">Ananya Rao</div><div class=\"onl-cell-user__meta\">ON-1201</div></div></div></td><td class=\"onl-hide-sm\">10-A</td><td class=\"onl-num\" data-sort-value=\"4500\">₹4,500</td><td class=\"onl-hide-sm\" data-sort-value=\"2026-11-10\">10 Nov</td><td><span class=\"onl-pill onl-badge\" data-status=\"paid\">Paid</span></td><td class=\"onl-num\"><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"More\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg></button></td></tr>\r\n          <tr><td><div class=\"onl-cell-user\"><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:210\">VK</span><div><div class=\"onl-cell-user__name\">Vikram Kumar</div><div class=\"onl-cell-user__meta\">ON-1188</div></div></div></td><td class=\"onl-hide-sm\">9-B</td><td class=\"onl-num\" data-sort-value=\"12800\">₹12,800</td><td class=\"onl-hide-sm\" data-sort-value=\"2026-10-28\">28 Oct</td><td><span class=\"onl-pill onl-badge\" data-status=\"overdue\">Overdue</span></td><td class=\"onl-num\"><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"More\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg></button></td></tr>\r\n          <tr><td><div class=\"onl-cell-user\"><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:140\">SM</span><div><div class=\"onl-cell-user__name\">Sara Mathew</div><div class=\"onl-cell-user__meta\">ON-1230</div></div></div></td><td class=\"onl-hide-sm\">10-A</td><td class=\"onl-num\" data-sort-value=\"2250\">₹2,250</td><td class=\"onl-hide-sm\" data-sort-value=\"2026-11-15\">15 Nov</td><td><span class=\"onl-pill onl-badge\" data-status=\"partial\">Partial</span></td><td class=\"onl-num\"><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"More\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg></button></td></tr>\r\n          <tr><td><div class=\"onl-cell-user\"><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:280\">RN</span><div><div class=\"onl-cell-user__name\">Rahul Nair</div><div class=\"onl-cell-user__meta\">ON-1172</div></div></div></td><td class=\"onl-hide-sm\">11-C</td><td class=\"onl-num\" data-sort-value=\"6000\">₹6,000</td><td class=\"onl-hide-sm\" data-sort-value=\"2026-11-20\">20 Nov</td><td><span class=\"onl-pill onl-badge\" data-status=\"pending\">Pending</span></td><td class=\"onl-num\"><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"More\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg></button></td></tr>\r\n        </tbody>\r\n      </table></div>\r\n      <div class=\"onl-card__footer\" style=\"justify-content:space-between\"><span class=\"onl-text-xs onl-text-muted\">4 of 248 invoices</span><div class=\"onl-row\" style=\"--onl-gap:4px\"><button class=\"onl-btn onl-btn--sm\" disabled>Previous</button><button class=\"onl-btn onl-btn--sm\">Next</button></div></div>\r\n    </div>"
+      },
+      {
+        "title": "Timeline",
+        "muted": false,
+        "html": "<ol class=\"onl-timeline\">\r\n        <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot onl-timeline__dot--success\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Fee paid · ₹4,500</span><time class=\"onl-timeline__time\">Today, 10:24</time></div><p class=\"onl-timeline__text\">Paid by UPI through a payment link.</p></div></li>\r\n        <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot onl-timeline__dot--warning\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Reminder sent</span><time class=\"onl-timeline__time\">3 Nov</time></div><p class=\"onl-timeline__text\">SMS and email to the parent.</p></div></li>\r\n        <li class=\"onl-timeline__item\"><span class=\"onl-timeline__dot onl-timeline__dot--brand\"></span><div class=\"onl-grow\"><div class=\"onl-timeline__head\"><span class=\"onl-timeline__title\">Invoice issued</span><time class=\"onl-timeline__time\">1 Nov</time></div></div></li>\r\n      </ol>"
+      },
+      {
+        "title": "Key / value & meters",
+        "muted": false,
+        "html": "\r\n        <dl class=\"onl-kv\" style=\"--cols:2\"><div><dt>Admission no.</dt><dd>ON-1201</dd></div><div><dt>Class</dt><dd>10-A</dd></div><div><dt>Transport</dt><dd>Route 4 · Stop 7</dd></div><div><dt>Hostel</dt><dd>Block B · Room 12</dd></div></dl>\r\n        <hr class=\"onl-divider\">\r\n        <div class=\"onl-meter\"><span class=\"onl-meter__label\">Mathematics</span><span class=\"onl-meter__track\"><span class=\"onl-meter__fill\" style=\"display:block;--value:92%\"></span></span><span class=\"onl-meter__value\">92</span></div>\r\n        <div class=\"onl-meter\"><span class=\"onl-meter__label\">Science</span><span class=\"onl-meter__track\"><span class=\"onl-meter__fill\" style=\"display:block;--value:84%\"></span></span><span class=\"onl-meter__value\">84</span></div>\r\n        <div class=\"onl-meter\"><span class=\"onl-meter__label\">English</span><span class=\"onl-meter__track\"><span class=\"onl-meter__fill\" style=\"display:block;--value:77%\"></span></span><span class=\"onl-meter__value\">77</span></div>"
+      }
+    ]
+  },
+  {
+    "slug": "media",
+    "title": "Media",
+    "group": "Display",
+    "description": "This covers avatars with initials and status, an image gallery with a lightbox (arrow keys and swipe), and a scroll-snap carousel.",
+    "demos": [
+      {
+        "title": "Avatars",
+        "muted": false,
+        "html": "<div class=\"onl-row\" style=\"--onl-gap:14px\">\r\n      <span class=\"onl-avatar onl-avatar--xs\" style=\"--hue:12\">AR</span>\r\n      <span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:210\">VK</span>\r\n      <span class=\"onl-avatar\" style=\"--hue:140\" data-status=\"online\" role=\"img\" aria-label=\"Sara Mathew, online\">SM</span>\r\n      <span class=\"onl-avatar onl-avatar--lg\" style=\"--hue:280\" data-status=\"away\">RN</span>\r\n      <span class=\"onl-avatar onl-avatar--xl onl-avatar--square\" style=\"--hue:35\">PS</span>\r\n      <div class=\"onl-avatar-group\"><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:12\">AR</span><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:210\">VK</span><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:140\">SM</span><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:0;background:var(--onl-surface-2);color:var(--onl-muted)\">+9</span></div>\r\n    </div>"
+      },
+      {
+        "title": "Gallery + lightbox",
+        "muted": false,
+        "html": "<ul class=\"onl-gallery onl-gallery--featured\" style=\"--cols:4\" data-onl-gallery>\r\n      <li><button class=\"onl-gallery__item\" data-caption=\"Annual day 2026\"><img data-ph=\"Annual day|220\" alt=\"Annual day stage\"></button></li>\r\n      <li><button class=\"onl-gallery__item\"><img data-ph=\"Science fair|160\" alt=\"Science fair\"></button></li>\r\n      <li><button class=\"onl-gallery__item\"><img data-ph=\"Sports meet|20\" alt=\"Sports meet\"></button></li>\r\n      <li><button class=\"onl-gallery__item\"><img data-ph=\"Library|280\" alt=\"Library\"></button></li>\r\n      <li><button class=\"onl-gallery__item\"><img data-ph=\"Art class|330\" alt=\"Art class\"></button></li>\r\n    </ul>"
+      },
+      {
+        "title": "Carousel",
+        "muted": false,
+        "html": "<div class=\"onl-carousel onl-carousel--3\" data-onl-carousel=\"5000\" aria-roledescription=\"carousel\" aria-label=\"Featured apps\">\r\n      <div class=\"onl-carousel__track\">\r\n        <div class=\"onl-carousel__slide\"><div class=\"doc-slide\" style=\"background:linear-gradient(135deg,#1449a0,#00a6f4)\">School management</div></div>\r\n        <div class=\"onl-carousel__slide\"><div class=\"doc-slide\" style=\"background:linear-gradient(135deg,#be123c,#fb7193)\">Multi-vendor shop</div></div>\r\n        <div class=\"onl-carousel__slide\"><div class=\"doc-slide\" style=\"background:linear-gradient(135deg,#047857,#34d399)\">Hospital</div></div>\r\n        <div class=\"onl-carousel__slide\"><div class=\"doc-slide\" style=\"background:linear-gradient(135deg,#6d28d9,#b4a0ff)\">Billing &amp; inventory</div></div>\r\n        <div class=\"onl-carousel__slide\"><div class=\"doc-slide\" style=\"background:linear-gradient(135deg,#a64b00,#fbbf24)\">Rentals</div></div>\r\n      </div>\r\n      <div class=\"onl-carousel__controls\"><div class=\"onl-carousel__dots\"></div><div class=\"onl-row\" style=\"--onl-gap:4px\"><button class=\"onl-btn onl-btn--icon onl-btn--sm\" data-onl-prev aria-label=\"Previous slide\">‹</button><button class=\"onl-btn onl-btn--icon onl-btn--sm\" data-onl-next aria-label=\"Next slide\">›</button></div></div>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "commerce",
+    "title": "Commerce",
+    "group": "Patterns",
+    "description": "These are product cards, prices, quantity steppers, cart lines, the checkout summary and pricing plans. Onlynify.totals() handles discount, GST and free-delivery maths.",
+    "demos": [
+      {
+        "title": "Product cards",
+        "muted": true,
+        "html": "<div class=\"onl-grid\" style=\"--onl-min:200px\">\r\n      <article class=\"onl-card onl-card--interactive onl-product\"><div class=\"onl-card__media\"><img data-ph=\"Kaju Katli|35\" alt=\"Kaju Katli\"><span class=\"onl-badge onl-badge--solid\">Bestseller</span></div><div class=\"onl-product__body\"><span class=\"onl-product__vendor\">Almond House Sweets</span><a class=\"onl-product__name\" href=\"#commerce\">Kaju Katli, 500 g gift box</a><span class=\"onl-product__rating\"><b>4.8</b> (1,204)</span><div class=\"onl-product__foot\"><span class=\"onl-price\"><span class=\"onl-price__now\">₹450</span><span class=\"onl-price__was\">₹520</span><span class=\"onl-price__off\">13% off</span></span><button class=\"onl-btn onl-btn--brand onl-btn--icon onl-btn--sm\" aria-label=\"Add Kaju Katli to cart\" onclick=\"Onlynify.toast('Added to cart')\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button></div></div></article>\r\n      <article class=\"onl-card onl-card--interactive onl-product\"><div class=\"onl-card__media\"><img data-ph=\"Mango Pickle|50\" alt=\"Mango pickle\"></div><div class=\"onl-product__body\"><span class=\"onl-product__vendor\">Priya Pickles</span><a class=\"onl-product__name\" href=\"#commerce\">Avakaya mango pickle, 1 kg</a><span class=\"onl-product__rating\"><b>4.6</b> (812)</span><div class=\"onl-product__foot\"><div><span class=\"onl-price\"><span class=\"onl-price__now\">₹380</span></span><div class=\"onl-text-xs\" style=\"color:var(--onl-warning);font-weight:500\">Only 3 left</div></div><button class=\"onl-btn onl-btn--brand onl-btn--icon onl-btn--sm\" aria-label=\"Add mango pickle to cart\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button></div></div></article>\r\n      <article class=\"onl-card onl-card--interactive onl-product\"><div class=\"onl-card__media\"><img data-ph=\"Rose Bouquet|345\" alt=\"Rose bouquet\"></div><div class=\"onl-product__body\"><span class=\"onl-product__vendor\">Petal Story</span><a class=\"onl-product__name\" href=\"#commerce\">Red roses bouquet, 24 stems</a><span class=\"onl-product__rating\"><b>4.9</b> (96)</span><div class=\"onl-product__foot\"><span class=\"onl-price\"><span class=\"onl-price__now\">₹1,299</span></span><button class=\"onl-btn onl-btn--brand onl-btn--icon onl-btn--sm\" aria-label=\"Add bouquet to cart\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button></div></div></article>\r\n      <article class=\"onl-card onl-product\"><div class=\"onl-card__media\"><img data-ph=\"Cotton Kurta|200\" alt=\"Cotton kurta\" style=\"opacity:.5;filter:grayscale(1)\"></div><div class=\"onl-product__body\"><span class=\"onl-product__vendor\">Handloom Co.</span><a class=\"onl-product__name\" href=\"#commerce\">Indigo cotton kurta</a><span class=\"onl-product__rating\"><b>4.4</b> (57)</span><div class=\"onl-product__foot\"><div><span class=\"onl-price\"><span class=\"onl-price__now\">₹899</span></span><div class=\"onl-text-xs\" style=\"color:var(--onl-danger);font-weight:500\">Out of stock</div></div><button class=\"onl-btn onl-btn--icon onl-btn--sm\" disabled aria-label=\"Out of stock\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button></div></div></article>\r\n    </div>"
+      },
+      {
+        "title": "Cart",
+        "muted": false,
+        "html": "\r\n        <div class=\"onl-cart-item\"><img class=\"onl-cart-item__img\" data-ph=\"Kaju|35\" alt=\"\"><div class=\"onl-cart-item__body\"><div class=\"onl-cart-item__top\"><div><p class=\"onl-cart-item__name\">Kaju Katli, 500 g</p><p class=\"onl-cart-item__meta\">Gift box · Almond House</p></div><b class=\"onl-tabular\">₹900</b></div><div class=\"onl-cart-item__bottom\"><div class=\"onl-qty\"><button type=\"button\" data-onl-step=\"-1\" aria-label=\"Decrease\">−</button><input type=\"number\" value=\"2\" min=\"1\" max=\"10\" aria-label=\"Quantity\"><button type=\"button\" data-onl-step=\"1\" aria-label=\"Increase\">+</button></div><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"Remove\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg></button></div></div></div>\r\n        <div class=\"onl-cart-item\"><img class=\"onl-cart-item__img\" data-ph=\"Gongura|110\" alt=\"\"><div class=\"onl-cart-item__body\"><div class=\"onl-cart-item__top\"><div><p class=\"onl-cart-item__name\">Gongura pickle, 250 g</p><p class=\"onl-cart-item__meta\">Priya Pickles</p></div><b class=\"onl-tabular\">₹120</b></div><div class=\"onl-cart-item__bottom\"><div class=\"onl-qty\"><button type=\"button\" data-onl-step=\"-1\" aria-label=\"Decrease\">−</button><input type=\"number\" value=\"1\" min=\"1\" max=\"10\" aria-label=\"Quantity\"><button type=\"button\" data-onl-step=\"1\" aria-label=\"Increase\">+</button></div><button class=\"onl-btn onl-btn--ghost onl-btn--icon onl-btn--sm\" aria-label=\"Remove\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg></button></div></div></div>"
+      },
+      {
+        "title": "Checkout summary",
+        "muted": false,
+        "html": "<div class=\"onl-card onl-card--pad\">\r\n        <h3 class=\"onl-card__title\">Order summary</h3>\r\n        <dl class=\"onl-summary\" style=\"margin-top:12px\">\r\n          <div class=\"onl-summary__row\"><dt>Subtotal (3 items)</dt><dd>₹1,020</dd></div>\r\n          <div class=\"onl-summary__row onl-summary__row--discount\"><dt>Discount <span class=\"onl-badge onl-badge--success\">WELCOME10</span></dt><dd>−₹100</dd></div>\r\n          <div class=\"onl-summary__row\"><dt>GST (5%)</dt><dd>₹46</dd></div>\r\n          <div class=\"onl-summary__row\"><dt>Delivery</dt><dd>₹49</dd></div>\r\n          <div class=\"onl-summary__row onl-summary__row--total\"><dt>Total</dt><dd>₹1,015</dd></div>\r\n        </dl>\r\n        <p class=\"onl-alert\" style=\"margin-top:12px;padding:8px 12px;font-size:12px\">Add ₹79 more for free delivery.</p>\r\n        <button class=\"onl-btn onl-btn--brand onl-btn--lg onl-btn--block\" style=\"margin-top:14px\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"8\" cy=\"21\" r=\"1\"/><circle cx=\"19\" cy=\"21\" r=\"1\"/><path d=\"M2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L22 7H6\"/></svg>Proceed to checkout</button>\r\n      </div>"
+      },
+      {
+        "title": "Pricing plans",
+        "muted": true,
+        "html": "<div class=\"onl-grid onl-grid--3\" style=\"padding-top:12px\">\r\n      <div class=\"onl-card onl-pricing\"><h3 class=\"onl-pricing__name\">Starter</h3><p class=\"onl-pricing__desc\">For a single school or store.</p><p class=\"onl-pricing__price\"><span class=\"onl-pricing__amount\">₹1,999</span><span class=\"onl-pricing__period\">/month</span></p><button class=\"onl-btn onl-btn--block\" style=\"margin-top:20px\">Start free trial</button><ul class=\"onl-pricing__features\"><li>Up to 300 students</li><li>Fees, attendance, exams</li><li>Email reminders</li><li data-off>Chat messaging</li><li data-off>Custom domain</li></ul></div>\r\n      <div class=\"onl-card onl-card--brand onl-pricing\"><span class=\"onl-pricing__badge\">Most popular</span><h3 class=\"onl-pricing__name\">Growth</h3><p class=\"onl-pricing__desc\">For growing institutions.</p><p class=\"onl-pricing__price\"><span class=\"onl-pricing__amount\">₹4,999</span><span class=\"onl-pricing__period\">/month</span></p><button class=\"onl-btn onl-btn--brand onl-btn--block\" style=\"margin-top:20px\">Start free trial</button><ul class=\"onl-pricing__features\"><li>Up to 2,000 students</li><li>Hostel &amp; transport</li><li>SMS + chat messaging</li><li>Online payment links</li><li>Custom domain</li></ul></div>\r\n      <div class=\"onl-card onl-pricing\"><h3 class=\"onl-pricing__name\">Enterprise</h3><p class=\"onl-pricing__desc\">For groups with many campuses.</p><p class=\"onl-pricing__price\"><span class=\"onl-pricing__amount\">Custom</span></p><button class=\"onl-btn onl-btn--block\" style=\"margin-top:20px\">Talk to sales</button><ul class=\"onl-pricing__features\"><li>Unlimited campuses</li><li>AI support assistant</li><li>Dedicated database</li><li>SLA &amp; SSO</li><li>Mobile apps in your brand</li></ul></div>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "admin",
+    "title": "Admin patterns",
+    "group": "Patterns",
+    "description": "These are dashboard widgets, filter bars and bulk actions. This page itself uses .onl-shell. Narrow the window to see the slide-over sidebar.",
+    "demos": [
+      {
+        "title": "Dashboard",
+        "muted": true,
+        "html": "\r\n      <div class=\"onl-page-header\">\r\n        <div><nav aria-label=\"Breadcrumb\"><ol class=\"onl-breadcrumb\"><li><a href=\"#admin\">Platform</a></li><li><span aria-current=\"page\">Overview</span></li></ol></nav><h2 class=\"onl-page-header__title\" style=\"margin-top:6px\">Good morning</h2><p class=\"onl-page-header__subtitle\">Here is how your clients are doing today.</p></div>\r\n        <div class=\"onl-row\"><button class=\"onl-btn\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Report</button><button class=\"onl-btn onl-btn--brand\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>New tenant</button></div>\r\n      </div>\r\n      <div class=\"onl-grid onl-grid--4\">\r\n        <div class=\"onl-card onl-stat\"><p class=\"onl-stat__label\">Active tenants</p><p class=\"onl-stat__value\">128</p><p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--up\">8</span> this month</p></div>\r\n        <div class=\"onl-card onl-stat\"><p class=\"onl-stat__label\">MRR</p><p class=\"onl-stat__value\">₹6.2L</p><p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--up\">11%</span> vs October</p></div>\r\n        <div class=\"onl-card onl-stat\"><p class=\"onl-stat__label\">Open enquiries</p><p class=\"onl-stat__value\">23</p><p class=\"onl-stat__foot\">7 demos scheduled</p></div>\r\n        <div class=\"onl-card onl-stat\"><p class=\"onl-stat__label\">Churn</p><p class=\"onl-stat__value\">1.4%</p><p class=\"onl-stat__foot\"><span class=\"onl-trend onl-trend--down\">0.3%</span> lower is better</p></div>\r\n      </div>\r\n      <div class=\"onl-grid onl-grid--3\" style=\"margin-top:16px\">\r\n        <div class=\"onl-card onl-widget onl-span-2\"><div class=\"onl-card__header\"><div><h3 class=\"onl-card__title\">Revenue by product</h3><p class=\"onl-card__subtitle\">Last 6 months</p></div><div class=\"onl-tabs onl-tabs--pill\" role=\"tablist\" data-onl-tabs aria-label=\"Range\"><button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">3M</button><button class=\"onl-tab\" role=\"tab\" aria-selected=\"true\">6M</button><button class=\"onl-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">1Y</button></div></div>\r\n          <div class=\"onl-widget__body\"><onl-chart type=\"bar\" stacked format=\"compact\" aria-label=\"Revenue by product\" labels='[\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\"]' series='[{\"name\":\"School\",\"data\":[210000,240000,232000,268000,281000,302000]},{\"name\":\"Ecommerce\",\"data\":[120000,131000,148000,152000,171000,189000]},{\"name\":\"Hospital\",\"data\":[60000,64000,72000,81000,86000,95000]},{\"name\":\"Billing\",\"data\":[22000,26000,24000,31000,33000,38000]}]'></onl-chart></div></div>\r\n        <div class=\"onl-card onl-widget\"><div class=\"onl-card__header\"><h3 class=\"onl-card__title\">Tenants by plan</h3></div><div class=\"onl-widget__body\"><onl-chart type=\"donut\" center-label=\"Tenants\" aria-label=\"Tenants by plan\" data='[{\"label\":\"Starter\",\"value\":64},{\"label\":\"Growth\",\"value\":49},{\"label\":\"Enterprise\",\"value\":15}]'></onl-chart></div></div>\r\n      </div>\r\n      <div class=\"onl-card\" style=\"margin-top:16px\">\r\n        <div class=\"onl-toolbar\"><div class=\"onl-input-group onl-toolbar__search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"onl-input onl-input--sm\" type=\"search\" placeholder=\"Search tenants\" aria-label=\"Search tenants\"></div>\r\n          <div class=\"onl-filters\" data-onl-toggle-group role=\"group\" aria-label=\"Plan\"><button class=\"onl-chip\" data-onl-toggle aria-pressed=\"true\">All</button><button class=\"onl-chip\" data-onl-toggle aria-pressed=\"false\">Trial</button><button class=\"onl-chip\" data-onl-toggle aria-pressed=\"false\">Suspended</button></div></div>\r\n        <div class=\"onl-table-wrap\"><table class=\"onl-table onl-table--hover\">\r\n          <thead><tr><th style=\"width:40px\"><input type=\"checkbox\" class=\"onl-checkbox\" aria-label=\"Select all\" id=\"doc-all\"></th><th>Tenant</th><th class=\"onl-hide-sm\">Domain</th><th>Plan</th><th>Status</th></tr></thead>\r\n          <tbody id=\"doc-tenants\">\r\n            <tr><td><input type=\"checkbox\" class=\"onl-checkbox\" aria-label=\"Select Green Valley School\"></td><td><b>Green Valley School</b></td><td class=\"onl-hide-sm\"><code class=\"onl-code\">greenvalley.onlynify.com</code></td><td>Growth</td><td><span class=\"onl-pill onl-badge\" data-status=\"active\">Active</span></td></tr>\r\n            <tr><td><input type=\"checkbox\" class=\"onl-checkbox\" aria-label=\"Select Almond House\"></td><td><b>Almond House</b></td><td class=\"onl-hide-sm\"><code class=\"onl-code\">almondhouse.in</code></td><td>Enterprise</td><td><span class=\"onl-pill onl-badge\" data-status=\"active\">Active</span></td></tr>\r\n            <tr><td><input type=\"checkbox\" class=\"onl-checkbox\" aria-label=\"Select CarePlus Hospital\"></td><td><b>CarePlus Hospital</b></td><td class=\"onl-hide-sm\"><code class=\"onl-code\">careplus.onlynify.com</code></td><td>Starter</td><td><span class=\"onl-pill onl-badge\" data-status=\"trial\">Trial</span></td></tr>\r\n          </tbody>\r\n        </table></div>\r\n      </div>\r\n      <div class=\"onl-bulkbar\" id=\"doc-bulk\" hidden><span class=\"onl-text-sm\"><b id=\"doc-bulk-n\">0</b> selected</span><button class=\"onl-btn onl-btn--sm\">Send notice</button><button class=\"onl-btn onl-btn--sm\">Suspend</button></div>"
+      }
+    ]
+  },
+  {
+    "slug": "marketing",
+    "title": "Marketing sections",
+    "group": "Marketing",
+    "description": "Hero, announcement pill, feature grid, bento, logo marquee, testimonials, FAQ, metrics and call to action: the sections every landing page needs, all following your theme and style preset.",
+    "demos": [
+      {
+        "title": "Hero · centred with gradient",
+        "muted": true,
+        "html": "<section class=\"onl-hero onl-hero--center\" style=\"padding:48px 0\"><div class=\"onl-container\">\r\n      <span class=\"onl-announce\"><b>New</b> Ten new chart types are here →</span>\r\n      <h1 class=\"onl-hero__title\" style=\"margin-top:18px\">Ship beautiful products <span class=\"onl-gradient-text\">faster</span></h1>\r\n      <p class=\"onl-hero__lead\">A zero-dependency design system for Angular, React, Vue and plain HTML. Modern components, charts and themes in one stylesheet.</p>\r\n      <div class=\"onl-hero__actions\"><a class=\"onl-btn onl-btn--gradient onl-btn--lg\" href=\"#\">Get started</a><a class=\"onl-btn onl-btn--lg\" href=\"#\">Live demo</a></div>\r\n    </div></section>"
+      },
+      {
+        "title": "Bento grid",
+        "muted": true,
+        "html": "<div class=\"onl-bento\">\r\n      <div class=\"onl-card onl-bento--big onl-card--gradient-border\"><span class=\"onl-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 3v18h18\"/><path d=\"M7 16v-5m5 5V7m5 9v-8\"/></svg></span><h3 class=\"onl-h3\">17 chart types</h3><p class=\"onl-text-muted\">Bar, combo, radar, heatmap, funnel, treemap and more, all SVG and accessible.</p><onl-chart type=\"area\" format=\"compact\" legend=\"false\" style=\"margin-top:auto\" labels='[\"M\",\"T\",\"W\",\"T\",\"F\",\"S\",\"S\"]' series='[{\"name\":\"Visits\",\"data\":[120,180,150,240,210,320,290]}]'></onl-chart></div>\r\n      <div class=\"onl-card onl-bento--wide\"><h3 class=\"onl-h4\">Works everywhere</h3><p class=\"onl-text-muted onl-text-sm\">Plain CSS classes and Web Components: no framework lock-in.</p></div>\r\n      <div class=\"onl-card\"><div class=\"onl-metric\"><b data-onl-count=\"99.9\" data-suffix=\"%\">99.9%</b><span>Lighthouse accessibility</span></div></div>\r\n      <div class=\"onl-card\"><div class=\"onl-metric\"><b data-onl-count=\"0\">0</b><span>Dependencies</span></div></div>\r\n    </div>"
+      },
+      {
+        "title": "Features",
+        "muted": false,
+        "html": "<div class=\"onl-grid onl-grid--2\" style=\"--onl-gap:22px\">\r\n        <div class=\"onl-feature\"><span class=\"onl-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"13.5\" cy=\"6.5\" r=\"1\"/><circle cx=\"17.5\" cy=\"10.5\" r=\"1\"/><circle cx=\"8.5\" cy=\"7.5\" r=\"1\"/><circle cx=\"6.5\" cy=\"12.5\" r=\"1\"/><path d=\"M12 2a10 10 0 0 0 0 20c1.7 0 2-1.3 1.3-2.4-.6-1-.2-2.6 1.4-2.6H17a5 5 0 0 0 5-5c0-5.5-4.5-10-10-10Z\"/></svg></span><h3>Themes</h3><p>12 brand presets, 5 style presets and any custom colour.</p></div>\r\n        <div class=\"onl-feature\"><span class=\"onl-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 2 10 5-10 5L2 7Z\"/><path d=\"m2 17 10 5 10-5M2 12l10 5 10-5\"/></svg></span><h3>Blocks</h3><p>Copy complete sections and pages into any framework.</p></div>\r\n        <div class=\"onl-feature\"><span class=\"onl-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 6h16M4 12h10M4 18h7\"/><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1.5\"/></svg></span><h3>Rich forms</h3><p>OTP, tags, file drop, calendar and more, on native inputs.</p></div>\r\n        <div class=\"onl-feature\"><span class=\"onl-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m16 18 6-6-6-6M8 6l-6 6 6 6\"/></svg></span><h3>Typed</h3><p>TypeScript definitions for every function and element.</p></div>\r\n      </div>"
+      },
+      {
+        "title": "Testimonial",
+        "muted": false,
+        "html": "<figure class=\"onl-card onl-testimonial\"><span class=\"onl-stars\" style=\"--v:5\" aria-label=\"5 out of 5\"></span><blockquote>“We replaced three UI libraries with one stylesheet. Our bundle dropped by half and the team ships pages in a day.”</blockquote><figcaption><span class=\"onl-avatar\" style=\"--hue:280\">MK</span><div><b>Meera Krishnan</b><span>Head of Product, Lumen Health</span></div></figcaption></figure>"
+      },
+      {
+        "title": "Logo marquee",
+        "muted": false,
+        "html": "<div class=\"onl-logos\" aria-label=\"Customers\"><div class=\"onl-logos__track\"><span class=\"onl-logos__item\">Northwind</span><span class=\"onl-logos__item\">Lumen</span><span class=\"onl-logos__item\">Acme Co</span><span class=\"onl-logos__item\">Bluebird</span><span class=\"onl-logos__item\">Quanta</span><span class=\"onl-logos__item\">Saffron</span></div><div class=\"onl-logos__track\" aria-hidden=\"true\"><span class=\"onl-logos__item\">Northwind</span><span class=\"onl-logos__item\">Lumen</span><span class=\"onl-logos__item\">Acme Co</span><span class=\"onl-logos__item\">Bluebird</span><span class=\"onl-logos__item\">Quanta</span><span class=\"onl-logos__item\">Saffron</span></div></div>"
+      },
+      {
+        "title": "FAQ",
+        "muted": false,
+        "html": "<div class=\"onl-faq\"><details open><summary>Does it need a CSS framework?</summary><p>No. One stylesheet and an optional 90 KB script. Nothing else to install.</p></details><details><summary>Can I use my own colours?</summary><p>Yes. Set any brand colour, accent, radius and font, or pick a style preset.</p></details></div>"
+      },
+      {
+        "title": "Call to action",
+        "muted": false,
+        "html": "<div class=\"onl-cta\"><div class=\"onl-row onl-row--between\"><div><h2>Ready to build something great?</h2><p>Start free with the open-source kit. Upgrade for premium sites and theme customisation.</p></div><div class=\"onl-row\"><a class=\"onl-btn onl-btn--lg\" href=\"#\">Start free</a></div></div></div>"
+      }
+    ]
+  },
+  {
+    "slug": "apps",
+    "title": "App patterns",
+    "group": "Patterns",
+    "description": "Command palette, kanban board, chat, notifications and popovers. The popover uses the browser's native popover attribute, so it needs no script at all.",
+    "demos": [
+      {
+        "title": "Command palette",
+        "description": "Opens with the button or ⌘K / Ctrl+K. Arrow keys move, Enter selects, typing filters.",
+        "muted": false,
+        "html": "<button type=\"button\" class=\"onl-btn\" data-onl-command=\"#cmd-demo\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg> Search… <kbd class=\"onl-kbd\">⌘K</kbd></button>\r\n        <dialog class=\"onl-command\" id=\"cmd-demo\" data-onl-hotkey aria-label=\"Command palette\">\r\n          <div class=\"onl-command__input\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input placeholder=\"Type a command or search…\" aria-label=\"Command\"></div>\r\n          <div class=\"onl-command__list\" role=\"listbox\">\r\n            <div class=\"onl-command__group\">Pages</div>\r\n            <button type=\"button\" class=\"onl-command__item\" role=\"option\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m3 10 9-7 9 7v10a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2Z\"/></svg>Dashboard<kbd class=\"onl-kbd\">G D</kbd></button>\r\n            <button type=\"button\" class=\"onl-command__item\" role=\"option\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 3.1a4 4 0 0 1 0 7.8M21 21v-2a4 4 0 0 0-3-3.9\"/></svg>Customers</button>\r\n            <button type=\"button\" class=\"onl-command__item\" role=\"option\" data-keywords=\"money invoice\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h12M6 8h12M6 13l8.5 8M6 13h3a5 5 0 0 0 0-10\"/></svg>Payments</button>\r\n            <div class=\"onl-command__group\">Actions</div>\r\n            <button type=\"button\" class=\"onl-command__item\" role=\"option\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>New project<kbd class=\"onl-kbd\">N</kbd></button>\r\n            <button type=\"button\" class=\"onl-command__item\" role=\"option\" data-keywords=\"dark light\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/></svg>Toggle theme</button>\r\n            <p class=\"onl-command__empty\" hidden>No results.</p>\r\n          </div>\r\n          <div class=\"onl-command__foot\"><span><kbd class=\"onl-kbd\">↑↓</kbd> move</span><span><kbd class=\"onl-kbd\">↵</kbd> select</span><span><kbd class=\"onl-kbd\">esc</kbd> close</span></div>\r\n        </dialog>"
+      },
+      {
+        "title": "Popover (native)",
+        "muted": false,
+        "html": "<button type=\"button\" class=\"onl-btn\" popovertarget=\"pop-demo\">Share project</button>\r\n        <div class=\"onl-popover\" id=\"pop-demo\" popover><p class=\"onl-h4\">Share link</p><p class=\"onl-text-sm onl-text-muted\" style=\"margin:4px 0 10px\">Anyone with the link can view.</p><div class=\"onl-row onl-row--nowrap\" style=\"--onl-gap:6px\"><input class=\"onl-input onl-input--sm\" value=\"https://onl.to/p/7Kq2\" readonly aria-label=\"Link\"><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\" data-onl-copy=\"https://onl.to/p/7Kq2\" data-toast>Copy</button></div></div>"
+      },
+      {
+        "title": "Kanban board",
+        "description": "Drag cards between columns; the board fires onl-move with the card and the column.",
+        "muted": true,
+        "html": "<div class=\"onl-kanban\" data-onl-kanban>\r\n      <div class=\"onl-kanban__col\" data-column=\"todo\"><div class=\"onl-kanban__head\">To do <span class=\"onl-badge\">2</span></div>\r\n        <div class=\"onl-kanban__card\" draggable=\"true\"><b>Pricing page copy</b><div class=\"onl-row onl-row--between\"><span class=\"onl-badge onl-badge--info\">Content</span><span class=\"onl-avatar onl-avatar--xs\" style=\"--hue:30\">AK</span></div></div>\r\n        <div class=\"onl-kanban__card\" draggable=\"true\"><b>Onboarding emails</b><span class=\"onl-badge onl-badge--warning\">Due Fri</span></div></div>\r\n      <div class=\"onl-kanban__col\" data-column=\"doing\"><div class=\"onl-kanban__head\">In progress <span class=\"onl-badge\">1</span></div>\r\n        <div class=\"onl-kanban__card\" draggable=\"true\"><b>Checkout redesign</b><div class=\"onl-progress onl-progress--sm\"><div class=\"onl-progress__bar\" style=\"--value:60%\"></div></div></div></div>\r\n      <div class=\"onl-kanban__col\" data-column=\"done\"><div class=\"onl-kanban__head\">Done <span class=\"onl-badge\">1</span></div>\r\n        <div class=\"onl-kanban__card\" draggable=\"true\"><b>Dark mode</b><span class=\"onl-badge onl-badge--success\">Shipped</span></div></div>\r\n    </div>"
+      },
+      {
+        "title": "Chat",
+        "muted": false,
+        "html": "<div class=\"onl-chat\"><div class=\"onl-bubble\">Hi! Is the 7-seater free this weekend?<span class=\"onl-bubble__time\">10:41</span></div><div class=\"onl-bubble onl-bubble--me\">Yes, Saturday 9 am to Sunday 8 pm. Shall I hold it?<span class=\"onl-bubble__time\">10:42 ✓✓</span></div><span class=\"onl-typing\" aria-label=\"Typing\"><i></i><i></i><i></i></span></div>"
+      },
+      {
+        "title": "Notifications",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:2px\">\r\n        <div class=\"onl-notice\" data-unread><span class=\"onl-avatar onl-avatar--sm\" style=\"--hue:200\">RS</span><div><p class=\"onl-text-sm\"><b>Riya Shah</b> commented on <b>Q3 report</b></p><span class=\"onl-notice__time\">2 min ago</span></div></div>\r\n        <div class=\"onl-notice\" data-unread><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h12M6 8h12M6 13l8.5 8M6 13h3a5 5 0 0 0 0-10\"/></svg></span><div><p class=\"onl-text-sm\">Payment of <b>₹12,400</b> received</p><span class=\"onl-notice__time\">1 hour ago</span></div></div>\r\n        <div class=\"onl-notice\"><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg></span><div><p class=\"onl-text-sm\">Deployment <b>v2.4.0</b> succeeded</p><span class=\"onl-notice__time\">Yesterday</span></div></div>\r\n      </div>"
+      }
+    ]
+  },
+  {
+    "slug": "styles",
+    "title": "Style presets",
+    "group": "Foundations",
+    "description": "Put data-style=\"soft | glass | sharp | bold\" on <html> or any element. Each preset changes radius, borders, shadows and surfaces; colours still come from the brand. Combine with data-density=\"compact | comfortable\".",
+    "demos": [
+      {
+        "title": "Modern (default)",
+        "muted": true,
+        "html": "<div class=\"onl-card onl-card--pad onl-stack\" style=\"--onl-gap:10px\"><b>Invoice #1042</b><span class=\"onl-text-sm onl-text-muted\">Due in 5 days</span><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\">Pay ₹4,200</button></div>"
+      },
+      {
+        "title": "Soft",
+        "muted": true,
+        "html": "<div class=\"onl-card onl-card--pad onl-stack\" style=\"--onl-gap:10px\"><b>Invoice #1042</b><span class=\"onl-text-sm onl-text-muted\">Due in 5 days</span><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\">Pay ₹4,200</button></div>"
+      },
+      {
+        "title": "Glass",
+        "muted": false,
+        "html": "<div class=\"onl-card onl-card--pad onl-stack\" style=\"--onl-gap:10px\"><b>Invoice #1042</b><span class=\"onl-text-sm onl-text-muted\">Due in 5 days</span><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\">Pay ₹4,200</button></div>"
+      },
+      {
+        "title": "Sharp",
+        "muted": true,
+        "html": "<div class=\"onl-card onl-card--pad onl-stack\" style=\"--onl-gap:10px\"><b>Invoice #1042</b><span class=\"onl-text-sm onl-text-muted\">Due in 5 days</span><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\">Pay ₹4,200</button></div>"
+      },
+      {
+        "title": "Bold",
+        "muted": true,
+        "html": "<div class=\"onl-card onl-card--pad onl-stack\" style=\"--onl-gap:10px\"><b>Invoice #1042</b><span class=\"onl-text-sm onl-text-muted\">Due in 5 days</span><button type=\"button\" class=\"onl-btn onl-btn--brand onl-btn--sm\">Pay ₹4,200</button></div>"
+      }
+    ]
+  },
+  {
+    "slug": "layouts",
+    "title": "Page layouts",
+    "group": "Foundations",
+    "description": "Put data-layout=\"centered | editorial | immersive | minimal\" on <html> or any wrapper. A layout rearranges site sections built from .onl-hero, .onl-section, .onl-section-head and .onl-site-nav. Colours still come from the brand and shapes from the style preset, so all three combine. The site templates and theme builder on ui.onlynify.com use the same attribute.",
+    "demos": [
+      {
+        "title": "Classic (default)",
+        "description": "The template as designed.",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-hero\" style=\"padding:32px 20px 28px\"><div><p class=\"onl-eyebrow\">Clinic</p><p class=\"onl-hero__title\" style=\"font-size:1.55rem;margin-top:6px\">Care that <span class=\"onl-gradient-text\">listens</span> first</p><p class=\"onl-hero__lead\" style=\"font-size:.9rem;margin-top:8px\">Same-day appointments and reports on your phone.</p><div class=\"onl-hero__actions\" style=\"margin-top:14px\"><a class=\"onl-btn onl-btn--brand onl-btn--sm\" href=\"#layouts\">Book a visit</a><a class=\"onl-btn onl-btn--sm\" href=\"#layouts\">Services</a></div></div></div>\r\n      <div class=\"onl-section onl-section--muted\" style=\"padding:18px 20px\"><div class=\"onl-section-head\" style=\"margin-bottom:0\"><p class=\"onl-eyebrow\">Services</p><h2 style=\"font-size:1.15rem\">Everything your family needs</h2></div></div>"
+      },
+      {
+        "title": "Centred",
+        "description": "Symmetric heroes and headings, centred navigation.",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-hero\" style=\"padding:32px 20px 28px\"><div><p class=\"onl-eyebrow\">Clinic</p><p class=\"onl-hero__title\" style=\"font-size:1.55rem;margin-top:6px\">Care that <span class=\"onl-gradient-text\">listens</span> first</p><p class=\"onl-hero__lead\" style=\"font-size:.9rem;margin-top:8px\">Same-day appointments and reports on your phone.</p><div class=\"onl-hero__actions\" style=\"margin-top:14px\"><a class=\"onl-btn onl-btn--brand onl-btn--sm\" href=\"#layouts\">Book a visit</a><a class=\"onl-btn onl-btn--sm\" href=\"#layouts\">Services</a></div></div></div>\r\n      <div class=\"onl-section onl-section--muted\" style=\"padding:18px 20px\"><div class=\"onl-section-head\" style=\"margin-bottom:0\"><p class=\"onl-eyebrow\">Services</p><h2 style=\"font-size:1.15rem\">Everything your family needs</h2></div></div>"
+      },
+      {
+        "title": "Editorial",
+        "description": "Left-aligned, ruled headings, magazine feel.",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-hero\" style=\"padding:32px 20px 28px\"><div><p class=\"onl-eyebrow\">Clinic</p><p class=\"onl-hero__title\" style=\"font-size:1.55rem;margin-top:6px\">Care that <span class=\"onl-gradient-text\">listens</span> first</p><p class=\"onl-hero__lead\" style=\"font-size:.9rem;margin-top:8px\">Same-day appointments and reports on your phone.</p><div class=\"onl-hero__actions\" style=\"margin-top:14px\"><a class=\"onl-btn onl-btn--brand onl-btn--sm\" href=\"#layouts\">Book a visit</a><a class=\"onl-btn onl-btn--sm\" href=\"#layouts\">Services</a></div></div></div>\r\n      <div class=\"onl-section onl-section--muted\" style=\"padding:18px 20px\"><div class=\"onl-section-head\" style=\"margin-bottom:0\"><p class=\"onl-eyebrow\">Services</p><h2 style=\"font-size:1.15rem\">Everything your family needs</h2></div></div>"
+      },
+      {
+        "title": "Immersive",
+        "description": "Full-colour hero, tinted sections.",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-hero\" style=\"padding:32px 20px 28px\"><div><p class=\"onl-eyebrow\">Clinic</p><p class=\"onl-hero__title\" style=\"font-size:1.55rem;margin-top:6px\">Care that <span class=\"onl-gradient-text\">listens</span> first</p><p class=\"onl-hero__lead\" style=\"font-size:.9rem;margin-top:8px\">Same-day appointments and reports on your phone.</p><div class=\"onl-hero__actions\" style=\"margin-top:14px\"><a class=\"onl-btn onl-btn--brand onl-btn--sm\" href=\"#layouts\">Book a visit</a><a class=\"onl-btn onl-btn--sm\" href=\"#layouts\">Services</a></div></div></div>\r\n      <div class=\"onl-section onl-section--muted\" style=\"padding:18px 20px\"><div class=\"onl-section-head\" style=\"margin-bottom:0\"><p class=\"onl-eyebrow\">Services</p><h2 style=\"font-size:1.15rem\">Everything your family needs</h2></div></div>"
+      },
+      {
+        "title": "Minimal",
+        "description": "No glow, flat cards, more white space.",
+        "muted": false,
+        "html": "\r\n      <div class=\"onl-hero\" style=\"padding:32px 20px 28px\"><div><p class=\"onl-eyebrow\">Clinic</p><p class=\"onl-hero__title\" style=\"font-size:1.55rem;margin-top:6px\">Care that <span class=\"onl-gradient-text\">listens</span> first</p><p class=\"onl-hero__lead\" style=\"font-size:.9rem;margin-top:8px\">Same-day appointments and reports on your phone.</p><div class=\"onl-hero__actions\" style=\"margin-top:14px\"><a class=\"onl-btn onl-btn--brand onl-btn--sm\" href=\"#layouts\">Book a visit</a><a class=\"onl-btn onl-btn--sm\" href=\"#layouts\">Services</a></div></div></div>\r\n      <div class=\"onl-section onl-section--muted\" style=\"padding:18px 20px\"><div class=\"onl-section-head\" style=\"margin-bottom:0\"><p class=\"onl-eyebrow\">Services</p><h2 style=\"font-size:1.15rem\">Everything your family needs</h2></div></div>"
+      }
+    ]
+  },
+  {
+    "slug": "selection",
+    "title": "Select, combobox & date picker",
+    "group": "Inputs",
+    "description": "Searchable comboboxes, a custom select with keyboard type-ahead, a date picker in a native popover, and toggles. All write to a hidden input, so forms submit normally, and fire onl-change.",
+    "demos": [
+      {
+        "title": "Combobox",
+        "description": "Type to filter, arrow keys to move, Enter to choose.",
+        "muted": false,
+        "html": "<div class=\"onl-field\" style=\"max-width:320px\"><label class=\"onl-label\" for=\"cb-city\">City</label>\r\n        <div class=\"onl-combobox\" data-onl-combobox data-empty=\"No city found\">\r\n          <input class=\"onl-input\" id=\"cb-city\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"cb-city-list\" aria-autocomplete=\"list\" placeholder=\"Search a city…\" autocomplete=\"off\">\r\n          <input type=\"hidden\" name=\"city\">\r\n          <ul class=\"onl-combobox__list\" id=\"cb-city-list\" role=\"listbox\" hidden>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o1\" data-value=\"BLR\" aria-selected=\"false\">Bengaluru<small>KA</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o2\" data-value=\"HYD\" aria-selected=\"false\">Hyderabad<small>TS</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o3\" data-value=\"MAA\" aria-selected=\"false\">Chennai<small>TN</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o4\" data-value=\"BOM\" aria-selected=\"false\" data-keywords=\"bombay\">Mumbai<small>MH</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o5\" data-value=\"PNQ\" aria-selected=\"false\">Pune<small>MH</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" id=\"cb-o6\" data-value=\"DEL\" aria-selected=\"false\" aria-disabled=\"true\">Delhi<small>soon</small></li>\r\n          </ul>\r\n        </div></div>"
+      },
+      {
+        "title": "Select",
+        "description": "A styled listbox that behaves like a native select (type a letter to jump).",
+        "muted": false,
+        "html": "<div class=\"onl-field\" style=\"max-width:320px\"><span class=\"onl-label\" id=\"sel-plan-l\">Plan</span>\r\n        <div class=\"onl-listselect\" data-onl-select>\r\n          <button type=\"button\" class=\"onl-combobox__trigger\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-labelledby=\"sel-plan-l\"><span class=\"onl-combobox__value onl-combobox__placeholder\">Choose a plan</span></button>\r\n          <input type=\"hidden\" name=\"plan\">\r\n          <ul class=\"onl-combobox__list\" role=\"listbox\" hidden>\r\n            <li class=\"onl-combobox__group\">Individual</li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" data-value=\"free\" aria-selected=\"false\">Free<small>₹0</small></li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" data-value=\"pro\" aria-selected=\"false\">Pro<small>₹2,999</small></li>\r\n            <li class=\"onl-combobox__group\">Business</li>\r\n            <li class=\"onl-combobox__option\" role=\"option\" data-value=\"team\" aria-selected=\"false\">Team<small>₹9,999</small></li>\r\n          </ul>\r\n        </div></div>"
+      },
+      {
+        "title": "Date picker",
+        "description": "A calendar inside a native popover: no positioning library needed.",
+        "muted": false,
+        "html": "<div class=\"onl-datepicker\">\r\n        <button type=\"button\" class=\"onl-combobox__trigger\" popovertarget=\"dp-pop\"><span class=\"onl-combobox__value onl-combobox__placeholder\">Pick a date</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg></button>\r\n        <input type=\"hidden\" id=\"dp-value\" name=\"date\">\r\n        <div id=\"dp-pop\" popover><div class=\"onl-calendar\" style=\"display:grid\"><div class=\"onl-datepicker__presets\"><button type=\"button\" class=\"onl-chip\" data-onl-date=\"today\">Today</button><button type=\"button\" class=\"onl-chip\" data-onl-date=\"1\">Tomorrow</button><button type=\"button\" class=\"onl-chip\" data-onl-date=\"7\">In a week</button></div><div data-onl-calendar data-for=\"#dp-value\"></div></div></div>\r\n      </div>"
+      },
+      {
+        "title": "Toggle & toggle group",
+        "muted": false,
+        "html": "<div class=\"onl-row\" style=\"--onl-gap:12px\">\r\n        <button type=\"button\" class=\"onl-toggle onl-toggle--outline\" aria-pressed=\"true\" data-onl-toggle aria-label=\"Bold\"><b>B</b></button>\r\n        <button type=\"button\" class=\"onl-toggle onl-toggle--outline\" aria-pressed=\"false\" data-onl-toggle aria-label=\"Italic\"><i>I</i></button>\r\n        <button type=\"button\" class=\"onl-toggle onl-toggle--outline\" aria-pressed=\"false\" data-onl-toggle aria-label=\"Underline\"><u>U</u></button>\r\n        <span class=\"onl-divider\" style=\"width:1px;height:24px;margin:0\"></span>\r\n        <div class=\"onl-row\" role=\"group\" aria-label=\"Alignment\" style=\"--onl-gap:2px\"><button type=\"button\" class=\"onl-toggle\" aria-pressed=\"true\" data-onl-toggle data-onl-toggle-group=\"align\">Left</button><button type=\"button\" class=\"onl-toggle\" aria-pressed=\"false\" data-onl-toggle data-onl-toggle-group=\"align\">Center</button><button type=\"button\" class=\"onl-toggle\" aria-pressed=\"false\" data-onl-toggle data-onl-toggle-group=\"align\">Right</button></div>\r\n      </div>"
+      }
+    ]
+  },
+  {
+    "slug": "menus",
+    "title": "Menus, sheets & alert dialog",
+    "group": "Overlays",
+    "description": "Context menu (right-click or long-press), menubar with arrow keys, a mega navigation menu, hover card, sheets from any edge and an alert dialog for destructive actions.",
+    "demos": [
+      {
+        "title": "Context menu",
+        "muted": false,
+        "html": "<div class=\"onl-context-area\" data-onl-contextmenu=\"#ctx-demo\">Right-click (or long-press) here</div>\r\n        <div class=\"onl-contextmenu\" id=\"ctx-demo\" popover role=\"menu\">\r\n          <button type=\"button\" class=\"onl-menu-item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>Rename<span class=\"onl-kbd\">F2</span></button>\r\n          <button type=\"button\" class=\"onl-menu-item\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3M7 10l5 5 5-5M5 21h14\"/></svg>Download</button>\r\n          <button type=\"button\" class=\"onl-menu-item\" role=\"menuitem\" data-onl-copy=\"Copied link\" data-toast><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 2 10 5-10 5L2 7Z\"/><path d=\"m2 17 10 5 10-5M2 12l10 5 10-5\"/></svg>Copy link<span class=\"onl-kbd\">⌘C</span></button>\r\n          <hr class=\"onl-menu-sep\">\r\n          <button type=\"button\" class=\"onl-menu-item onl-menu-item--danger\" role=\"menuitem\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15\"/></svg>Delete<span class=\"onl-kbd\">⌫</span></button>\r\n        </div>"
+      },
+      {
+        "title": "Menubar",
+        "muted": false,
+        "html": "<nav class=\"onl-menubar\" role=\"menubar\" aria-label=\"Editor\">\r\n        <details><summary role=\"menuitem\">File</summary><div class=\"onl-menubar__panel\" role=\"menu\"><button type=\"button\" class=\"onl-menu-item\">New file<span class=\"onl-kbd\">⌘N</span></button><button type=\"button\" class=\"onl-menu-item\">Open…<span class=\"onl-kbd\">⌘O</span></button><hr class=\"onl-menu-sep\"><button type=\"button\" class=\"onl-menu-item\">Export as PDF</button></div></details>\r\n        <details><summary role=\"menuitem\">Edit</summary><div class=\"onl-menubar__panel\" role=\"menu\"><button type=\"button\" class=\"onl-menu-item\">Undo<span class=\"onl-kbd\">⌘Z</span></button><button type=\"button\" class=\"onl-menu-item\">Redo<span class=\"onl-kbd\">⇧⌘Z</span></button></div></details>\r\n        <details><summary role=\"menuitem\">View</summary><div class=\"onl-menubar__panel\" role=\"menu\"><label class=\"onl-menu-item\"><input type=\"checkbox\" checked> Show grid</label><label class=\"onl-menu-item\"><input type=\"checkbox\"> Show rulers</label></div></details>\r\n        <details><summary role=\"menuitem\">Help</summary><div class=\"onl-menubar__panel\" role=\"menu\"><button type=\"button\" class=\"onl-menu-item\">Keyboard shortcuts</button></div></details>\r\n      </nav>"
+      },
+      {
+        "title": "Navigation menu",
+        "description": "Opens on hover and on keyboard focus; pure CSS.",
+        "muted": false,
+        "html": "<ul class=\"onl-navmenu\">\r\n      <li><button type=\"button\" class=\"onl-navmenu__trigger\" aria-haspopup=\"true\">Products</button>\r\n        <div class=\"onl-navmenu__panel\"><div class=\"onl-navmenu__grid\">\r\n          <a class=\"onl-navmenu__feature\" href=\"#\"><b>Onlynify UI</b><span style=\"font-size:13px;opacity:.85\">Components, charts and themes for every framework.</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Components</b><span>80+ accessible building blocks</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Charts</b><span>17 SVG chart types</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Themes</b><span>Brand colours and style presets</span></a>\r\n        </div></div></li>\r\n      <li><button type=\"button\" class=\"onl-navmenu__trigger\" aria-haspopup=\"true\">Solutions</button>\r\n        <div class=\"onl-navmenu__panel\"><div class=\"onl-navmenu__grid\">\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Dashboards</b><span>Admin and analytics screens</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Commerce</b><span>Stores, carts and checkout</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Marketing sites</b><span>Complete site templates</span></a>\r\n          <a class=\"onl-navmenu__link\" href=\"#\"><b>Forms</b><span>Onboarding, booking and surveys</span></a>\r\n        </div></div></li>\r\n      <li><a class=\"onl-navmenu__trigger\" href=\"#\">Pricing</a></li>\r\n    </ul>"
+      },
+      {
+        "title": "Hover card",
+        "muted": false,
+        "html": "<p>Reviewed by <span class=\"onl-hovercard\"><a href=\"#\">@riya</a><span class=\"onl-hovercard__card\" role=\"tooltip\"><span class=\"onl-row onl-row--nowrap\" style=\"--onl-gap:12px;align-items:flex-start\"><span class=\"onl-avatar onl-avatar--lg\" style=\"--hue:300\">RS</span><span><b>Riya Shah</b><span class=\"onl-text-sm onl-text-muted\" style=\"display:block\">Design lead · joined March 2024</span><span class=\"onl-text-sm\" style=\"display:block;margin-top:6px\">Designs the onboarding and billing flows.</span></span></span></span></span> yesterday.</p>"
+      },
+      {
+        "title": "Alert dialog & sheets",
+        "muted": false,
+        "html": "<div class=\"onl-row\">\r\n        <button type=\"button\" class=\"onl-btn onl-btn--danger\" data-onl-open=\"#alert-demo\">Delete project</button>\r\n        <button type=\"button\" class=\"onl-btn\" data-onl-open=\"#sheet-bottom\">Bottom sheet</button>\r\n        <button type=\"button\" class=\"onl-btn\" data-onl-open=\"#sheet-top\">Top sheet</button>\r\n      </div>\r\n        <dialog class=\"onl-modal onl-modal--alert\" id=\"alert-demo\" role=\"alertdialog\" aria-labelledby=\"alert-t\" aria-describedby=\"alert-d\" data-onl-static><div class=\"onl-modal__body\"><span class=\"onl-modal__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg></span><h2 class=\"onl-h3\" id=\"alert-t\">Delete \"Website relaunch\"?</h2><p class=\"onl-text-muted\" id=\"alert-d\" style=\"margin-top:6px\">This removes 42 tasks and 18 files for everyone. You can't undo this.</p><div class=\"onl-modal__actions\"><button type=\"button\" class=\"onl-btn\" data-onl-close>Cancel</button><button type=\"button\" class=\"onl-btn onl-btn--danger-solid\" data-onl-close>Delete</button></div></div></dialog>\r\n        <dialog class=\"onl-drawer onl-drawer--bottom\" id=\"sheet-bottom\" aria-label=\"Share\"><div class=\"onl-modal__body\"><div class=\"onl-sheet__grip\"></div><h2 class=\"onl-h3\">Share</h2><p class=\"onl-text-muted\" style=\"margin-top:6px\">Bottom sheets suit mobile actions.</p><div class=\"onl-row\" style=\"margin-top:14px\"><button type=\"button\" class=\"onl-btn onl-btn--brand\" data-onl-close>Copy link</button><button type=\"button\" class=\"onl-btn\" data-onl-close>Close</button></div></div></dialog>\r\n        <dialog class=\"onl-drawer onl-drawer--top\" id=\"sheet-top\" aria-label=\"Notice\"><div class=\"onl-modal__body\"><div class=\"onl-row onl-row--between\"><b>Maintenance on Sunday 2–4 am</b><button type=\"button\" class=\"onl-btn onl-btn--sm\" data-onl-close>Dismiss</button></div></div></dialog>"
+      }
+    ]
+  },
+  {
+    "slug": "content",
+    "title": "Typography, code & content",
+    "group": "Display",
+    "description": "Article typography, a code block with line numbers, highlighting and copy (built-in highlighter, no library), markers, aspect ratio, collapsible, items, attachments and scroll areas.",
+    "demos": [
+      {
+        "title": "Typography",
+        "muted": false,
+        "html": "<article class=\"onl-prose\">\r\n        <h1>Ship faster with tokens</h1>\r\n        <p class=\"lead\">Design tokens keep every product on one visual language.</p>\r\n        <p>Store colours, spacing and radius as <code>--onl-*</code> variables. Change one value and <mark class=\"onl-mark\">every component follows</mark>, including charts.</p>\r\n        <blockquote>Consistency is a feature your users feel before they notice it.</blockquote>\r\n        <ul><li>One stylesheet</li><li>Any framework</li><li><span class=\"onl-mark onl-mark--underline\">Zero dependencies</span></li></ul>\r\n      </article>"
+      },
+      {
+        "title": "Code block",
+        "description": "Add data-lang; the code is highlighted and escaped on load. Mark lines with data-highlight after rendering, or use the class names yourself.",
+        "muted": false,
+        "html": "<div class=\"onl-codeblock onl-codeblock--numbers\" data-lang=\"ts\">\r\n        <div class=\"onl-codeblock__head\"><span class=\"onl-codeblock__file\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m16 18 6-6-6-6M8 6l-6 6 6 6\"/></svg>chart.ts</span><button type=\"button\" class=\"onl-btn onl-btn--ghost onl-btn--sm onl-codeblock__copy\" data-onl-copy=\"#code-demo\" data-toast>Copy</button></div>\r\n        <pre><code id=\"code-demo\">import { init } from \"onlynify-ui\";\r\n\r\n// one call wires charts, dialogs and inputs\r\ninit();\r\nconst chart = document.querySelector(\"onl-chart\");\r\nchart.config = { type: \"radar\", labels: [\"A\", \"B\", \"C\"], series: [] };\r\nexport const ready = true;</code></pre>\r\n      </div>"
+      },
+      {
+        "title": "Collapsible & aspect ratio",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <details class=\"onl-collapsible\" open><summary>3 files changed</summary><div class=\"onl-collapsible__body onl-stack\" style=\"--onl-gap:6px\"><code class=\"onl-code\">src/css/more.css</code><code class=\"onl-code\">src/js/more.js</code><code class=\"onl-code\">types/index.d.ts</code></div></details>\r\n        <div class=\"onl-aspect\" style=\"--ratio:16/9;max-width:360px\"><img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3Crect width='16' height='9' fill='%2393c5fd'/%3E%3C/svg%3E\" alt=\"Placeholder\"></div>\r\n      </div>"
+      },
+      {
+        "title": "Items & attachments",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" style=\"--onl-gap:12px\">\r\n        <div class=\"onl-item-group\">\r\n          <a class=\"onl-item onl-item--outline\" href=\"#\"><span class=\"onl-item__media\"><span class=\"onl-avatar\" style=\"--hue:200\">AK</span></span><span class=\"onl-item__content\"><span class=\"onl-item__title\">Anil Kumar</span><span class=\"onl-item__desc\">Invited you to \"Q4 planning\"</span></span><span class=\"onl-item__actions\"><span class=\"onl-badge onl-badge--brand\">New</span></span></a>\r\n          <div class=\"onl-item onl-item--muted\"><span class=\"onl-item__media\"><span class=\"onl-icon-tile\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9\"/><path d=\"M10.3 21a1.9 1.9 0 0 0 3.4 0\"/></svg></span></span><span class=\"onl-item__content\"><span class=\"onl-item__title\">Two-factor authentication</span><span class=\"onl-item__desc\">Protect your account with a code.</span></span><span class=\"onl-item__actions\"><button type=\"button\" class=\"onl-btn onl-btn--sm\">Enable</button></span></div>\r\n        </div>\r\n        <div class=\"onl-attachments\">\r\n          <span class=\"onl-attachment\"><span class=\"onl-attachment__icon\">pdf</span><span><span class=\"onl-attachment__name\">Q3-report.pdf</span><span class=\"onl-attachment__size\">2.4 MB</span></span><button type=\"button\" aria-label=\"Remove Q3-report.pdf\">×</button></span>\r\n          <span class=\"onl-attachment\"><span class=\"onl-attachment__icon\">xls</span><span><span class=\"onl-attachment__name\">forecast-2027.xlsx</span><span class=\"onl-attachment__size\">380 KB</span></span><button type=\"button\" aria-label=\"Remove forecast-2027.xlsx\">×</button></span>\r\n        </div>\r\n      </div>"
+      },
+      {
+        "title": "Scroll area",
+        "muted": false,
+        "html": "<div class=\"onl-scroll onl-scroll--fade\" style=\"max-height:180px;padding-inline-end:6px\"><ol class=\"onl-stack\" style=\"--onl-gap:8px;padding-inline-start:20px;margin:0\">\r\n        <li>v1.3.0 · page layouts (data-layout)</li><li>v1.3.0 · 12 brand presets in the switcher</li><li>v1.2.0 · combobox, select, date picker</li><li>v1.2.0 · menubar and navigation menu</li><li>v1.2.0 · data table with selection</li><li>v1.1.0 · 10 new chart types</li><li>v1.1.0 · style presets</li><li>v1.1.0 · OTP, tags and drop zone</li><li>v1.0.1 · RTL fixes</li><li>v1.0.0 · first release</li>\r\n      </ol></div>\r\n      <div class=\"onl-scroll onl-scroll--x onl-scroll--fade\" style=\"margin-top:12px;padding-block-end:6px\"><span class=\"onl-chip\">Design</span><span class=\"onl-chip\">Data</span><span class=\"onl-chip\">Development</span><span class=\"onl-chip\">Marketing</span><span class=\"onl-chip\">Product</span><span class=\"onl-chip\">Finance</span><span class=\"onl-chip\">Writing</span><span class=\"onl-chip\">Sales</span><span class=\"onl-chip\">Support</span></div>"
+      }
+    ]
+  },
+  {
+    "slug": "datatable",
+    "title": "Data table & resizable",
+    "group": "Data",
+    "description": "data-onl-datatable adds row selection (with indeterminate select-all), search, column toggles and pagination to any table; combine with data-onl-sortable for sorting. Resizable panels drag with the mouse, touch or arrow keys.",
+    "demos": [
+      {
+        "title": "Data table",
+        "muted": true,
+        "html": "<div class=\"onl-datatable\" data-onl-datatable data-page-size=\"5\">\r\n      <div class=\"onl-datatable__bar\">\r\n        <div class=\"onl-datatable__filters onl-row\" style=\"--onl-gap:8px\"><div class=\"onl-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"onl-input\" type=\"search\" placeholder=\"Filter invoices…\" data-table-search aria-label=\"Filter invoices\"></div>\r\n          <details class=\"onl-dropdown\"><summary class=\"onl-btn onl-btn--sm\">Columns</summary><div class=\"onl-menu onl-colmenu\"><label><input type=\"checkbox\" data-col=\"2\" checked> Customer</label><label><input type=\"checkbox\" data-col=\"3\" checked> Status</label><label><input type=\"checkbox\" data-col=\"4\" checked> Due</label></div></details></div>\r\n        <div class=\"onl-datatable__selection\"><b><span data-selected-count>0</span> selected</b><button type=\"button\" class=\"onl-btn onl-btn--sm\">Send reminder</button><button type=\"button\" class=\"onl-btn onl-btn--danger onl-btn--sm\">Delete</button></div>\r\n      </div>\r\n      <div class=\"onl-table-wrap\"><table class=\"onl-table onl-table--hover\" data-onl-sortable>\r\n        <thead><tr><th><input type=\"checkbox\" aria-label=\"Select all\"></th><th aria-sort=\"none\">Invoice</th><th aria-sort=\"none\">Customer</th><th>Status</th><th aria-sort=\"none\">Due</th><th class=\"onl-num\" aria-sort=\"none\">Amount</th></tr></thead>\r\n        <tbody>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1042\"></td><td>INV-1042</td><td>Lumen Health</td><td><span class=\"onl-pill onl-badge\" data-status=\"paid\">Paid</span></td><td data-sort-value=\"2026-11-02\">2 Nov</td><td class=\"onl-num\" data-sort-value=\"48200\">₹48,200</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1043\"></td><td>INV-1043</td><td>Ledgerly</td><td><span class=\"onl-pill onl-badge\" data-status=\"overdue\">Overdue</span></td><td data-sort-value=\"2026-10-28\">28 Oct</td><td class=\"onl-num\" data-sort-value=\"12900\">₹12,900</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1044\"></td><td>INV-1044</td><td>Saffron Foods</td><td><span class=\"onl-pill onl-badge\" data-status=\"pending\">Pending</span></td><td data-sort-value=\"2026-11-12\">12 Nov</td><td class=\"onl-num\" data-sort-value=\"7400\">₹7,400</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1045\"></td><td>INV-1045</td><td>Classboard</td><td><span class=\"onl-pill onl-badge\" data-status=\"paid\">Paid</span></td><td data-sort-value=\"2026-11-05\">5 Nov</td><td class=\"onl-num\" data-sort-value=\"96000\">₹96,000</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1046\"></td><td>INV-1046</td><td>Quanta Energy</td><td><span class=\"onl-pill onl-badge\" data-status=\"pending\">Pending</span></td><td data-sort-value=\"2026-11-20\">20 Nov</td><td class=\"onl-num\" data-sort-value=\"31250\">₹31,250</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1047\"></td><td>INV-1047</td><td>Northwind</td><td><span class=\"onl-pill onl-badge\" data-status=\"paid\">Paid</span></td><td data-sort-value=\"2026-11-01\">1 Nov</td><td class=\"onl-num\" data-sort-value=\"18600\">₹18,600</td></tr>\r\n          <tr><td><input type=\"checkbox\" aria-label=\"Select INV-1048\"></td><td>INV-1048</td><td>Bluebird Travel</td><td><span class=\"onl-pill onl-badge\" data-status=\"overdue\">Overdue</span></td><td data-sort-value=\"2026-10-21\">21 Oct</td><td class=\"onl-num\" data-sort-value=\"54300\">₹54,300</td></tr>\r\n        </tbody>\r\n      </table></div>\r\n      <div class=\"onl-datatable__foot\"><span data-page-info></span><div class=\"onl-row\" style=\"--onl-gap:6px\"><button type=\"button\" class=\"onl-btn onl-btn--sm\" data-page=\"prev\">Previous</button><button type=\"button\" class=\"onl-btn onl-btn--sm\" data-page=\"next\">Next</button></div></div>\r\n    </div>"
+      },
+      {
+        "title": "Resizable panels",
+        "muted": false,
+        "html": "<div class=\"onl-resizable\" data-onl-resizable style=\"height:220px\">\r\n      <div class=\"onl-resizable__panel\" style=\"--size:1;padding:14px\"><b>Inbox</b><p class=\"onl-text-sm onl-text-muted\">Drag the handle or focus it and use the arrow keys.</p></div>\r\n      <div class=\"onl-resizable__handle\" role=\"separator\" aria-orientation=\"vertical\" aria-valuenow=\"40\" tabindex=\"0\" aria-label=\"Resize\"></div>\r\n      <div class=\"onl-resizable__panel\" style=\"--size:1.5\">\r\n        <div class=\"onl-resizable onl-resizable--vertical\" data-onl-resizable style=\"height:100%;border:0;border-radius:0\">\r\n          <div class=\"onl-resizable__panel\" style=\"padding:14px\"><b>Message</b></div>\r\n          <div class=\"onl-resizable__handle\" role=\"separator\" aria-orientation=\"horizontal\" tabindex=\"0\" aria-label=\"Resize\"></div>\r\n          <div class=\"onl-resizable__panel\" style=\"padding:14px\"><b>Reply</b></div>\r\n        </div>\r\n      </div>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "messaging",
+    "title": "Messages, questionnaire & trace",
+    "group": "Patterns",
+    "description": "Chat messages with hover actions, a message scroller that sticks to the newest message, a one-question-at-a-time questionnaire with validation, and a trace view for request timings or AI agent steps.",
+    "demos": [
+      {
+        "title": "Message & message scroller",
+        "muted": false,
+        "html": "<div class=\"onl-message-scroller onl-scroll\" data-onl-autoscroll style=\"--max-h:300px\">\r\n        <article class=\"onl-message\"><span class=\"onl-avatar\" style=\"--hue:200\">RS</span><div class=\"onl-message__meta\"><b>Riya Shah</b><time>10:02</time></div><div><div class=\"onl-message__body\">Can we ship the new checkout on Friday?</div><div class=\"onl-message__actions\"><button type=\"button\" class=\"onl-btn onl-btn--ghost onl-btn--sm\">Reply</button><button type=\"button\" class=\"onl-btn onl-btn--ghost onl-btn--sm\">React</button></div></div></article>\r\n        <article class=\"onl-message\"><span class=\"onl-avatar\" style=\"--hue:30\">AK</span><div class=\"onl-message__meta\"><b>Anil Kumar</b><time>10:04</time></div><div class=\"onl-message__body\">Yes, QA signed off this morning. I'll update the release notes.</div></article>\r\n        <div class=\"onl-message-scroller__divider\">New messages</div>\r\n        <article class=\"onl-message onl-message--assistant\"><span class=\"onl-avatar\" style=\"--hue:260\">AI</span><div class=\"onl-message__meta\"><b>Assistant</b><time>10:05</time></div><div class=\"onl-message__body\">Summary: checkout ships Friday after QA sign-off. Release notes owner: Anil. <span class=\"onl-attachment\" style=\"margin-top:8px\"><span class=\"onl-attachment__icon\">md</span><span class=\"onl-attachment__name\">release-notes.md</span></span></div></article>\r\n        <article class=\"onl-message\"><span class=\"onl-avatar\" style=\"--hue:200\">RS</span><div class=\"onl-message__meta\"><b>Riya Shah</b><time>10:06</time></div><div class=\"onl-message__body\">Perfect, thanks both!</div></article>\r\n        <button type=\"button\" class=\"onl-btn onl-btn--sm onl-message-scroller__jump\" hidden>↓ Jump to latest</button>\r\n      </div>"
+      },
+      {
+        "title": "Questionnaire",
+        "muted": false,
+        "html": "<form class=\"onl-questionnaire\" data-onl-questionnaire>\r\n        <div class=\"onl-questionnaire__head\"><span class=\"onl-questionnaire__count\" data-q-count></span><div class=\"onl-progress onl-progress--sm\"><div class=\"onl-progress__bar\" style=\"--value:0%\"></div></div></div>\r\n        <fieldset class=\"onl-fieldset\" data-step><legend class=\"onl-questionnaire__q\">What are you building?</legend><div class=\"onl-choices\" style=\"--onl-min:140px\"><label class=\"onl-choice\"><input type=\"radio\" name=\"q-what\" value=\"saas\" required><span class=\"onl-choice__title\">A SaaS app</span></label><label class=\"onl-choice\"><input type=\"radio\" name=\"q-what\" value=\"site\"><span class=\"onl-choice__title\">A website</span></label><label class=\"onl-choice\"><input type=\"radio\" name=\"q-what\" value=\"store\"><span class=\"onl-choice__title\">A store</span></label></div></fieldset>\r\n        <fieldset class=\"onl-fieldset\" data-step hidden><legend class=\"onl-questionnaire__q\">How big is your team?</legend><div class=\"onl-segmented onl-segmented--block\"><label><input type=\"radio\" name=\"q-team\" value=\"1\" required> Just me</label><label><input type=\"radio\" name=\"q-team\" value=\"5\"> 2–10</label><label><input type=\"radio\" name=\"q-team\" value=\"50\"> 11+</label></div></fieldset>\r\n        <div class=\"onl-field\" data-step hidden><label class=\"onl-questionnaire__q\" for=\"q-email\">Where should we send your starter kit?</label><input class=\"onl-input\" id=\"q-email\" name=\"email\" type=\"email\" placeholder=\"you@company.com\" required style=\"margin-top:10px\"></div>\r\n        <div class=\"onl-questionnaire__done\" data-q-done hidden><span class=\"onl-feature__icon\" style=\"margin-inline:auto\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg></span><p class=\"onl-h3\" style=\"margin-top:10px\">All done, thank you!</p><button type=\"button\" class=\"onl-btn onl-btn--sm\" data-q=\"restart\" style=\"margin-top:10px\">Start again</button></div>\r\n        <div class=\"onl-questionnaire__nav\"><button type=\"button\" class=\"onl-btn\" data-q=\"prev\">Back</button><button type=\"button\" class=\"onl-btn onl-btn--brand\" data-q=\"next\">Next</button></div>\r\n      </form>"
+      },
+      {
+        "title": "Trace",
+        "description": "Each row sets --start and --len as percentages of the whole request, --depth for nesting, and data-status / data-kind for colour.",
+        "muted": false,
+        "html": "<div class=\"onl-trace\" role=\"table\" aria-label=\"Request trace\">\r\n      <div class=\"onl-trace__head\" role=\"row\"><span role=\"columnheader\">Span</span><span role=\"columnheader\">Timeline (0–842 ms)</span><span role=\"columnheader\">Duration</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" style=\"--depth:0;--start:0;--len:100\"><span class=\"onl-trace__name\"><span>POST /api/checkout</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">842 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-kind=\"cache\" style=\"--depth:1;--start:1;--len:2\"><span class=\"onl-trace__name\"><span>cache.get cart</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">14 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-kind=\"db\" style=\"--depth:1;--start:4;--len:18\"><span class=\"onl-trace__name\"><span>db.find products</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">152 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-kind=\"http\" style=\"--depth:1;--start:24;--len:58\"><span class=\"onl-trace__name\"><span>payment gateway: create order</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">488 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-status=\"error\" data-kind=\"http\" style=\"--depth:2;--start:26;--len:12\"><span class=\"onl-trace__name\"><span>retry #1 (timeout)</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">101 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-kind=\"db\" style=\"--depth:1;--start:84;--len:9\"><span class=\"onl-trace__name\"><span>db.insert order</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">76 ms</span></div>\r\n      <div class=\"onl-trace__row\" role=\"row\" data-status=\"running\" style=\"--depth:1;--start:94;--len:6\"><span class=\"onl-trace__name\"><span>notify customer</span></span><span class=\"onl-trace__track\"><span class=\"onl-trace__bar\"></span></span><span class=\"onl-trace__time\">…</span></div>\r\n    </div>"
+      }
+    ]
+  },
+  {
+    "slug": "direction",
+    "title": "Direction (RTL)",
+    "group": "Foundations",
+    "description": "Spacing, borders and offsets use logical properties, so dir=\"rtl\" on <html> or any element mirrors the layout: menus, steps, switches, the sidebar and text all flip.",
+    "demos": [
+      {
+        "title": "Right-to-left",
+        "muted": false,
+        "html": "<div class=\"onl-stack\" dir=\"rtl\" lang=\"ar\" style=\"--onl-gap:14px;max-width:460px\">\r\n      <nav aria-label=\"مسار\"><ol class=\"onl-breadcrumb\"><li><a href=\"#\">الرئيسية</a></li><li><a href=\"#\">الفواتير</a></li><li><span aria-current=\"page\">INV-1042</span></li></ol></nav>\r\n      <div class=\"onl-field\"><label class=\"onl-label\" for=\"rtl-name\">الاسم</label><div class=\"onl-input-group\"><span class=\"onl-input-group__addon\">@</span><input class=\"onl-input\" id=\"rtl-name\" placeholder=\"اكتب اسمك\"></div></div>\r\n      <div class=\"onl-switch-row\"><label for=\"rtl-sw\">الإشعارات</label><input type=\"checkbox\" role=\"switch\" class=\"onl-switch\" id=\"rtl-sw\" checked></div>\r\n      <div class=\"onl-row\"><button type=\"button\" class=\"onl-btn onl-btn--brand\">حفظ</button><button type=\"button\" class=\"onl-btn\">إلغاء</button></div>\r\n    </div>"
+      }
+    ]
+  }
+]

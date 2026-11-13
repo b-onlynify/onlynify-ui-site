@@ -1,0 +1,47 @@
+<div class="onlp-stage">
+  <div class="onlp-stack onlp-max" style="--onlp-gap:20px;--onlp-max:980px">
+    <ol class="onlp-crumbs"><li><a href="#"><svg data-icon="home"></svg>Home</a></li><li><a href="#">Customers</a></li><li><span aria-current="page">Sunrise Traders</span></li></ol>
+    <div class="onlp-card">
+      <div class="onlp-tabs" role="tablist" data-onl-tabs aria-label="Customer" style="padding:0 20px">
+        <button role="tab" aria-selected="true" aria-controls="pt-1" id="pt-1-t"><svg data-icon="user"></svg>Overview</button>
+        <button role="tab" aria-selected="false" tabindex="-1" aria-controls="pt-2" id="pt-2-t"><svg data-icon="receipt"></svg>Invoices <span class="onlp-badge onlp-badge--brand">12</span></button>
+        <button role="tab" aria-selected="false" tabindex="-1" aria-controls="pt-3" id="pt-3-t"><svg data-icon="message-square"></svg>Notes <span class="onlp-badge">3</span></button>
+        <button role="tab" aria-selected="false" tabindex="-1" aria-controls="pt-4" id="pt-4-t"><svg data-icon="settings"></svg>Settings</button>
+      </div>
+      <div role="tabpanel" id="pt-1" aria-labelledby="pt-1-t" class="onlp-card__body">
+        <ol class="onlp-hsteps" aria-label="Onboarding">
+          <li data-state="done"><span></span><b>Account</b></li>
+          <li data-state="done"><span></span><b>KYC</b></li>
+          <li aria-current="step"><span></span><b>First invoice</b></li>
+          <li><span></span><b>Go live</b></li>
+        </ol>
+      </div>
+      <div role="tabpanel" id="pt-2" aria-labelledby="pt-2-t" class="onlp-card__body" hidden><p class="onlp-sub">12 invoices, 2 overdue.</p></div>
+      <div role="tabpanel" id="pt-3" aria-labelledby="pt-3-t" class="onlp-card__body" hidden><p class="onlp-sub">3 notes from the account team.</p></div>
+      <div role="tabpanel" id="pt-4" aria-labelledby="pt-4-t" class="onlp-card__body" hidden><p class="onlp-sub">Billing contacts and tax details.</p></div>
+    </div>
+    <div class="onlp-grid" style="--onlp-min:300px">
+      <div class="onlp-card onlp-card--pad" style="display:grid;grid-template-columns:180px 1fr;gap:20px">
+        <div class="onlp-vtabs" role="tablist" aria-label="Settings sections" aria-orientation="vertical">
+          <button role="tab" aria-selected="true"><svg data-icon="user"></svg>Profile</button>
+          <button role="tab" aria-selected="false"><svg data-icon="lock"></svg>Security</button>
+          <button role="tab" aria-selected="false"><svg data-icon="credit-card"></svg>Billing</button>
+          <button role="tab" aria-selected="false"><svg data-icon="plug"></svg>Integrations</button>
+        </div>
+        <div class="onlp-stack" style="--onlp-gap:6px"><b class="onlp-title">Profile</b><p class="onlp-sub">Your photo, name and contact details.</p></div>
+      </div>
+      <div class="onlp-card onlp-card--pad">
+        <ol class="onlp-stepper">
+          <li data-state="done"><span class="onlp-stepper__dot"><svg data-icon="check"></svg></span><div><b>Order placed</b><small>12 Nov, 10:42 am</small></div></li>
+          <li data-state="done"><span class="onlp-stepper__dot"><svg data-icon="check"></svg></span><div><b>Packed</b><small>12 Nov, 4:10 pm</small></div></li>
+          <li aria-current="step"><span class="onlp-stepper__dot">3</span><div><b>Out for delivery</b><small>Arriving by 7 pm today</small></div></li>
+          <li><span class="onlp-stepper__dot">4</span><div><b>Delivered</b><small>Signature required</small></div></li>
+        </ol>
+      </div>
+    </div>
+    <nav class="onlp-pager" aria-label="Pagination">
+      <span>Showing <b style="color:var(--onl-fg)">41–60</b> of 392</span>
+      <div class="onlp-pager__pages"><button aria-label="Previous page">‹</button><button>1</button><button>2</button><button aria-current="page">3</button><button>4</button><button>…</button><button>20</button><button aria-label="Next page">›</button></div>
+    </nav>
+  </div>
+</div>

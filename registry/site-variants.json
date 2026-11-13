@@ -1,0 +1,389 @@
+{
+  "nova": [
+    { "id": "original", "name": "Nova", "tagline": "Product analytics", "description": "The original: a glass SaaS site for a product analytics platform, with live dashboards, funnels and a plan comparison.", "theme": { "brand": "indigo", "style": "glass", "accent": "#ec4899" }, "layout": "classic", "copy": {} },
+    {
+      "id": "ledgerly", "name": "Ledgerly", "tagline": "Finance cloud", "description": "An editorial finance-software site for CFOs and accounting teams. Calm emerald palette and copy about reconciliation and reporting.",
+      "theme": { "brand": "emerald", "style": "modern", "accent": "#0ea5e9", "font": "humanist" }, "layout": "editorial",
+      "copy": {
+        "Know what your users <span class=\"onl-gradient-text\">actually do</span>": "Close the books <span class=\"onl-gradient-text\">in a day, not a week</span>",
+        "Nova turns product events into dashboards, funnels and retention curves your whole team can read. Set up in ten minutes, no SQL needed.": "Ledgerly connects your bank, GST and payroll into one live ledger your finance team can trust. Reconcile automatically and report in minutes.",
+        "<b>New</b> Funnels now update in real time →": "<b>New</b> GST reconciliation is now automatic →",
+        "Trusted by 1,200+ product teams": "Trusted by 900+ finance teams",
+        "Everything you need to understand usage": "Everything finance needs, in one ledger",
+        "From the first event to the board report, without a data team.": "From the first invoice to the board pack, without spreadsheets.",
+        "See your product clearly": "See your cash clearly",
+        "Start free in ten minutes. Bring your team when you're ready.": "Connect your bank in ten minutes. Bring your accountant when you're ready.",
+        "Simple pricing that grows with you": "Pricing that grows with your entities",
+        "Nova Analytics Pvt. Ltd.": "Ledgerly Finance Pvt. Ltd.",
+        "<span class=\"onl-logos__item\">Ledgerly</span>": "<span class=\"onl-logos__item\">Tallyhouse</span>",
+        "onl-site-nav__mark\">N</span>": "onl-site-nav__mark\">L</span>",
+        "Nova": "Ledgerly"
+      }
+    },
+    {
+      "id": "beacon", "name": "Beacon", "tagline": "People platform", "description": "A friendly, centred HR software site: hiring, onboarding and engagement surveys in one place. Soft teal style with rounded type.",
+      "theme": { "brand": "teal", "style": "soft", "accent": "#f59e0b", "font": "rounded" }, "layout": "centered",
+      "copy": {
+        "Know what your users <span class=\"onl-gradient-text\">actually do</span>": "Build a team that <span class=\"onl-gradient-text\">wants to stay</span>",
+        "Nova turns product events into dashboards, funnels and retention curves your whole team can read. Set up in ten minutes, no SQL needed.": "Beacon brings hiring, onboarding, reviews and pulse surveys into one place, so managers spot problems early and people feel heard.",
+        "<b>New</b> Funnels now update in real time →": "<b>New</b> Anonymous pulse surveys are here →",
+        "Trusted by 1,200+ product teams": "Trusted by 1,500+ people teams",
+        "Everything you need to understand usage": "Everything you need to grow your people",
+        "From the first event to the board report, without a data team.": "From the offer letter to the annual review, without the paperwork.",
+        "See your product clearly": "Make work feel better",
+        "Simple pricing that grows with you": "Simple pricing per employee",
+        "Nova Analytics Pvt. Ltd.": "Beacon People Pvt. Ltd.",
+        "onl-site-nav__mark\">N</span>": "onl-site-nav__mark\">B</span>",
+        "Nova": "Beacon"
+      }
+    },
+    {
+      "id": "forge", "name": "Forge", "tagline": "Developer platform", "description": "A minimal, technical site for a deploy-and-observe developer platform. Sharp corners, monospace type and a terminal-green accent.",
+      "theme": { "brand": "slate", "style": "sharp", "accent": "#22c55e", "font": "mono" }, "layout": "minimal",
+      "copy": {
+        "Know what your users <span class=\"onl-gradient-text\">actually do</span>": "Ship on Friday. <span class=\"onl-gradient-text\">Sleep on Friday.</span>",
+        "Nova turns product events into dashboards, funnels and retention curves your whole team can read. Set up in ten minutes, no SQL needed.": "Forge builds, deploys and monitors your services from one push to main. Preview environments, instant rollbacks and traces out of the box.",
+        "<b>New</b> Funnels now update in real time →": "<b>New</b> Edge functions in Mumbai and Chennai →",
+        "Trusted by 1,200+ product teams": "Deploying for 4,000+ engineering teams",
+        "Everything you need to understand usage": "Everything between git push and production",
+        "From the first event to the board report, without a data team.": "From the first commit to the incident review, without a platform team.",
+        "See your product clearly": "Deploy with confidence",
+        "Simple pricing that grows with you": "Pay for compute, not seats",
+        "Nova Analytics Pvt. Ltd.": "Forge Cloud Pvt. Ltd.",
+        "onl-site-nav__mark\">N</span>": "onl-site-nav__mark\">F</span>",
+        "Nova": "Forge"
+      }
+    }
+  ],
+  "ember": [
+    { "id": "original", "name": "Ember", "tagline": "Wood-fire kitchen", "description": "The original: a warm restaurant site with its story, signature dishes, reviews and table booking.", "theme": { "brand": "orange", "style": "soft", "font": "serif", "accent": "#b91c1c" }, "layout": "classic", "copy": {} },
+    {
+      "id": "saffron-table", "name": "Saffron Table", "tagline": "Modern Indian dining", "description": "An editorial fine-dining site for a modern Indian restaurant with a seasonal tasting menu. Deep amber, serif headlines.",
+      "theme": { "brand": "amber", "style": "modern", "font": "serif", "accent": "#be123c" }, "layout": "editorial",
+      "copy": {
+        "Cooked over fire, <em class=\"onl-gradient-text\" style=\"font-style:italic\">shared</em> at the table": "Regional recipes, <em class=\"onl-gradient-text\" style=\"font-style:italic\">reimagined</em> for today",
+        "Seasonal plates from our wood-fired oven and grill, natural wines and a long table for friends. Ingredients from farms within 150 km of Bengaluru.": "Coastal, Chettinad and Awadhi classics cooked with heirloom spices and small-batch masalas, plus a tasting menu that changes with the season.",
+        "One fire, no shortcuts": "Grandmother's recipes, chef's precision",
+        "What everyone orders": "Guests come back for these",
+        "Book your table": "Reserve your evening",
+        "From the fire": "From the tandoor and the tawa",
+        "Everything is cooked over wood.": "Spices are ground fresh every morning.",
+        "Ember Kitchen &amp; Bar": "Saffron Table Dining Pvt. Ltd.",
+        "onl-site-nav__mark\">E</span>": "onl-site-nav__mark\">S</span>",
+        "Ember": "Saffron Table"
+      }
+    },
+    {
+      "id": "verde", "name": "Verde", "tagline": "Plant-forward café", "description": "A bright, centred café site for an all-day plant-forward kitchen and coffee bar. Fresh greens and rounded type.",
+      "theme": { "brand": "emerald", "style": "soft", "font": "rounded", "accent": "#f59e0b" }, "layout": "centered",
+      "copy": {
+        "Cooked over fire, <em class=\"onl-gradient-text\" style=\"font-style:italic\">shared</em> at the table": "Good food, <em class=\"onl-gradient-text\" style=\"font-style:italic\">grown</em> close to home",
+        "Seasonal plates from our wood-fired oven and grill, natural wines and a long table for friends. Ingredients from farms within 150 km of Bengaluru.": "All-day bowls, sourdough and specialty coffee, made from produce our partner farms harvest the same week.",
+        "One fire, no shortcuts": "Farm to bowl, every morning",
+        "What everyone orders": "Café favourites",
+        "Book your table": "Save a seat",
+        "From the fire": "Fresh from the kitchen",
+        "Everything is cooked over wood.": "Everything is made from scratch each day.",
+        "Ember Kitchen &amp; Bar": "Verde Café LLP",
+        "onl-site-nav__mark\">E</span>": "onl-site-nav__mark\">V</span>",
+        "Ember": "Verde"
+      }
+    },
+    {
+      "id": "noir", "name": "Noir", "tagline": "Cocktail bar & grill", "description": "A moody, immersive site for a late-night cocktail bar and grill. Glass cards, rose accent and a full-colour hero.",
+      "theme": { "brand": "rose", "style": "glass", "font": "geometric", "accent": "#f59e0b" }, "layout": "immersive",
+      "copy": {
+        "Cooked over fire, <em class=\"onl-gradient-text\" style=\"font-style:italic\">shared</em> at the table": "Late nights, <em class=\"onl-gradient-text\" style=\"font-style:italic\">slow</em> pours",
+        "Seasonal plates from our wood-fired oven and grill, natural wines and a long table for friends. Ingredients from farms within 150 km of Bengaluru.": "Signature cocktails, a charcoal grill and live jazz on Fridays. Open until 1 am in the heart of Indiranagar.",
+        "One fire, no shortcuts": "Crafted behind the bar",
+        "What everyone orders": "House signatures",
+        "Book your table": "Book a booth",
+        "From the fire": "From the grill and the bar",
+        "Ember Kitchen &amp; Bar": "Noir Bar &amp; Grill",
+        "onl-site-nav__mark\">E</span>": "onl-site-nav__mark\">N</span>",
+        "Ember": "Noir"
+      }
+    }
+  ],
+  "haven": [
+    { "id": "original", "name": "Haven", "tagline": "Verified homes", "description": "The original: property search with filters, featured homes, market charts and agents.", "theme": { "brand": "emerald", "style": "modern", "radius": 12 }, "layout": "classic", "copy": {} },
+    {
+      "id": "skyline", "name": "Skyline", "tagline": "Luxury residences", "description": "An editorial luxury real-estate site for premium apartments and villas. Slate and gold, serif type, glass cards.",
+      "theme": { "brand": "slate", "style": "glass", "font": "serif", "accent": "#d4a017" }, "layout": "editorial",
+      "copy": {
+        "Find a home you'll <span class=\"onl-gradient-text\">love coming back to</span>": "Residences for a <span class=\"onl-gradient-text\">considered life</span>",
+        "Every listing is visited and verified by a Haven agent. Real photos, real prices, no brokerage surprises.": "Private viewings of the city's finest apartments, villas and penthouses, guided by advisors who know every building.",
+        "<b>4,820</b> verified homes listed this month": "<b>120</b> private listings this season",
+        "Featured homes": "Signature residences",
+        "Prices, honestly": "The luxury market, in numbers",
+        "Talk to an agent who knows the street": "Meet your private advisor",
+        "Selling your home?": "Selling a landmark home?",
+        "Haven Realty Pvt. Ltd.": "Skyline Estates Pvt. Ltd.",
+        "Haven": "Skyline"
+      }
+    },
+    {
+      "id": "nest", "name": "Nest", "tagline": "Rentals made simple", "description": "A friendly, centred rentals site for young professionals and families: verified flats, zero brokerage and digital agreements.",
+      "theme": { "brand": "sky", "style": "soft", "font": "rounded", "accent": "#f97316" }, "layout": "centered",
+      "copy": {
+        "Find a home you'll <span class=\"onl-gradient-text\">love coming back to</span>": "Rent a home <span class=\"onl-gradient-text\">without the hassle</span>",
+        "Every listing is visited and verified by a Haven agent. Real photos, real prices, no brokerage surprises.": "Verified flats with zero brokerage, digital rent agreements and move-in help. Find, visit and sign in a week.",
+        "<b>4,820</b> verified homes listed this month": "<b>2,300</b> flats ready to move in",
+        "Featured homes": "Ready to move in",
+        "Prices, honestly": "Rents, honestly",
+        "Talk to an agent who knows the street": "Talk to a relationship manager",
+        "Selling your home?": "Own a flat to rent out?",
+        "Haven Realty Pvt. Ltd.": "Nest Living Pvt. Ltd.",
+        "Haven": "Nest"
+      }
+    },
+    {
+      "id": "terra", "name": "Terra", "tagline": "Plots & farmland", "description": "A clean, minimal site for open plots and managed farmland near the city. Earthy lime and amber, sharp layout.",
+      "theme": { "brand": "lime", "style": "sharp", "font": "humanist", "accent": "#a16207" }, "layout": "minimal",
+      "copy": {
+        "Find a home you'll <span class=\"onl-gradient-text\">love coming back to</span>": "Own land that <span class=\"onl-gradient-text\">grows with you</span>",
+        "Every listing is visited and verified by a Haven agent. Real photos, real prices, no brokerage surprises.": "DTCP-approved plots and managed farmland within 90 minutes of the city. Clear titles, surveyed boundaries and transparent prices.",
+        "<b>4,820</b> verified homes listed this month": "<b>640</b> approved plots available",
+        "Featured homes": "Featured plots",
+        "Prices, honestly": "Land prices, honestly",
+        "Talk to an agent who knows the street": "Visit a site with our team",
+        "Selling your home?": "Selling land?",
+        "Haven Realty Pvt. Ltd.": "Terra Landholdings Pvt. Ltd.",
+        "Haven": "Terra"
+      }
+    }
+  ],
+  "medica": [
+    { "id": "original", "name": "Medica", "tagline": "Family clinic", "description": "The original: a calm clinic site with services, doctors, patient stories and appointment booking.", "theme": { "brand": "sky", "style": "soft", "font": "humanist" }, "layout": "classic", "copy": {} },
+    {
+      "id": "smile-studio", "name": "Smile Studio", "tagline": "Dental care", "description": "A bright, centred dental clinic site: check-ups, aligners and implants with clear pricing. Teal and rounded type.",
+      "theme": { "brand": "teal", "style": "soft", "font": "rounded", "accent": "#38bdf8" }, "layout": "centered",
+      "copy": {
+        "Care that <span class=\"onl-gradient-text\">listens</span> first": "Smiles, <span class=\"onl-gradient-text\">without the fear</span>",
+        "Family medicine, specialists and diagnostics under one roof. Same-day appointments, reports on your phone and cashless with 30+ insurers.": "Gentle check-ups, clear aligners, implants and whitening in a calm studio. Painless care, upfront prices and EMI on every treatment.",
+        "Everything your family needs": "Treatments for every smile",
+        "Meet our doctors": "Meet our dentists",
+        "Short waits, clear answers": "Gentle hands, clear prices",
+        "Medica Health Pvt. Ltd.": "Smile Studio Dental LLP",
+        "onl-site-nav__mark\">+</span>": "onl-site-nav__mark\">S</span>",
+        "Medica": "Smile Studio"
+      }
+    },
+    {
+      "id": "vitality", "name": "Vitality", "tagline": "Physio & wellness", "description": "An editorial physiotherapy and wellness centre site for sports injuries, back pain and rehab programmes. Emerald, humanist type.",
+      "theme": { "brand": "emerald", "style": "modern", "font": "humanist", "accent": "#f59e0b" }, "layout": "editorial",
+      "copy": {
+        "Care that <span class=\"onl-gradient-text\">listens</span> first": "Move better, <span class=\"onl-gradient-text\">feel stronger</span>",
+        "Family medicine, specialists and diagnostics under one roof. Same-day appointments, reports on your phone and cashless with 30+ insurers.": "Physiotherapy, sports rehab and pain management with a plan built around you. Track every exercise and session in our app.",
+        "Everything your family needs": "Programmes for every body",
+        "Meet our doctors": "Meet our physiotherapists",
+        "Short waits, clear answers": "Progress you can measure",
+        "Medica Health Pvt. Ltd.": "Vitality Wellness Pvt. Ltd.",
+        "onl-site-nav__mark\">+</span>": "onl-site-nav__mark\">V</span>",
+        "Medica": "Vitality"
+      }
+    },
+    {
+      "id": "little-steps", "name": "Little Steps", "tagline": "Children's clinic", "description": "A cheerful, immersive paediatric clinic site with vaccines, growth checks and a parents' guide. Violet with a warm accent.",
+      "theme": { "brand": "violet", "style": "soft", "font": "rounded", "accent": "#f97316" }, "layout": "immersive",
+      "copy": {
+        "Care that <span class=\"onl-gradient-text\">listens</span> first": "Happy kids, <span class=\"onl-gradient-text\">calm parents</span>",
+        "Family medicine, specialists and diagnostics under one roof. Same-day appointments, reports on your phone and cashless with 30+ insurers.": "Paediatricians, vaccines, growth checks and a 24-hour helpline for new parents. Short waits and a play area kids actually like.",
+        "Everything your family needs": "Care from newborn to teen",
+        "Meet our doctors": "Meet our paediatricians",
+        "Short waits, clear answers": "Gentle care, clear answers",
+        "Medica Health Pvt. Ltd.": "Little Steps Children's Clinic",
+        "onl-site-nav__mark\">+</span>": "onl-site-nav__mark\">L</span>",
+        "Medica": "Little Steps"
+      }
+    }
+  ],
+  "studio-north": [
+    { "id": "original", "name": "Studio North", "tagline": "Design & engineering", "description": "The original: a bold creative agency site with oversized type, services, a project grid and a brief form.", "theme": { "brand": "slate", "style": "bold", "accent": "#f97316", "font": "geometric" }, "layout": "classic", "copy": {} },
+    {
+      "id": "pixel-pine", "name": "Pixel & Pine", "tagline": "Digital product studio", "description": "A minimal product-studio site for SaaS and mobile apps: discovery, UX and engineering. Emerald and clean geometric type.",
+      "theme": { "brand": "emerald", "style": "modern", "font": "geometric", "accent": "#0ea5e9" }, "layout": "minimal",
+      "copy": {
+        "Brands and products people remember.": "Digital products, built to last.",
+        "We're a 14-person design and engineering studio. Strategy, identity, websites and apps for founders who want to stand out.": "We're a product studio for SaaS and mobile teams: discovery, UX, design systems and engineering, from first sprint to scale.",
+        "<b>Booking</b> 2 slots open for January": "<b>Now booking</b> discovery sprints for Q1",
+        "Four things, done properly": "From idea to shipped product",
+        "Design that moves numbers": "Products our clients' users love",
+        "Let's make something <span class=\"onl-gradient-text\">loud</span>.": "Let's build something <span class=\"onl-gradient-text\">useful</span>.",
+        "Studio North Design LLP": "Pixel &amp; Pine Labs LLP",
+        "hello@studionorth.in": "hello@pixelpine.in",
+        "onl-site-nav__mark\">SN</span>": "onl-site-nav__mark\">PP</span>",
+        "Studio North": "Pixel &amp; Pine"
+      }
+    },
+    {
+      "id": "monograph", "name": "Monograph", "tagline": "Brand & editorial", "description": "An editorial branding studio site for publishers, hospitality and luxury brands. Serif type, sharp grid, rose accent.",
+      "theme": { "brand": "slate", "style": "sharp", "font": "serif", "accent": "#e11d48" }, "layout": "editorial",
+      "copy": {
+        "Brands and products people remember.": "Identities with a point of view.",
+        "We're a 14-person design and engineering studio. Strategy, identity, websites and apps for founders who want to stand out.": "We're an independent brand and editorial studio. Naming, identity, packaging and publications for brands that care about craft.",
+        "<b>Booking</b> 2 slots open for January": "<b>Now accepting</b> two identity projects for spring",
+        "Four things, done properly": "Craft, in four disciplines",
+        "Design that moves numbers": "Work that gets noticed",
+        "Let's make something <span class=\"onl-gradient-text\">loud</span>.": "Let's make something <span class=\"onl-gradient-text\">timeless</span>.",
+        "Studio North Design LLP": "Monograph Studio LLP",
+        "hello@studionorth.in": "studio@monograph.in",
+        "onl-site-nav__mark\">SN</span>": "onl-site-nav__mark\">M</span>",
+        "Studio North": "Monograph"
+      }
+    },
+    {
+      "id": "signal", "name": "Signal", "tagline": "Growth marketing", "description": "A high-energy, immersive growth-marketing agency site: performance ads, SEO and conversion design. Orange on bold outlines.",
+      "theme": { "brand": "orange", "style": "bold", "font": "geometric", "accent": "#7c3aed" }, "layout": "immersive",
+      "copy": {
+        "Brands and products people remember.": "More customers. Less guesswork.",
+        "We're a 14-person design and engineering studio. Strategy, identity, websites and apps for founders who want to stand out.": "We're a growth team for hire: performance ads, SEO, lifecycle email and landing pages, measured weekly against your revenue.",
+        "<b>Booking</b> 2 slots open for January": "<b>Free</b> growth audit for the first 10 brands this month",
+        "Four things, done properly": "Four growth engines, one team",
+        "Design that moves numbers": "Results we report every week",
+        "Let's make something <span class=\"onl-gradient-text\">loud</span>.": "Let's grow something <span class=\"onl-gradient-text\">fast</span>.",
+        "Studio North Design LLP": "Signal Growth Pvt. Ltd.",
+        "hello@studionorth.in": "grow@signal.in",
+        "onl-site-nav__mark\">SN</span>": "onl-site-nav__mark\">S</span>",
+        "Studio North": "Signal"
+      }
+    }
+  ],
+  "pulse": [
+    { "id": "original", "name": "Pulse", "tagline": "Strength & conditioning", "description": "The original: a high-energy gym site with programmes, trainers, member results and a class timetable.", "theme": { "brand": "fuchsia", "style": "sharp", "accent": "#f97316" }, "layout": "classic", "copy": {} },
+    {
+      "id": "flow", "name": "Flow", "tagline": "Yoga & pilates", "description": "A calm, centred yoga and pilates studio site with class packs, teachers and a weekly timetable. Soft teal, humanist type.",
+      "theme": { "brand": "teal", "style": "soft", "font": "humanist", "accent": "#f472b6" }, "layout": "centered",
+      "copy": {
+        "Stronger <span class=\"onl-gradient-text\">every week.</span>": "Breathe. <span class=\"onl-gradient-text\">Move. Restore.</span>",
+        "Coached strength, conditioning and mobility classes in small groups. Track every lift and every class in the app.": "Hatha, vinyasa, reformer pilates and breathwork in small, unhurried classes. Book your mat and track your practice in the app.",
+        "<b>New</b> Race-fit training block starts 3 November": "<b>New</b> Sunrise reformer classes from 6 am",
+        "Pick your training": "Find your practice",
+        "Twelve weeks changes a lot": "A calmer mind in twelve weeks",
+        "Coaches": "Teachers",
+        "Pulse Fitness Clubs Pvt. Ltd.": "Flow Studios LLP",
+        "onl-site-nav__mark\">P</span>": "onl-site-nav__mark\">F</span>",
+        "PULSE": "FLOW"
+      }
+    },
+    {
+      "id": "iron-yard", "name": "Iron Yard", "tagline": "Strength club", "description": "An immersive powerlifting and strength club site with coached programmes, open gym hours and competition prep. Bold slate and orange.",
+      "theme": { "brand": "slate", "style": "bold", "font": "geometric", "accent": "#f97316" }, "layout": "immersive",
+      "copy": {
+        "Stronger <span class=\"onl-gradient-text\">every week.</span>": "Lift heavy. <span class=\"onl-gradient-text\">Lift smart.</span>",
+        "Coached strength, conditioning and mobility classes in small groups. Track every lift and every class in the app.": "Competition racks, calibrated plates and coaches who've been on the platform. Programmes for beginners to national lifters.",
+        "<b>New</b> Race-fit training block starts 3 November": "<b>New</b> Meet-prep block starts 3 November",
+        "Pick your training": "Choose your programme",
+        "Twelve weeks changes a lot": "Personal bests, every block",
+        "Pulse Fitness Clubs Pvt. Ltd.": "Iron Yard Strength Club",
+        "onl-site-nav__mark\">P</span>": "onl-site-nav__mark\">IY</span>",
+        "PULSE": "IRON YARD"
+      }
+    },
+    {
+      "id": "stride", "name": "Stride", "tagline": "Run club", "description": "A minimal running-club site with training groups, race calendars and coaching plans. Sky blue, crisp sharp style.",
+      "theme": { "brand": "sky", "style": "sharp", "font": "geometric", "accent": "#facc15" }, "layout": "minimal",
+      "copy": {
+        "Stronger <span class=\"onl-gradient-text\">every week.</span>": "Run further. <span class=\"onl-gradient-text\">Together.</span>",
+        "Coached strength, conditioning and mobility classes in small groups. Track every lift and every class in the app.": "Coached group runs for every pace, from first 5K to marathon. Plans, pacing and race-day support, all in the app.",
+        "<b>New</b> Race-fit training block starts 3 November": "<b>New</b> Half-marathon plan starts 3 November",
+        "Pick your training": "Pick your distance",
+        "Twelve weeks changes a lot": "Twelve weeks to your next PB",
+        "Coaches": "Run leads",
+        "Pulse Fitness Clubs Pvt. Ltd.": "Stride Running Collective",
+        "onl-site-nav__mark\">P</span>": "onl-site-nav__mark\">S</span>",
+        "PULSE": "STRIDE"
+      }
+    }
+  ],
+  "lumen-academy": [
+    { "id": "original", "name": "Lumen Academy", "tagline": "Online courses", "description": "The original: a course platform with learning paths, popular courses, instructor stats and a filterable catalogue.", "theme": { "brand": "violet", "style": "soft", "accent": "#14b8a6", "font": "rounded" }, "layout": "classic", "copy": {} },
+    {
+      "id": "codecamp", "name": "CodeCamp", "tagline": "Developer bootcamp", "description": "A minimal, technical coding bootcamp site with full-stack and data tracks, mentors and placement stats. Mono type, green accent.",
+      "theme": { "brand": "slate", "style": "sharp", "font": "mono", "accent": "#22c55e" }, "layout": "minimal",
+      "copy": {
+        "Learn skills that <span class=\"onl-gradient-text\">get you hired</span>": "Write code that <span class=\"onl-gradient-text\">ships</span>",
+        "Short, project-based courses in design, data and development. Learn at your pace, get feedback from mentors and earn certificates employers recognise.": "Full-stack, data and DevOps tracks taught by working engineers. Build real projects, get code reviews every week and graduate job-ready.",
+        "<b>New</b> Data analysis path, 8 weeks with mentor reviews": "<b>New</b> Cloud & DevOps track, 12 weeks with live labs",
+        "Popular this month": "Most enrolled tracks",
+        "From beginner to job-ready": "From first commit to first offer",
+        "Lumen Learning Pvt. Ltd.": "CodeCamp Labs Pvt. Ltd.",
+        "onl-site-nav__mark\">L</span>": "onl-site-nav__mark\">&gt;_</span>",
+        "Lumen Academy": "CodeCamp"
+      }
+    },
+    {
+      "id": "brightpath", "name": "Brightpath", "tagline": "K-12 tutoring", "description": "A warm, centred tutoring site for school students and parents: live classes, doubt solving and progress reports. Amber and rounded type.",
+      "theme": { "brand": "amber", "style": "soft", "font": "rounded", "accent": "#0ea5e9" }, "layout": "centered",
+      "copy": {
+        "Learn skills that <span class=\"onl-gradient-text\">get you hired</span>": "Confidence in every <span class=\"onl-gradient-text\">subject</span>",
+        "Short, project-based courses in design, data and development. Learn at your pace, get feedback from mentors and earn certificates employers recognise.": "Live small-group classes for classes 6 to 12 in maths, science and English, with doubt solving every day and weekly reports for parents.",
+        "<b>New</b> Data analysis path, 8 weeks with mentor reviews": "<b>New</b> Board exam crash course starts in January",
+        "Popular this month": "Most loved by students",
+        "From beginner to job-ready": "From basics to board-ready",
+        "Lumen Learning Pvt. Ltd.": "Brightpath Tutoring Pvt. Ltd.",
+        "onl-site-nav__mark\">L</span>": "onl-site-nav__mark\">B</span>",
+        "Lumen Academy": "Brightpath"
+      }
+    },
+    {
+      "id": "leadwell", "name": "Leadwell", "tagline": "Executive education", "description": "An editorial executive-education site for leadership programmes, cohorts and certificates. Indigo, serif headlines.",
+      "theme": { "brand": "indigo", "style": "modern", "font": "serif", "accent": "#d4a017" }, "layout": "editorial",
+      "copy": {
+        "Learn skills that <span class=\"onl-gradient-text\">get you hired</span>": "Lead with <span class=\"onl-gradient-text\">clarity</span>",
+        "Short, project-based courses in design, data and development. Learn at your pace, get feedback from mentors and earn certificates employers recognise.": "Cohort-based leadership, strategy and finance programmes for senior managers, taught by practitioners and faculty from top business schools.",
+        "<b>New</b> Data analysis path, 8 weeks with mentor reviews": "<b>New</b> General management cohort opens in February",
+        "Popular this month": "Flagship programmes",
+        "From beginner to job-ready": "From manager to leader",
+        "Lumen Learning Pvt. Ltd.": "Leadwell Executive Education",
+        "onl-site-nav__mark\">L</span>": "onl-site-nav__mark\">LW</span>",
+        "Lumen Academy": "Leadwell"
+      }
+    }
+  ],
+  "wanderlust": [
+    { "id": "original", "name": "Wanderlust", "tagline": "Tea-estate bungalow", "description": "The original: a boutique hotel site with a full-bleed hero, booking bar, experiences, gallery and reviews.", "theme": { "brand": "teal", "style": "glass", "accent": "#f59e0b", "font": "serif" }, "layout": "classic", "copy": {} },
+    {
+      "id": "coastline", "name": "Coastline", "tagline": "Beach villas", "description": "A breezy, centred beach-resort site with private pool villas, water sports and sunset dining. Sky blue, glass cards.",
+      "theme": { "brand": "sky", "style": "glass", "font": "humanist", "accent": "#fb923c" }, "layout": "centered",
+      "copy": {
+        "Wake up above the clouds": "Wake up to the sound of the sea",
+        "Fourteen rooms in a restored 1920s planter's bungalow, surrounded by 40 acres of tea.": "Twelve private pool villas on a quiet stretch of the Konkan coast, a short walk from the sand.",
+        "<b>Monsoon offer</b> Third night free until 30 September": "<b>Winter offer</b> Fourth night free until 31 January",
+        "Slow mornings, long walks, good food": "Salt air, slow days, fresh catch",
+        "Things to do from the house": "Things to do by the sea",
+        "Wanderlust Heritage Stays": "Coastline Villas &amp; Resort",
+        "onl-site-nav__mark\">W</span>": "onl-site-nav__mark\">C</span>",
+        "Wanderlust": "Coastline"
+      }
+    },
+    {
+      "id": "desert-rose", "name": "Desert Rose", "tagline": "Heritage palace", "description": "An editorial heritage-palace hotel site with royal suites, courtyard dining and desert safaris. Warm orange, serif type.",
+      "theme": { "brand": "orange", "style": "modern", "font": "serif", "accent": "#be123c" }, "layout": "editorial",
+      "copy": {
+        "Wake up above the clouds": "Stay where royalty once did",
+        "Fourteen rooms in a restored 1920s planter's bungalow, surrounded by 40 acres of tea.": "Twenty-two suites in a restored 18th-century palace at the edge of the Thar, with courtyard dining under the stars.",
+        "<b>Monsoon offer</b> Third night free until 30 September": "<b>Festive season</b> Desert safari included until 15 January",
+        "Slow mornings, long walks, good food": "Grand rooms, quiet courtyards, royal kitchens",
+        "Things to do from the house": "Experiences at the palace",
+        "Wanderlust Heritage Stays": "Desert Rose Palace Hotels",
+        "onl-site-nav__mark\">W</span>": "onl-site-nav__mark\">DR</span>",
+        "Wanderlust": "Desert Rose"
+      }
+    },
+    {
+      "id": "pinecrest", "name": "Pinecrest", "tagline": "Mountain lodge", "description": "A minimal mountain-lodge site with cabins, guided treks and a fireside kitchen. Forest green, clean humanist type.",
+      "theme": { "brand": "emerald", "style": "sharp", "font": "humanist", "accent": "#f59e0b" }, "layout": "minimal",
+      "copy": {
+        "Wake up above the clouds": "Cabins among the pines",
+        "Fourteen rooms in a restored 1920s planter's bungalow, surrounded by 40 acres of tea.": "Ten timber cabins at 2,400 metres in the Himalayan foothills, with guided treks from the door and a fireside kitchen.",
+        "<b>Monsoon offer</b> Third night free until 30 September": "<b>Spring treks</b> Guided Kheerganga trail every Saturday",
+        "Slow mornings, long walks, good food": "Clear air, quiet trails, warm fires",
+        "Things to do from the house": "Adventures from the lodge",
+        "Wanderlust Heritage Stays": "Pinecrest Mountain Lodges",
+        "onl-site-nav__mark\">W</span>": "onl-site-nav__mark\">P</span>",
+        "Wanderlust": "Pinecrest"
+      }
+    }
+  ]
+}

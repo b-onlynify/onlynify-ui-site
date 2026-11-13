@@ -1,0 +1,74 @@
+<div class="onl-shell">
+  <aside class="onl-shell__sidebar" id="db-nav">
+    <div class="onl-shell__brand"><strong style="color:var(--onl-brand);font-size:17px">Onlynify</strong><span class="onl-badge onl-badge--brand" style="margin-left:8px">Admin</span></div>
+    <nav class="onl-shell__nav onl-nav" aria-label="Main">
+      <div>
+        <ul class="onl-nav__list">
+          <li><a class="onl-nav__link" href="#" aria-current="page"><svg data-icon="home"></svg>Overview</a></li>
+          <li><a class="onl-nav__link" href="#"><svg data-icon="box"></svg>Orders<span class="onl-badge onl-badge--count onl-badge--brand">18</span></a></li>
+          <li><a class="onl-nav__link" href="#"><svg data-icon="tag"></svg>Products</a></li>
+          <li><a class="onl-nav__link" href="#"><svg data-icon="users"></svg>Customers</a></li>
+          <li><a class="onl-nav__link" href="#"><svg data-icon="chart"></svg>Reports</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="onl-nav__title">Settings</p>
+        <ul class="onl-nav__list">
+          <li><a class="onl-nav__link" href="#"><svg data-icon="rupee"></svg>Payments</a></li>
+          <li><a class="onl-nav__link" href="#"><svg data-icon="bell"></svg>Notifications</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="onl-shell__foot"><div class="onl-cell-user"><span class="onl-avatar onl-avatar--sm" style="--hue:210">PS</span><div><div class="onl-cell-user__name">Priya Sharma</div><div class="onl-cell-user__meta">Owner</div></div></div></div>
+  </aside>
+  <div class="onl-shell__scrim"></div>
+  <div class="onl-shell__main">
+    <header class="onl-shell__topbar">
+      <button type="button" class="onl-btn onl-btn--ghost onl-btn--icon onl-shell__menu-btn" data-onl-nav-toggle aria-label="Open navigation" aria-controls="db-nav"><svg data-icon="menu"></svg></button>
+      <div class="onl-input-group onl-grow" style="max-width:360px"><svg data-icon="search"></svg><input class="onl-input onl-input--sm" type="search" placeholder="Search orders, customers…" aria-label="Search"></div>
+      <span class="onl-grow"></span>
+      <button class="onl-btn onl-btn--ghost onl-btn--icon" aria-label="Notifications"><svg data-icon="bell"></svg></button>
+      <button class="onl-btn onl-btn--brand onl-btn--sm"><svg data-icon="plus"></svg>New product</button>
+    </header>
+    <main class="onl-shell__content">
+      <div class="onl-page-header">
+        <div><h1 class="onl-page-header__title">Overview</h1><p class="onl-page-header__subtitle">Store performance for the last 30 days.</p></div>
+        <div class="onl-btn-group" role="group" aria-label="Range" data-onl-toggle-group>
+          <button class="onl-btn onl-btn--sm" data-onl-toggle aria-pressed="false">7D</button>
+          <button class="onl-btn onl-btn--sm" data-onl-toggle aria-pressed="true">30D</button>
+          <button class="onl-btn onl-btn--sm" data-onl-toggle aria-pressed="false">90D</button>
+        </div>
+      </div>
+      <div class="onl-grid onl-grid--4">
+        <div class="onl-card onl-stat"><p class="onl-stat__label">Revenue</p><p class="onl-stat__value">₹8.42L</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">12.5%</span> vs previous</p></div>
+        <div class="onl-card onl-stat"><p class="onl-stat__label">Orders</p><p class="onl-stat__value">1,392</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">8.2%</span> vs previous</p></div>
+        <div class="onl-card onl-stat"><p class="onl-stat__label">Avg. order value</p><p class="onl-stat__value">₹605</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--up">3.9%</span> vs previous</p></div>
+        <div class="onl-card onl-stat"><p class="onl-stat__label">Refund rate</p><p class="onl-stat__value">1.2%</p><p class="onl-stat__foot"><span class="onl-trend onl-trend--down">0.4%</span> lower is better</p></div>
+      </div>
+      <div class="onl-grid onl-grid--3" style="margin-top:16px">
+        <div class="onl-card onl-widget onl-span-2">
+          <div class="onl-card__header"><div><h2 class="onl-card__title">Revenue by category</h2><p class="onl-card__subtitle">Weekly, stacked</p></div></div>
+          <div class="onl-widget__body"><onl-chart type="bar" stacked format="compact" aria-label="Revenue by category" labels='["W1","W2","W3","W4","W5","W6","W7","W8"]' series='[{"name":"Sweets","data":[52000,61000,58000,72000,69000,81000,77000,92000]},{"name":"Pickles","data":[21000,24000,23000,28000,26000,31000,30000,34000]},{"name":"Clothing","data":[34000,31000,38000,36000,42000,45000,43000,51000]}]'></onl-chart></div>
+        </div>
+        <div class="onl-card onl-widget">
+          <div class="onl-card__header"><h2 class="onl-card__title">Sales channels</h2></div>
+          <div class="onl-widget__body"><onl-chart type="donut" format="percent" center-label="of orders" aria-label="Sales channels" data='[{"label":"Website","value":46},{"label":"App","value":38},{"label":"Walk-in","value":16}]'></onl-chart></div>
+        </div>
+      </div>
+      <div class="onl-card" style="margin-top:16px">
+        <div class="onl-card__header"><div><h2 class="onl-card__title">Recent orders</h2><p class="onl-card__subtitle">Updated just now</p></div><a href="#" class="onl-btn onl-btn--sm">View all</a></div>
+        <div class="onl-table-wrap">
+          <table class="onl-table onl-table--hover" data-onl-sortable>
+            <thead><tr><th aria-sort="none">Order</th><th>Customer</th><th class="onl-hide-sm" aria-sort="none">Date</th><th class="onl-num" aria-sort="none">Total</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td><b>#ON-2051</b></td><td><div class="onl-cell-user"><span class="onl-avatar onl-avatar--xs" style="--hue:12">AR</span>Ananya Rao</div></td><td class="onl-hide-sm" data-sort-value="2026-11-05T16:40">Today, 4:40 pm</td><td class="onl-num" data-sort-value="1015">₹1,015</td><td><span class="onl-pill onl-badge" data-status="paid">Paid</span></td></tr>
+              <tr><td><b>#ON-2050</b></td><td><div class="onl-cell-user"><span class="onl-avatar onl-avatar--xs" style="--hue:140">VK</span>Vikram Kumar</div></td><td class="onl-hide-sm" data-sort-value="2026-11-05T13:12">Today, 1:12 pm</td><td class="onl-num" data-sort-value="2340">₹2,340</td><td><span class="onl-pill onl-badge" data-status="shipped">Shipped</span></td></tr>
+              <tr><td><b>#ON-2049</b></td><td><div class="onl-cell-user"><span class="onl-avatar onl-avatar--xs" style="--hue:280">SM</span>Sara Mathew</div></td><td class="onl-hide-sm" data-sort-value="2026-11-04T19:05">Yesterday</td><td class="onl-num" data-sort-value="480">₹480</td><td><span class="onl-pill onl-badge" data-status="pending">Pending</span></td></tr>
+              <tr><td><b>#ON-2048</b></td><td><div class="onl-cell-user"><span class="onl-avatar onl-avatar--xs" style="--hue:35">RN</span>Rahul Nair</div></td><td class="onl-hide-sm" data-sort-value="2026-11-04T11:30">Yesterday</td><td class="onl-num" data-sort-value="1299">₹1,299</td><td><span class="onl-pill onl-badge" data-status="refunded">Refunded</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

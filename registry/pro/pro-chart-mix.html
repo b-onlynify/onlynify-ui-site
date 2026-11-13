@@ -1,0 +1,25 @@
+<div class="onlp-stage">
+  <div class="onlp-max onlp-grid" style="--onlp-max:1000px;--onlp-min:300px">
+    <section class="onlp-card onlp-chart" aria-label="Expense mix">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Expenses · October</p><div class="onlp-chart__value">₹18.4L<span class="onlp-delta onlp-delta--down">4.2%</span></div></div><span class="onlp-badge">vs September</span></div>
+      <div class="onlp-chart__body" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;align-items:center;padding:12px 20px 20px">
+        <onl-chart type="pie" format="inr" height="190" legend="false" aria-label="Expense split" data='[{"label":"Salaries","value":920000},{"label":"Rent","value":310000},{"label":"Marketing","value":240000},{"label":"Software","value":170000},{"label":"Travel","value":110000},{"label":"Other","value":90000}]'></onl-chart>
+        <ol class="onlp-rank">
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-1)">Salaries</span><b>50%</b></li>
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-2)">Rent</span><b>17%</b></li>
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-3)">Marketing</span><b>13%</b></li>
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-4)">Software</span><b>9%</b></li>
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-5)">Travel</span><b>6%</b></li>
+          <li><span class="onlp-label-dot" style="--_c:var(--onl-series-6)">Other</span><b>5%</b></li>
+        </ol>
+      </div>
+    </section>
+    <section class="onlp-card onlp-chart" aria-label="Budget used">
+      <div class="onlp-chart__head"><div><p class="onlp-sub">Budget used · Q3</p><div class="onlp-chart__value">71%<span class="onlp-sub" style="font-size:13px;font-weight:500;letter-spacing:0">of ₹78L</span></div></div><span class="onlp-badge onlp-badge--success">On track</span></div>
+      <div class="onlp-chart__body" style="padding:4px 20px 20px">
+        <onl-chart type="radial" format="percent" max="100" height="200" aria-label="Budget used by team" data='[{"label":"Engineering","value":82},{"label":"Sales","value":74},{"label":"Marketing","value":91},{"label":"Operations","value":48}]'></onl-chart>
+        <div class="onlp-callout onlp-callout--warning" style="margin-top:8px"><svg data-icon="alert"></svg><span>Marketing has used 91% with 5 weeks left in the quarter.</span></div>
+      </div>
+    </section>
+  </div>
+</div>

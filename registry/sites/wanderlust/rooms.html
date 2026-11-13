@@ -1,0 +1,57 @@
+<main class="onl-bg-mesh">
+  <section class="onl-section" style="padding-top:36px">
+    <div class="onl-container onl-container--xl">
+      <ol class="onl-steps" aria-label="Booking steps" style="max-width:600px">
+        <li class="onl-step" aria-current="step"><span class="onl-step__label">Dates &amp; room</span></li>
+        <li class="onl-step"><span class="onl-step__label">Guest details</span></li>
+        <li class="onl-step"><span class="onl-step__label">Payment</span></li>
+      </ol>
+
+      <div style="display:grid;gap:24px;margin-top:24px;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:start">
+        <form class="onl-stack" style="--onl-gap:18px;grid-column:span 2;min-width:0">
+          <div class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:14px">
+            <h1 class="onl-h2" style="font-style:italic">Choose your dates</h1>
+            <div class="onl-row" style="--onl-gap:20px;align-items:flex-start">
+              <div data-onl-calendar data-range data-for="#wl-stay" data-min="today"></div>
+              <div class="onl-stack" style="--onl-gap:12px;min-width:200px;flex:1">
+                <div class="onl-field"><label class="onl-label" for="wl-stay">Stay</label><input class="onl-input" id="wl-stay" placeholder="Pick check-in, then check-out" readonly></div>
+                <div class="onl-field"><label class="onl-label" for="wl-adults">Adults</label><div class="onl-qty"><button type="button" data-onl-step="-1" aria-label="Fewer adults">−</button><input id="wl-adults" type="number" min="1" max="6" value="2"><button type="button" data-onl-step="1" aria-label="More adults">+</button></div></div>
+                <div class="onl-field"><label class="onl-label" for="wl-kids">Children</label><div class="onl-qty"><button type="button" data-onl-step="-1" aria-label="Fewer children">−</button><input id="wl-kids" type="number" min="0" max="4" value="0"><button type="button" data-onl-step="1" aria-label="More children">+</button></div></div>
+              </div>
+            </div>
+          </div>
+
+          <fieldset class="onl-fieldset"><legend class="onl-h3" style="font-style:italic">Choose a room</legend>
+            <div class="onl-stack" style="--onl-gap:12px">
+              <label class="onl-choice" style="padding:0;overflow:hidden"><img data-ph="Garden room|120" alt="" style="width:180px;align-self:stretch;object-fit:cover"><span style="padding:14px 0;flex:1"><span class="onl-choice__title">Garden room</span><span class="onl-choice__desc">Queen bed · Garden view · 28 m² · Breakfast included</span><span class="onl-row" style="--onl-gap:6px;margin-top:8px"><span class="onl-chip">Rain shower</span><span class="onl-chip">Work desk</span></span></span><span class="onl-choice__aside" style="padding:14px">₹9,800<span class="onl-text-xs onl-text-muted" style="display:block;font-weight:400">per night</span></span><input type="radio" name="wl-room" style="margin:14px"></label>
+              <label class="onl-choice" style="padding:0;overflow:hidden"><img data-ph="Valley suite|170" alt="" style="width:180px;align-self:stretch;object-fit:cover"><span style="padding:14px 0;flex:1"><span class="onl-choice__title">Valley suite <span class="onl-badge onl-badge--brand">Most booked</span></span><span class="onl-choice__desc">King bed · Valley view · Fireplace · 42 m²</span><span class="onl-row" style="--onl-gap:6px;margin-top:8px"><span class="onl-chip">Bathtub</span><span class="onl-chip">Private verandah</span></span></span><span class="onl-choice__aside" style="padding:14px">₹15,400<span class="onl-text-xs onl-text-muted" style="display:block;font-weight:400">per night</span></span><input type="radio" name="wl-room" checked style="margin:14px"></label>
+              <label class="onl-choice" style="padding:0;overflow:hidden"><img data-ph="Planter's cottage|30" alt="" style="width:180px;align-self:stretch;object-fit:cover"><span style="padding:14px 0;flex:1"><span class="onl-choice__title">Planter's cottage</span><span class="onl-choice__desc">2 bedrooms · Sleeps 4 · Kitchenette · 70 m²</span><span class="onl-row" style="--onl-gap:6px;margin-top:8px"><span class="onl-chip">Family</span><span class="onl-chip">Garden</span></span></span><span class="onl-choice__aside" style="padding:14px">₹22,000<span class="onl-text-xs onl-text-muted" style="display:block;font-weight:400">per night</span></span><input type="radio" name="wl-room" style="margin:14px"></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="onl-fieldset"><legend class="onl-h3" style="font-style:italic">Add to your stay</legend>
+            <div class="onl-choices" style="--onl-min:200px">
+              <label class="onl-choice"><input type="checkbox" checked><span><span class="onl-choice__title">Airport pick-up</span><span class="onl-choice__desc">Kochi, private car</span></span><span class="onl-choice__aside">₹4,500</span></label>
+              <label class="onl-choice"><input type="checkbox"><span><span class="onl-choice__title">Dinner by the fire</span><span class="onl-choice__desc">5-course, for two</span></span><span class="onl-choice__aside">₹6,000</span></label>
+              <label class="onl-choice"><input type="checkbox"><span><span class="onl-choice__title">Tea estate walk</span><span class="onl-choice__desc">Morning, 2 hours</span></span><span class="onl-choice__aside">₹1,200</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <aside class="onl-card onl-card--pad-lg onl-stack" style="--onl-gap:14px;position:sticky;top:84px">
+          <h2 class="onl-h3">Your stay</h2>
+          <div class="onl-summary">
+            <div class="onl-summary__row"><span>Valley suite × 3 nights</span><span>₹46,200</span></div>
+            <div class="onl-summary__row"><span>Monsoon offer (3rd night)</span><span style="color:var(--onl-success)">− ₹15,400</span></div>
+            <div class="onl-summary__row"><span>Airport pick-up</span><span>₹4,500</span></div>
+            <div class="onl-summary__row"><span>GST 18%</span><span>₹6,354</span></div>
+            <div class="onl-summary__row onl-summary__total"><span>Total</span><span>₹41,654</span></div>
+          </div>
+          <button type="button" class="onl-btn onl-btn--brand onl-btn--lg onl-btn--block">Continue to details</button>
+          <p class="onl-text-xs onl-text-muted">Free cancellation until 7 days before arrival. Pay 30% now, the rest at check-in.</p>
+          <onl-chart type="gauge" value="11" max="14" center-label="rooms booked that week" aria-label="Rooms booked that week" color="var(--onl-warning)"></onl-chart>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>

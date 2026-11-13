@@ -1,0 +1,45 @@
+<main>
+  <section class="onl-section" style="padding-top:36px">
+    <div class="onl-container onl-container--xl">
+      <div class="onl-row onl-row--between">
+        <div><p class="onl-eyebrow">Timetable</p><h1 class="onl-h1" style="font-size:2.5rem;margin-top:6px;letter-spacing:-0.03em">This week's classes</h1></div>
+        <div class="onl-row" style="--onl-gap:8px"><select class="onl-select" aria-label="Club" style="width:auto"><option>Koramangala</option><option>HSR Layout</option><option>Whitefield</option></select><button type="button" class="onl-btn" data-onl-command="#pl-cmd"><svg data-icon="search"></svg> Find a class <kbd class="onl-kbd">⌘K</kbd></button></div>
+      </div>
+
+      <div class="onl-tabs onl-tabs--pill" role="tablist" data-onl-tabs style="margin-top:20px;overflow-x:auto">
+        <button type="button" role="tab" class="onl-tab" aria-selected="true">Mon 3</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Tue 4</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Wed 5</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Thu 6</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Fri 7</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Sat 8</button><button type="button" role="tab" class="onl-tab" aria-selected="false">Sun 9</button>
+      </div>
+
+      <div class="onl-card" style="margin-top:16px">
+        <div class="onl-table-wrap"><table class="onl-table onl-table--hover">
+          <thead><tr><th>Time</th><th>Class</th><th>Coach</th><th>Spots</th><th></th></tr></thead>
+          <tbody>
+            <tr><td class="onl-tabular">6:00 am</td><td><b>Strength: lower body</b><div class="onl-text-xs onl-text-muted">60 min · All levels</div></td><td>Arjun J.</td><td><div class="onl-progress onl-progress--sm onl-progress--warning" style="width:90px"><div class="onl-progress__bar" style="--value:83%"></div></div><span class="onl-text-xs">2 left</span></td><td><button type="button" class="onl-btn onl-btn--brand onl-btn--sm">Book</button></td></tr>
+            <tr><td class="onl-tabular">7:15 am</td><td><b>Conditioning</b><div class="onl-text-xs onl-text-muted">45 min · Intermediate</div></td><td>Maya K.</td><td><div class="onl-progress onl-progress--sm onl-progress--danger" style="width:90px"><div class="onl-progress__bar" style="--value:100%"></div></div><span class="onl-text-xs">Waitlist</span></td><td><button type="button" class="onl-btn onl-btn--sm">Join waitlist</button></td></tr>
+            <tr><td class="onl-tabular">12:30 pm</td><td><b>Mobility flow</b><div class="onl-text-xs onl-text-muted">40 min · All levels</div></td><td>Tenzin N.</td><td><div class="onl-progress onl-progress--sm onl-progress--success" style="width:90px"><div class="onl-progress__bar" style="--value:42%"></div></div><span class="onl-text-xs">7 left</span></td><td><button type="button" class="onl-btn onl-btn--brand onl-btn--sm">Book</button></td></tr>
+            <tr><td class="onl-tabular">6:30 pm</td><td><b>Race simulation</b> <span class="onl-badge onl-badge--brand">New</span><div class="onl-text-xs onl-text-muted">75 min · Advanced</div></td><td>Maya K.</td><td><div class="onl-progress onl-progress--sm" style="width:90px"><div class="onl-progress__bar" style="--value:58%"></div></div><span class="onl-text-xs">5 left</span></td><td><button type="button" class="onl-btn onl-btn--brand onl-btn--sm">Book</button></td></tr>
+            <tr><td class="onl-tabular">8:00 pm</td><td><b>Strength: upper body</b><div class="onl-text-xs onl-text-muted">60 min · All levels</div></td><td>Arjun J.</td><td><div class="onl-progress onl-progress--sm" style="width:90px"><div class="onl-progress__bar" style="--value:66%"></div></div><span class="onl-text-xs">4 left</span></td><td><button type="button" class="onl-btn onl-btn--brand onl-btn--sm">Book</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div style="display:grid;gap:16px;margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr))">
+        <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">When the gym is busy</h2><span class="onl-text-xs onl-text-muted">Average check-ins per hour</span></div><div class="onl-card__body"><onl-chart type="heatmap" aria-label="Gym check-ins by weekday and hour" labels='["5am","7am","9am","11am","1pm","3pm","5pm","7pm","9pm"]' series='[{"name":"Mon","data":[38,62,30,14,18,16,48,70,34]},{"name":"Tue","data":[34,58,28,12,16,15,44,66,30]},{"name":"Wed","data":[36,60,29,13,17,15,46,68,31]},{"name":"Thu","data":[33,55,27,12,15,14,42,62,29]},{"name":"Fri","data":[30,50,26,12,14,14,38,52,22]},{"name":"Sat","data":[22,48,56,44,30,24,30,34,16]},{"name":"Sun","data":[12,30,46,40,26,20,22,24,10]}]'></onl-chart></div></div>
+        <div class="onl-card"><div class="onl-card__header"><h2 class="onl-card__title">Your week</h2></div><div class="onl-card__body" style="display:grid;gap:12px;grid-template-columns:1fr 1fr;align-items:center"><onl-chart type="gauge" value="3" max="4" center-label="Classes booked" aria-label="Weekly class goal" color="var(--onl-brand)"></onl-chart><onl-chart type="radial" max="100" format="percent" legend="false" aria-label="Weekly goals" data='[{"label":"Strength","value":75},{"label":"Cardio","value":50},{"label":"Mobility","value":30}]'></onl-chart></div></div>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="onl-command" id="pl-cmd" data-onl-hotkey aria-label="Find a class">
+    <div class="onl-command__input"><svg data-icon="search"></svg><input placeholder="Search classes, coaches, times…" aria-label="Search classes"></div>
+    <div class="onl-command__list" role="listbox">
+      <div class="onl-command__group">Classes</div>
+      <button type="button" class="onl-command__item" role="option" data-keywords="arjun morning">Strength: lower body · Mon 6:00 am</button>
+      <button type="button" class="onl-command__item" role="option" data-keywords="maya">Conditioning · Mon 7:15 am</button>
+      <button type="button" class="onl-command__item" role="option" data-keywords="tenzin yoga">Mobility flow · Mon 12:30 pm</button>
+      <button type="button" class="onl-command__item" role="option" data-keywords="race maya">Race simulation · Mon 6:30 pm</button>
+      <p class="onl-command__empty" hidden>No classes match.</p>
+    </div>
+    <div class="onl-command__foot"><span><kbd class="onl-kbd">↑↓</kbd> move</span><span><kbd class="onl-kbd">↵</kbd> book</span><span><kbd class="onl-kbd">esc</kbd> close</span></div>
+  </dialog>
+</main>

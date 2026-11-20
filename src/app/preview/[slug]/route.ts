@@ -22,7 +22,7 @@ export async function GET(req: Request, { params }: { params: Promise<{ slug: st
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>${block.title} · Onlynify UI</title>
+<title>${block.title} · Onlyn.ify UI</title>
 <link rel="stylesheet" href="/ui/onlynify-ui.css">
 <script src="/ui/onlynify-ui.js" data-manual></script>
 <script>Onlynify.init({ restore: false });</script>

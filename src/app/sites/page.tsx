@@ -4,7 +4,7 @@ import { currentUser } from "@/lib/auth.ts";
 import { userHasPremium } from "@/lib/payments.ts";
 import { SITES } from "@/lib/sites.ts";
 
-export const metadata: Metadata = { title: "Site templates", description: "Eight complete, multi-page website templates built with Onlynify UI. Pro: customise the theme and download HTML, React, Vue or Angular code." };
+export const metadata: Metadata = { title: "Site templates", description: "Eight complete, multi-page website templates built with Onlyn.ify UI. Pro: customise the theme and download HTML, React, Vue or Angular code." };
 export const dynamic = "force-dynamic";
 
 export default async function Sites() {

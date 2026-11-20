@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ICON_ALIASES, ICON_GROUPS, ICON_NAMES, icon } from "onlynify-ui";
+import { ICON_ALIASES, ICON_GROUPS, ICON_NAMES, iconSetAliases, iconSets } from "onlynify-ui";
+import { loadAllIcons } from "onlynify-ui/icons/all";
 import "onlynify-ui/css/flex-layout";
 import { CodeBlock } from "@/components/client";
 import { IconGallery, type GalleryGroup } from "@/components/icon-gallery";
@@ -28,7 +29,7 @@ function Introduction() {
   return (
     <>
       <p className="onl-lead">
-        Onlynify UI is a design system you can drop into any project. It's a stylesheet, a few Web Components and a set of copy-paste blocks. There's nothing to
+        Onlyn.ify UI is a design system you can drop into any project. It's a stylesheet, a few Web Components and a set of copy-paste blocks. There's nothing to
         learn beyond HTML classes.
       </p>
       <h2>Why it's built this way</h2>
@@ -89,25 +90,48 @@ function Installation() {
   );
 }
 
-function iconGroups(): GalleryGroup[] {
+/** Core + extended icons merged into the same categories. Tiles draw from the shared sprite, so the page stays light. */
+function iconGroups(): { groups: GalleryGroup[]; extended: number } {
+  const extended = loadAllIcons();
   const aliasesOf: Record<string, string[]> = {};
-  for (const [alias, name] of Object.entries(ICON_ALIASES)) (aliasesOf[name] ??= []).push(alias);
-  return ICON_GROUPS.map((g) => ({
-    id: g.id,
-    title: g.title,
-    icons: g.icons.map((name) => ({ name, svg: icon(name, "", 22), aliases: aliasesOf[name] ?? [] })),
-  }));
+  for (const [alias, name] of [...Object.entries(ICON_ALIASES), ...Object.entries(iconSetAliases())]) (aliasesOf[name] ??= []).push(alias);
+  const groups = new Map<string, GalleryGroup>(ICON_GROUPS.map((g) => [g.id, { id: g.id, title: g.title, icons: g.icons.map((name) => ({ name, set: "onlynify", aliases: aliasesOf[name] ?? [] })) }]));
+  for (const set of iconSets()) {
+    for (const g of set.groups) {
+      const target = groups.get(g.id) ?? { id: g.id, title: g.title, icons: [] };
+      target.icons.push(...g.icons.map((name) => ({ name, set: set.id, aliases: aliasesOf[name] ?? [] })));
+      groups.set(g.id, target);
+    }
+  }
+  for (const g of groups.values()) g.icons.sort((a, b) => a.name.localeCompare(b.name));
+  return { groups: [...groups.values()], extended };
 }
 
 function Icons() {
+  const { groups, extended } = iconGroups();
   return (
     <>
       <p className="onl-lead">
-        {ICON_NAMES.length} lightweight stroke icons in {ICON_GROUPS.length} groups: navigation, arrows, dashboards, education, healthcare, commerce, travel, files, editing, weather,
-        food, sports, home, shapes, brands and more. You can also add any other icon set, including solid, multi-colour or brand SVGs.
-        They inherit the current text colour. Search by name, pick a group, then click an icon to copy it. How to use them is at the bottom of the page.
+        {(ICON_NAMES.length + extended).toLocaleString("en-IN")} Onlyn.ify icons, drawn in one stroke style on a 24 px grid: navigation, dashboards, education, healthcare, commerce,
+        travel, files, editing, weather, food, sports, home and more. They inherit the current text colour and work in any framework. Search by name or topic, then click an icon to
+        copy it. Usage is at the bottom of the page.
       </p>
-      <IconGallery groups={iconGroups()} />
+      <IconGallery groups={groups} sprite="/ui/icons/sprite-all.svg" files="/ui/icons/" />
+
+      <h2 id="full-set">Loading the full set</h2>
+      <p>
+        The {ICON_NAMES.length} most used icons ship with the kit. The other {extended.toLocaleString("en-IN")} load when you ask for them, so apps that don't need them stay small.
+      </p>
+      <CodeBlock title="JavaScript / React / Vue / Angular" code={`import { init } from "onlynify-ui";
+import { loadAllIcons } from "onlynify-ui/icons/all";
+
+init();
+loadAllIcons(); // once; then icon("badge-check"), <onl-icon name="alarm-clock-check"> …`} />
+      <CodeBlock title="Plain HTML" code={`<script src="/onlynify-ui/onlynify-ui.js" defer></script>
+<script src="/onlynify-ui/onlynify-ui-icons-all.js" defer></script>  <!-- after onlynify-ui.js -->`} />
+      <CodeBlock title="Sprite / files" code={`dist/icons/sprite.svg            kit icons
+dist/icons/sprite-all.svg        every icon
+dist/icons/<name>.svg            every icon as a file`} />
 
       <h2 id="usage">Usage</h2>
       <p>Every icon above works the same way in any framework, with no icon font and no extra package.</p>
@@ -307,7 +331,7 @@ function Grid() {
         <div className="onl-stack" dangerouslySetInnerHTML={{ __html: withCells(FLEX_LAYOUT) }} />
       </Demo>
       <table>
-        <thead><tr><th>Flex-Layout plugin</th><th>Onlynify UI</th><th>Values</th></tr></thead>
+        <thead><tr><th>Flex-Layout plugin</th><th>Onlyn.ify UI</th><th>Values</th></tr></thead>
         <tbody>
           <tr><td><code>fxLayout</code></td><td><code>onlFlexLayout</code></td><td><code>row</code> · <code>column</code> · <code>row-reverse</code> · <code>column-reverse</code>, plus <code>wrap</code> and <code>inline</code></td></tr>
           <tr><td><code>fxLayoutAlign</code></td><td><code>onlFlexLayoutAlign</code></td><td>main axis <code>start center end space-between space-around space-evenly</code>, then cross axis <code>start center end stretch baseline</code></td></tr>
@@ -393,9 +417,9 @@ function Cli() {
 function License() {
   return (
     <>
-      <h2>Onlynify UI (core): MIT</h2>
+      <h2>Onlyn.ify UI (core): MIT</h2>
       <p>The stylesheet, Web Components, tokens, CLI and every component on this site are MIT licensed. You can use them in personal, commercial and client projects for free, with no attribution required beyond keeping the licence file.</p>
-      <h2>Onlynify UI Pro</h2>
+      <h2>Onlyn.ify UI Pro</h2>
       <ul>
         <li><b>Pro</b> covers one developer and unlimited projects, including commercial ones.</li>
         <li><b>Team</b> covers up to five developers and client work for agencies.</li>

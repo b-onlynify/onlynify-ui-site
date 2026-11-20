@@ -54,7 +54,7 @@ export async function createOrder(userId: string, planId: string): Promise<{ ord
   });
 
   const checkout = rz
-    ? { mode: "live", key: rz.keyId, orderId: gatewayOrderId, amount: plan.amount, currency: plan.currency, name: "Onlynify UI", description: `${plan.name} licence` }
+    ? { mode: "live", key: rz.keyId, orderId: gatewayOrderId, amount: plan.amount, currency: plan.currency, name: "Onlyn.ify UI", description: `${plan.name} licence` }
     : { mode: "test", url: `/pay/test/${orderId}` };
   return { order, checkout };
 }

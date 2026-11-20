@@ -6,7 +6,7 @@ import { read } from "@/lib/store.ts";
 import { decodeTheme, DEFAULT_THEME, freeSubset, normalizeTheme, type Theme } from "@/lib/theme.ts";
 import { ThemeBuilder } from "./builder";
 
-export const metadata: Metadata = { title: "Theme builder", description: "Pick a brand colour and style preset, preview Onlynify UI live on real blocks, and with Pro customise colours, radius, font and density, save themes and export CSS." };
+export const metadata: Metadata = { title: "Theme builder", description: "Pick a brand colour and style preset, preview Onlyn.ify UI live on real blocks, and with Pro customise colours, radius, font and density, save themes and export CSS." };
 export const dynamic = "force-dynamic";
 
 export default async function Themes({ searchParams }: { searchParams: Promise<{ theme?: string }> }) {

@@ -7,7 +7,7 @@ import { COMPONENT_DOCS } from "@/lib/registry.ts";
 
 export const metadata: Metadata = {
   title: "Pro components",
-  description: "Modern, professional Pro versions of every Onlynify UI component and chart, with code for HTML, React, Vue and Angular.",
+  description: "Modern, professional Pro versions of every Onlyn.ify UI component and chart, with code for HTML, React, Vue and Angular.",
 };
 export const dynamic = "force-dynamic";
 

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 /**
- * Motion kit (no dependencies, shared by every Onlynify app):
+ * Motion kit (no dependencies, shared by every Onlyn.ify app):
  *   <FloatingShapes/>  drifting circles, rings, triangles, squares, plus signs and dots; parallax with the pointer;
  *                      optionally draggable (grab a shape, throw it somewhere else)
  *   <HeroBanner/>      animated gradient header with floating shapes (dashboards)

@@ -10,7 +10,7 @@ import { ActivityBar } from "@/components/onlyn-loader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3600"),
-  title: { default: "Onlynify UI · Components for Angular, React, Vue and HTML", template: "%s · Onlynify UI" },
+  title: { default: "Onlyn.ify UI · Components for Angular, React, Vue and HTML", template: "%s · Onlyn.ify UI" },
   description: "An open-source, zero-dependency UI kit and design system with buttons, cards, charts, forms, tables and premium blocks. Works in Angular, React, Vue and plain HTML.",
   icons: { icon: "/ui/assets/mark.svg" },
 };
@@ -46,9 +46,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div className="onl-container onl-container--xl site-header__inner">
             <Link href="/" className="site-logo site-plain">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/logo-light.png" alt="Onlynify" className="onl-logo-light" />
+              <img src="/brand/logo-light.png" alt="Onlyn.ify" className="onl-logo-light" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/logo-dark.png" alt="Onlynify" className="onl-logo-dark" />
+              <img src="/brand/logo-dark.png" alt="Onlyn.ify" className="onl-logo-dark" />
               <span className="onl-badge onl-badge--brand">UI</span>
             </Link>
             <nav className="onl-navbar__links" aria-label="Main">
@@ -91,7 +91,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <footer className="site-footer">
           <div className="onl-container onl-container--xl onl-row onl-row--between">
             <span>
-              Built with Onlynify UI. The core kit is MIT licensed, so you can use it free in any project.
+              Built with Onlyn.ify UI. The core kit is MIT licensed, so you can use it free in any project.
             </span>
             <span className="onl-row" style={{ ["--onl-gap" as string]: "16px" }}>
               <Link href="/terms">Terms</Link>

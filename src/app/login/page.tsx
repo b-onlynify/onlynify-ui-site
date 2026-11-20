@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { AuthForm } from "@/components/client";
-import { FloatingShapes } from "@/components/motion";
+import { LoginScene } from "@/components/login-scene";
 import { currentUser } from "@/lib/auth.ts";
 import { googleEnabled } from "@/lib/google.ts";
 
@@ -22,13 +22,13 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
   if (await currentUser()) redirect(safeNext(next));
   return (
     <div className="login-split">
-      <section className="login-hero mo-hero mo-drag-panel" aria-label="About Onlynify UI">
-        <FloatingShapes draggable tone="light" />
+      <section className="login-hero mo-hero" aria-label="About Onlyn.ify UI">
         <div style={{ position: "relative", zIndex: 1, maxWidth: 480 }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.85 }}>Onlynify UI</p>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.85 }}>Onlyn.ify UI</p>
           <h2 style={{ fontSize: "clamp(28px, 3vw, 40px)", lineHeight: 1.15, fontWeight: 650, marginTop: 12 }}>Build polished interfaces in minutes, not weeks.</h2>
           <p style={{ marginTop: 14, opacity: 0.88, fontSize: 16 }}>One account for your licences, premium blocks, full sites and saved themes.</p>
-          <ul style={{ listStyle: "none", padding: 0, margin: "32px 0 0", display: "grid", gap: 18 }}>
+          <LoginScene scene="ui" className="login-scene-hero" />
+          <ul style={{ listStyle: "none", padding: 0, margin: "8px 0 0", display: "grid", gap: 18 }}>
             {FEATURES.map(([icon, title, text]) => (
               <li key={title} style={{ display: "flex", gap: 14 }}>
                 <span aria-hidden style={{ flex: "none", display: "grid", placeItems: "center", width: 38, height: 38, borderRadius: 12, background: "rgb(255 255 255 / 0.16)", fontSize: 16 }}>{icon}</span>
@@ -55,7 +55,7 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
         <p style={{ position: "relative", zIndex: 1, fontSize: 12, opacity: 0.75 }}>Secure sessions · Scrypt-hashed passwords · Your data stays yours</p>
       </section>
       <section className="login-panel">
-        <FloatingShapes tone="brand" count={5} />
+        <LoginScene scene="ui" className="login-scene-mobile" />
         <div className="mo-rise" style={{ position: "relative", zIndex: 1, width: "100%", display: "grid", placeItems: "center" }}>
           <AuthForm next={safeNext(next)} initialMode={mode === "signup" ? "signup" : "signin"} google={googleEnabled()} error={error} />
         </div>

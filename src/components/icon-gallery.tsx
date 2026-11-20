@@ -3,16 +3,13 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { toast } from "onlynify-ui";
 
-export type GalleryIcon = { name: string; svg: string; aliases: string[] };
+export type GalleryIcon = { name: string; set: string; aliases: string[] };
 export type GalleryGroup = { id: string; title: string; icons: GalleryIcon[] };
 
 type CopyMode = "tag" | "name" | "svg";
 const COPY_LABEL: Record<CopyMode, string> = { tag: "<onl-icon>", name: "Name", svg: "SVG" };
 
-const copyText = (mode: CopyMode, i: GalleryIcon) =>
-  mode === "name" ? i.name : mode === "svg" ? i.svg : `<onl-icon name="${i.name}"></onl-icon>`;
-
-/** Every search word must appear in the icon name, one of its aliases or its group. */
+/** Every search word must appear in the icon name, one of its aliases, or its topic. */
 export function matchIcon(icon: GalleryIcon, group: GalleryGroup, term: string) {
   const words = term.trim().toLowerCase().split(/\s+/).filter(Boolean);
   if (!words.length) return true;
@@ -20,15 +17,25 @@ export function matchIcon(icon: GalleryIcon, group: GalleryGroup, term: string) 
   return words.every((w) => hay.includes(w));
 }
 
-/** Searchable, filterable icon gallery. Click a tile to copy it. Press "/" to jump to search. */
-export function IconGallery({ groups }: { groups: GalleryGroup[] }) {
+/**
+ * Searchable Onlyn.ify icon gallery (about 2,100 icons, one flat A–Z grid). Tiles draw from one cached sprite file, so
+ * the page carries names only. Search also matches each icon's topic keywords. Click a tile to copy it; "SVG"
+ * fetches that icon's file. Press "/" to jump to search.
+ */
+const CHUNK = 240;
+
+export function IconGallery({ groups, sprite, files }: { groups: GalleryGroup[]; sprite: string; files: string }) {
   const [query, setQuery] = useState("");
-  const [group, setGroup] = useState("all");
   const [mode, setMode] = useState<CopyMode>("tag");
   const [copied, setCopied] = useState<string | null>(null);
   const term = useDeferredValue(query);
   const input = useRef<HTMLInputElement>(null);
-  const total = useMemo(() => groups.reduce((n, g) => n + g.icons.length, 0), [groups]);
+  /** Every icon once, A–Z, with the topic it came from (used for search only). */
+  const all = useMemo(() => {
+    const seen = new Map<string, { icon: GalleryIcon; group: GalleryGroup }>();
+    for (const g of groups) for (const i of g.icons) if (!seen.has(i.name)) seen.set(i.name, { icon: i, group: g });
+    return [...seen.values()].sort((a, b) => a.icon.name.localeCompare(b.icon.name));
+  }, [groups]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -42,19 +49,22 @@ export function IconGallery({ groups }: { groups: GalleryGroup[] }) {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  const visible = useMemo(
-    () =>
-      groups
-        .filter((g) => group === "all" || g.id === group)
-        .map((g) => ({ ...g, icons: g.icons.filter((i) => matchIcon(i, g, term)) }))
-        .filter((g) => g.icons.length > 0),
-    [groups, group, term],
-  );
-  const shown = visible.reduce((n, g) => n + g.icons.length, 0);
+  const visible = useMemo(() => all.filter((x) => matchIcon(x.icon, x.group, term)).map((x) => x.icon), [all, term]);
+  const chunks = useMemo(() => {
+    const out: GalleryIcon[][] = [];
+    for (let i = 0; i < visible.length; i += CHUNK) out.push(visible.slice(i, i + CHUNK));
+    return out;
+  }, [visible]);
+  const shown = visible.length;
 
   async function copy(i: GalleryIcon) {
-    const text = copyText(mode, i);
+    let text = mode === "name" ? i.name : `<onl-icon name="${i.name}"></onl-icon>`;
     try {
+      if (mode === "svg") {
+        const res = await fetch(`${files}${i.name}.svg`);
+        if (!res.ok) throw new Error(String(res.status));
+        text = (await res.text()).trim();
+      }
       await navigator.clipboard.writeText(text);
       setCopied(i.name);
       setTimeout(() => setCopied((c) => (c === i.name ? null : c)), 1200);
@@ -78,7 +88,7 @@ export function IconGallery({ groups }: { groups: GalleryGroup[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === "Escape" && setQuery("")}
-            placeholder={`Search ${total} icons by name, e.g. calendar, file, arrow…`}
+            placeholder={`Search ${all.length.toLocaleString("en-IN")} icons, e.g. calendar, school, invoice…`}
             aria-label="Search icons by name"
             autoComplete="off"
             spellCheck={false}
@@ -95,49 +105,37 @@ export function IconGallery({ groups }: { groups: GalleryGroup[] }) {
         </label>
       </div>
 
-      <div className="icon-gallery__chips" role="group" aria-label="Filter by group">
-        <button type="button" className="onl-chip" aria-pressed={group === "all"} onClick={() => setGroup("all")}>
-          All <span className="onl-text-muted">{total}</span>
-        </button>
-        {groups.map((g) => (
-          <button key={g.id} type="button" className="onl-chip" aria-pressed={group === g.id} onClick={() => setGroup(g.id)}>
-            {g.title} <span className="onl-text-muted">{g.icons.length}</span>
-          </button>
-        ))}
-      </div>
-
       <p className="onl-help" aria-live="polite">
         {shown
-          ? `${shown} ${shown === 1 ? "icon" : "icons"}${term.trim() ? ` match “${term.trim()}”` : ""}. Click an icon to copy it.`
+          ? `${shown.toLocaleString("en-IN")} ${shown === 1 ? "icon" : "icons"}${term.trim() ? ` match “${term.trim()}”` : ""}. Click an icon to copy it.`
           : null}
       </p>
 
       {shown === 0 ? (
         <div className="onl-empty icon-gallery__empty">
           <p><b>No icons match “{term.trim()}”.</b></p>
-          <p className="onl-text-muted">Try a shorter word or another group, or add your own icon with <code>registerIcons()</code> (see Usage below).</p>
-          <button type="button" className="onl-btn onl-btn--sm" onClick={() => { setQuery(""); setGroup("all"); }}>Clear search</button>
+          <p className="onl-text-muted">Try a shorter word, or add your own icon with <code>registerIcons()</code> (see Usage below).</p>
+          <button type="button" className="onl-btn onl-btn--sm" onClick={() => setQuery("")}>Clear search</button>
         </div>
       ) : (
-        visible.map((g) => (
-          <section key={g.id} aria-label={g.title}>
-            <h3 className="icon-gallery__group">{g.title} <span className="onl-text-muted">{g.icons.length}</span></h3>
-            <div className="icon-gallery__grid">
-              {g.icons.map((i) => (
-                <button
-                  key={i.name}
-                  type="button"
-                  className="icon-gallery__tile"
-                  data-copied={copied === i.name ? "" : undefined}
-                  title={i.aliases.length ? `${i.name} (also: ${i.aliases.join(", ")})` : i.name}
-                  onClick={() => copy(i)}
-                >
-                  <span dangerouslySetInnerHTML={{ __html: i.svg }} />
-                  <span className="icon-gallery__name">{copied === i.name ? "Copied" : i.name}</span>
-                </button>
-              ))}
-            </div>
-          </section>
+        chunks.map((c, n) => (
+          <div key={n} className="icon-gallery__section icon-gallery__grid">
+            {c.map((i) => (
+              <button
+                key={i.name}
+                type="button"
+                className="icon-gallery__tile"
+                data-copied={copied === i.name ? "" : undefined}
+                title={`${i.name}${i.aliases.length ? ` (also: ${i.aliases.join(", ")})` : ""}`}
+                onClick={() => copy(i)}
+              >
+                <svg width="22" height="22" aria-hidden="true">
+                  <use href={`${sprite}#i-${i.name}`} />
+                </svg>
+                <span className="icon-gallery__name">{copied === i.name ? "Copied" : i.name}</span>
+              </button>
+            ))}
+          </div>
         ))
       )}
     </div>

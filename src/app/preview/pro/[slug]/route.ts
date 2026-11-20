@@ -22,7 +22,7 @@ export async function GET(req: Request, { params }: { params: Promise<{ slug: st
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>${meta.title} · Onlynify UI Pro</title>
+<title>${meta.title} · Onlyn.ify UI Pro</title>
 <link rel="stylesheet" href="/ui/onlynify-ui.css">
 <style>${proCss().replace(/<\//g, "<\\/")}</style>
 ${theme ? `<style>${themeCss(theme).replace(/<\//g, "<\\/")}</style>` : ""}

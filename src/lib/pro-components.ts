@@ -70,7 +70,7 @@ export function proFiles(slug: string, framework: Framework, theme?: Theme | nul
     files.push({
       path: `${slug}/index.html`,
       language: "html",
-      content: `<!doctype html>\n<html lang="en"${attrs ? ` ${attrs}` : ""}>\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>${meta.title} · Onlynify UI Pro</title>\n<link rel="stylesheet" href="./onlynify-ui/onlynify-ui.css">\n<link rel="stylesheet" href="./pro.css">\n${theme ? `<link rel="stylesheet" href="./theme.css">\n` : ""}<script src="./onlynify-ui/onlynify-ui.js" defer></script>\n</head>\n<body>\n${body}\n</body>\n</html>\n`,
+      content: `<!doctype html>\n<html lang="en"${attrs ? ` ${attrs}` : ""}>\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>${meta.title} · Onlyn.ify UI Pro</title>\n<link rel="stylesheet" href="./onlynify-ui/onlynify-ui.css">\n<link rel="stylesheet" href="./pro.css">\n${theme ? `<link rel="stylesheet" href="./theme.css">\n` : ""}<script src="./onlynify-ui/onlynify-ui.js" defer></script>\n</head>\n<body>\n${body}\n</body>\n</html>\n`,
     });
   } else {
     for (const f of toFramework(body, framework, slug, { title: `${meta.title} (Pro)` })) files.push({ ...f, path: `${slug}/${f.path}` });
@@ -80,7 +80,7 @@ export function proFiles(slug: string, framework: Framework, theme?: Theme | nul
   files.push({
     path: `${slug}/README.md`,
     language: "markdown",
-    content: `# ${meta.title} · Onlynify UI Pro\n\n${meta.description}\n\n1. Load \`onlynify-ui.css\` (free kit), then \`pro.css\`${theme ? ", then `theme.css`" : ""}.\n${attrs ? `2. Add to your <html> element: \`${attrs}\`\n` : ""}3. Call \`init()\` from \`onlynify-ui\` once on the client${meta.chart || body.includes("<onl-chart") ? " (charts render through the <onl-chart> web component)" : " (tabs, menus and other interactive parts)"}.\n\nAll colours come from the kit tokens, so dark mode and brand presets work automatically.\nLicensed under the Onlynify UI Pro licence${meta.tier === "team" ? " (Team)" : ""}: use in your products, don't redistribute the source.\n`,
+    content: `# ${meta.title} · Onlyn.ify UI Pro\n\n${meta.description}\n\n1. Load \`onlynify-ui.css\` (free kit), then \`pro.css\`${theme ? ", then `theme.css`" : ""}.\n${attrs ? `2. Add to your <html> element: \`${attrs}\`\n` : ""}3. Call \`init()\` from \`onlynify-ui\` once on the client${meta.chart || body.includes("<onl-chart") ? " (charts render through the <onl-chart> web component)" : " (tabs, menus and other interactive parts)"}.\n\nAll colours come from the kit tokens, so dark mode and brand presets work automatically.\nLicensed under the Onlyn.ify UI Pro licence${meta.tier === "team" ? " (Team)" : ""}: use in your products, don't redistribute the source.\n`,
   });
   return files;
 }

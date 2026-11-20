@@ -25,7 +25,7 @@ export default function Home() {
           </Link>
           <h1 className="site-hero__title">Beautiful UI that works in every framework</h1>
           <p className="site-hero__lead">
-            Onlynify UI is an open-source design system made of plain CSS and Web Components. You get buttons, cards, badges, forms, tables and charts with zero
+            Onlyn.ify UI is an open-source design system made of plain CSS and Web Components. You get buttons, cards, badges, forms, tables and charts with zero
             dependencies. Rich form inputs, 17 chart types, 12 brand colours and 5 modern styles. Copy them into Angular, React, Vue or plain HTML.
           </p>
           <div className="onl-row" style={{ justifyContent: "center", marginTop: 28 }}>

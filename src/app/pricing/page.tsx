@@ -8,7 +8,7 @@ import { BLOCKS, COMPONENTS } from "@/lib/registry.ts";
 import { SITES } from "@/lib/sites.ts";
 import { CATALOG, CHART_TYPES } from "@/lib/catalog";
 
-export const metadata: Metadata = { title: "Pricing", description: "Onlynify UI is free and open source. Pro unlocks premium blocks with a one-time payment." };
+export const metadata: Metadata = { title: "Pricing", description: "Onlyn.ify UI is free and open source. Pro unlocks premium blocks with a one-time payment." };
 export const dynamic = "force-dynamic";
 
 const FAQ = [

@@ -7,7 +7,7 @@
  */
 
 export const BRAND_PRESETS: Record<string, { light: string; dark: string; label: string }> = {
-  onlynify: { light: "#1449a0", dark: "#74b6ff", label: "Onlynify blue" },
+  onlynify: { light: "#1449a0", dark: "#74b6ff", label: "Onlyn.ify blue" },
   indigo: { light: "#4338ca", dark: "#a5b4fc", label: "Indigo" },
   violet: { light: "#6d28d9", dark: "#b4a0ff", label: "Violet" },
   fuchsia: { light: "#a21caf", dark: "#f0abfc", label: "Fuchsia" },
@@ -176,7 +176,7 @@ export function themeCss(t: Theme) {
   const body = Object.entries(vars).map(([k, v]) => `  ${k}: ${v};`).join("\n");
   const attrs = themeAttrs(t);
   const attrLine = Object.entries(attrs).map(([k, v]) => `${k}="${v}"`).join(" ");
-  const head = `/* Onlynify UI theme${t.name ? `: ${t.name}` : ""}\n   Put this after onlynify-ui.css${attrLine ? `, and add to <html>: ${attrLine}` : ""}. */`;
+  const head = `/* Onlyn.ify UI theme${t.name ? `: ${t.name}` : ""}\n   Put this after onlynify-ui.css${attrLine ? `, and add to <html>: ${attrLine}` : ""}. */`;
   const layoutBlock = layoutNote(t.layout);
   if (!body) return `${head}\n/* Presets only: no custom properties needed. */\n${layoutBlock}`;
   return `${head}\n:root,\n:root[data-style],\n[data-style] {\n${body}\n}\n${isHex(t.brand) ? `[data-brand] { --onl-brand: var(--onl-brand-light); }\n` : ""}${layoutBlock}`;

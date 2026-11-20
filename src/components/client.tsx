@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { init, toast } from "onlynify-ui";
 import type { CodeFile } from "@/lib/convert";
 import { CHECKOUT_FAILED_EVENT, loadCheckout } from "@/lib/gateway-client";
+import { RichInput } from "./rich-input";
 
 /** Registers <onl-chart> and the delegated behaviours once. */
 export function UiInit() {
@@ -328,26 +329,24 @@ export function AuthForm({ next, initialMode = "signin", google = false, error }
         <span style={{ flex: 1, height: 1, background: "var(--onl-border, currentColor)", opacity: 0.4 }} />
       </div>
       <form className="onl-stack" style={{ marginTop: 16, ["--onl-gap" as string]: "14px" }} onSubmit={submit}>
-        {mode === "signup" && (
-          <div className="onl-field">
-            <label className="onl-label" htmlFor="au-name">Name</label>
-            <input className="onl-input" id="au-name" name="name" autoComplete="name" required maxLength={80} />
-          </div>
-        )}
-        <div className="onl-field">
-          <label className="onl-label" htmlFor="au-email">Email</label>
-          <input className="onl-input" id="au-email" name="email" type="email" autoComplete="email" required maxLength={160} />
-        </div>
-        <div className="onl-field">
-          <label className="onl-label" htmlFor="au-pass">Password</label>
-          <div style={{ position: "relative" }}>
-            <input className="onl-input" id="au-pass" name="password" type={show ? "text" : "password"} autoComplete={mode === "signin" ? "current-password" : "new-password"} required minLength={8} maxLength={200} style={{ paddingRight: 64 }} />
-            <button type="button" className="onl-btn onl-btn--ghost onl-btn--sm" onClick={() => setShow((s) => !s)} aria-label={show ? "Hide password" : "Show password"} style={{ position: "absolute", right: 4, top: "50%", transform: "translateY(-50%)" }}>
+        {mode === "signup" && <RichInput id="au-name" name="name" label="Name" autoComplete="name" required maxLength={80} />}
+        <RichInput id="au-email" name="email" type="email" label="Email" autoComplete="email" required maxLength={160} />
+        <RichInput
+          id="au-pass"
+          name="password"
+          label="Password"
+          type={show ? "text" : "password"}
+          autoComplete={mode === "signin" ? "current-password" : "new-password"}
+          required
+          minLength={8}
+          maxLength={200}
+          hint={mode === "signup" ? "At least 8 characters." : undefined}
+          trailing={
+            <button type="button" onClick={() => setShow((s) => !s)} aria-label={show ? "Hide password" : "Show password"} style={{ width: "auto", padding: "0 8px", fontSize: 13, fontWeight: 600 }}>
               {show ? "Hide" : "Show"}
             </button>
-          </div>
-          {mode === "signup" && <p className="onl-help">At least 8 characters.</p>}
-        </div>
+          }
+        />
         <button className="onl-btn onl-btn--brand onl-btn--lg onl-btn--block" type="submit" aria-busy={busy || undefined}>
           {mode === "signin" ? "Sign in" : "Create account"}
         </button>
@@ -406,7 +405,7 @@ export function TestGateway({ orderId, amountLabel, planName }: { orderId: strin
       </div>
       <div className="onl-card__body onl-stack" style={{ ["--onl-gap" as string]: "10px" }}>
         <dl className="onl-summary">
-          <div className="onl-summary__row"><dt>Item</dt><dd>Onlynify UI {planName} licence</dd></div>
+          <div className="onl-summary__row"><dt>Item</dt><dd>Onlyn.ify UI {planName} licence</dd></div>
           <div className="onl-summary__row onl-summary__row--total"><dt>Amount</dt><dd>{amountLabel}</dd></div>
         </dl>
         <p className="onl-text-xs onl-text-muted">No real money moves. Set PAYMENT_GATEWAY_KEY_ID and PAYMENT_GATEWAY_KEY_SECRET to take live payments.</p>

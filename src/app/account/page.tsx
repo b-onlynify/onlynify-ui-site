@@ -52,7 +52,7 @@ export default async function Account({ searchParams }: { searchParams: Promise<
         <SignOutButton />
       </div>
 
-      {joined && <AccountCelebration title={`Congratulations, ${user.name.split(" ")[0]}! 🎉`} message="Your Onlynify UI account is ready. Browse the components, copy free blocks, and unlock Pro whenever you need it." cta="Start building" />}
+      {joined && <AccountCelebration title={`Congratulations, ${user.name.split(" ")[0]}! 🎉`} message="Your Onlyn.ify UI account is ready. Browse the components, copy free blocks, and unlock Pro whenever you need it." cta="Start building" />}
       {welcome && active && <AccountCelebration title="Pro is unlocked! 🎉" message="Payment received. Every premium block now shows its code, and your licence key works with the CLI." cta="See my licence" />}
       {welcome && active && (
         <div className="onl-alert onl-alert--success" style={{ marginBottom: 20 }}>

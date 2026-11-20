@@ -40,7 +40,6 @@ export default async function ComponentPage({ params }: { params: Promise<{ slug
       <p className="onl-lead" style={{ marginTop: 8, maxWidth: 720 }}>{c.description}</p>
       <div className="onl-row" style={{ marginTop: 14, ["--onl-gap" as string]: "6px" }}>
         <span className="onl-badge onl-badge--success">Basic · Free · MIT</span>
-        {pros.length > 0 && <a href="#pro-versions" className="site-pro site-plain">PRO version{pros.length > 1 ? "s" : ""}</a>}
         <span className="onl-badge">HTML</span>
         <span className="onl-badge">React</span>
         <span className="onl-badge">Vue</span>

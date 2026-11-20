@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOCKS, CATEGORIES } from "@/lib/registry.ts";
 
-export const metadata: Metadata = { title: "Blocks", description: "Copy-paste page sections and full screens built with Onlynify UI, for HTML, React, Vue and Angular." };
+export const metadata: Metadata = { title: "Blocks", description: "Copy-paste page sections and full screens built with Onlyn.ify UI, for HTML, React, Vue and Angular." };
 
 export default async function Blocks({ searchParams }: { searchParams: Promise<{ category?: string; tier?: string }> }) {
   const { category, tier } = await searchParams;

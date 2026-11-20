@@ -2,7 +2,7 @@ import icons from "../../registry/icons.json";
 
 const ICONS = icons as Record<string, { attrs: string; body: string }>;
 
-/** Inline SVG icon from the Onlynify UI sprite (no icon package). */
+/** Inline SVG icon from the Onlyn.ify UI sprite (no icon package). */
 export function Icon({ name, size = 16, className }: { name: string; size?: number; className?: string }) {
   const i = ICONS[name];
   if (!i) return null;

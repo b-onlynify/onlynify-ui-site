@@ -4,27 +4,25 @@ import { CATALOG, CHART_TYPES } from "@/lib/catalog";
 import { PRO_COMPONENTS } from "@/lib/pro-components.ts";
 import { COMPONENT_DOCS, COMPONENTS } from "@/lib/registry.ts";
 
-export const metadata: Metadata = { title: "All components", description: "Every Onlynify UI component in one list: inputs, overlays, data, charts, marketing sections and app patterns." };
+export const metadata: Metadata = { title: "All components", description: "Every Onlyn.ify UI component in one list: inputs, overlays, data, charts, marketing sections and app patterns." };
 
 /** "All components" index: the coverage check a buyer does before paying. */
 export default function AllComponents() {
   const list = COMPONENT_DOCS;
   const fresh = list.filter((c) => c.isNew);
   const demos = list.reduce((count, component) => count + component.demos.length, 0);
-  const withPro = new Set(PRO_COMPONENTS.flatMap((p) => p.components));
   const link = (c: (typeof list)[number]) => (
     <Link key={c.name} href={`/docs/components/${c.slug}`} className="site-catalog__item site-plain">
       {c.name}
       {c.isNew && <span className="site-catalog__dot" aria-label="new" />}
-      {withPro.has(c.name) && <span className="site-pro" style={{ fontSize: 9, padding: "0 5px", marginInlineStart: 6 }}>PRO</span>}
     </Link>
   );
   return (
-    <div className="site-prose" style={{ maxWidth: 900 }}>
+    <div className="site-prose">
       <p className="onl-eyebrow">Components</p>
       <h1 className="onl-h1" style={{ fontSize: "2rem" }}>All components</h1>
       <p className="onl-lead">
-        {list.length} components and {CHART_TYPES.length} chart types across {COMPONENTS.length} documentation pages with {demos} live examples. Every one has a free basic version under the MIT licence, with HTML, React, Vue and Angular examples plus React Native conversion starters. {list.filter((c) => withPro.has(c.name)).length} of them also have a polished <Link href="/pro">Pro version</Link>, alongside {PRO_COMPONENTS.filter((p) => p.chart).length} Pro chart cards.
+        {list.length} components and {CHART_TYPES.length} chart types across {COMPONENTS.length} documentation pages with {demos} live examples. Every one has a free basic version under the MIT licence, with HTML, React, Vue and Angular examples plus React Native conversion starters. Paid <Link href="/pro">Pro components</Link> ({PRO_COMPONENTS.length}, including {PRO_COMPONENTS.filter((p) => p.chart).length} chart cards) are listed separately.
       </p>
 
       <div className="onl-grid onl-grid--4" style={{ marginTop: 20 }}>

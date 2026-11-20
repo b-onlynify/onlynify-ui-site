@@ -174,3 +174,13 @@ test("payments: test-gateway order → idempotent fulfilment → licence lookup"
 
   await assert.rejects(payments.fulfilOrder({ orderId: "ord_missing" }, "p", "x"), /not found/);
 });
+
+test("docs sidebar: every component has an icon that exists (core + extended sets)", async () => {
+  const ui = await import("onlynify-ui");
+  const { loadAllIcons } = await import("onlynify-ui/icons/all");
+  loadAllIcons();
+  const { COMPONENT_ICONS, componentIcon } = await import("../src/lib/component-icons.ts");
+  const { COMPONENT_DOCS } = await import("../src/lib/registry.ts");
+  for (const c of COMPONENT_DOCS) assert.ok(ui.hasIcon(componentIcon(c.slug)), `${c.slug} → ${componentIcon(c.slug)}`);
+  for (const [slug, name] of Object.entries(COMPONENT_ICONS)) assert.ok(ui.hasIcon(name), `${slug} → ${name}`);
+});

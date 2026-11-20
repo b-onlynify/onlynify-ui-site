@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * The "onlyn" loader (shared by every Onlynify web app; copied per app like the other shared components).
+ * The "onlyn" loader (shared by every Onlyn.ify web app; copied per app like the other shared components).
  *
  *  <OnlynLoader size>     the animated wordmark: letters ripple, a brand gradient sweeps through them, a bar runs under them
  *  <AreaLoader>           centred loader for one content area (a table, a card, a page body) while its data loads

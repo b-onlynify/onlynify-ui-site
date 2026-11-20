@@ -1,5 +1,5 @@
 /**
- * Turn framework-agnostic Onlynify markup into idiomatic code for each framework.
+ * Turn framework-agnostic Onlyn.ify markup into idiomatic code for each framework.
  * The markup is trusted (it comes from our own registry), so a careful regex
  * transform is enough: no HTML parser dependency.
  */
@@ -274,7 +274,7 @@ export function htmlToReactNative(input: string): string {
 export function toFramework(html: string, framework: ComponentFramework, name: string, opts: { title?: string; usesChart?: boolean } = {}): CodeFile[] {
   const Comp = pascal(name);
   const usesChart = opts.usesChart ?? html.includes("<onl-chart");
-  const header = opts.title ? `Onlynify UI · ${opts.title}` : `Onlynify UI · ${name}`;
+  const header = opts.title ? `Onlyn.ify UI · ${opts.title}` : `Onlyn.ify UI · ${name}`;
   switch (framework) {
     case "react-native": {
       const nativeHtml = htmlToReactNative(html);

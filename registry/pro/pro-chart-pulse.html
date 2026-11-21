@@ -1,0 +1,20 @@
+<div class="onlp-stage">
+  <section class="onlp-card onlp-chart onlp-max" style="--onlp-max:1120px" aria-label="Live store pulse">
+    <div class="onlp-chart__head">
+      <div><p class="onlp-sub">Live · updated every minute</p><div class="onlp-chart__value">₹3.92L<span class="onlp-delta onlp-delta--up">9.4%</span></div><p class="onlp-sub onlp-xs">Sales today vs the same time last week</p></div>
+      <div class="onlp-seg" role="radiogroup" aria-label="Range"><label><input type="radio" name="cp-r" checked>Today</label><label><input type="radio" name="cp-r">7D</label><label><input type="radio" name="cp-r">30D</label></div>
+    </div>
+    <div class="onlp-grid" style="--onlp-min:min(100%, 170px);--onlp-gap:12px;padding:4px 20px 8px">
+      <div class="onlp-card onlp-kpi"><div class="onlp-kpi__head">Orders<span class="onlp-delta onlp-delta--up">6.2%</span></div><div class="onlp-kpi__value">418</div><onl-chart type="sparkline" aria-label="Orders per hour" labels='["9","10","11","12","13","14","15","16","17","18"]' series='[{"name":"Orders","data":[22,31,38,44,41,47,52,49,58,61]}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi"><div class="onlp-kpi__head">Visitors<span class="onlp-delta onlp-delta--up">12.8%</span></div><div class="onlp-kpi__value">9,240</div><onl-chart type="sparkline" aria-label="Visitors per hour" labels='["9","10","11","12","13","14","15","16","17","18"]' series='[{"name":"Visitors","data":[540,680,820,910,880,960,1040,990,1120,1180]}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi"><div class="onlp-kpi__head">Conversion<span class="onlp-delta onlp-delta--down">0.4%</span></div><div class="onlp-kpi__value">4.5<small>%</small></div><onl-chart type="sparkline" aria-label="Conversion rate per hour" labels='["9","10","11","12","13","14","15","16","17","18"]' series='[{"name":"Conversion","data":[4.9,4.8,4.7,4.8,4.6,4.6,4.5,4.6,4.5,4.5]}]'></onl-chart></div>
+      <div class="onlp-card onlp-kpi onlp-kpi--accent"><div class="onlp-kpi__head">Basket size<span class="onlp-delta onlp-delta--up">3.1%</span></div><div class="onlp-kpi__value">₹938</div><onl-chart type="sparkline" style="--onl-series-1:#fff" aria-label="Average basket per hour" labels='["9","10","11","12","13","14","15","16","17","18"]' series='[{"name":"Basket","data":[860,880,870,900,910,905,920,930,925,938]}]'></onl-chart></div>
+    </div>
+    <div class="onlp-chart__body">
+      <onl-chart type="combo" format="compact" height="250" aria-label="Sales per hour today and last week" labels='["9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm"]' series='[{"name":"Today","data":[18000,26000,34000,42000,39000,45000,51000,47000,56000,60000]},{"name":"Last week","type":"line","data":[16000,22000,30000,36000,37000,40000,44000,45000,49000,52000]}]'></onl-chart>
+    </div>
+    <div class="onlp-chart__foot">
+      <div>Peak hour<b>6pm · ₹60k</b></div><div>Top channel<b>Social · 38%</b></div><div>Returning<b>61%</b></div><div>Cart drop-off<b style="color:var(--onl-danger)">22%</b></div>
+    </div>
+  </section>
+</div>

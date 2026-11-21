@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Chart } from "@/components/chart";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { CodeBlock, CopyButton, SignOutButton } from "@/components/client";
@@ -66,16 +67,16 @@ export default async function Account({ searchParams }: { searchParams: Promise<
       {active ? (
         <section style={{ marginBottom: 20 }}>
           <div className="onl-grid onl-grid--4">
-            <div className="onl-card onl-stat"><p className="onl-stat__label">Downloads, 30 days</p><p className="onl-stat__value">{last30}</p><onl-chart type="sparkline" aria-label="Downloads trend" labels={json(days)} series={json([{ name: "Downloads", data: perDay }])} /></div>
+            <div className="onl-card onl-stat"><p className="onl-stat__label">Downloads, 30 days</p><p className="onl-stat__value">{last30}</p><Chart type="sparkline" aria-label="Downloads trend" labels={json(days)} series={json([{ name: "Downloads", data: perDay }])} /></div>
             <div className="onl-card onl-stat"><p className="onl-stat__label">Premium blocks used</p><p className="onl-stat__value">{usedBlocks}<span className="onl-text-sm onl-text-muted"> / {proBlocks.length}</span></p></div>
             <div className="onl-card onl-stat"><p className="onl-stat__label">Sites downloaded</p><p className="onl-stat__value">{usedSites}<span className="onl-text-sm onl-text-muted"> / {SITES.length}</span></p></div>
             <div className="onl-card onl-stat"><p className="onl-stat__label">Saved themes</p><p className="onl-stat__value">{themes}</p><Link href="/themes" className="onl-text-xs">Open theme builder →</Link></div>
           </div>
           <div className="onl-grid onl-grid--2" style={{ marginTop: 16 }}>
-            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Downloads per day</h2></div><div className="onl-card__body"><onl-chart type="area" format="number" legend="false" aria-label="Downloads per day, last 30 days" labels={json(days.map((d) => d.slice(8) + "/" + d.slice(5, 7)))} series={json([{ name: "Downloads", data: perDay }])} /></div></div>
-            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">By framework</h2></div><div className="onl-card__body">{byFw.length ? <onl-chart type="donut" center-label="Downloads" aria-label="Downloads by framework" data={json(byFw)} /> : <p className="onl-text-sm onl-text-muted">No downloads yet. Open a premium block or site and download its code.</p>}</div></div>
-            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Most used</h2></div><div className="onl-card__body">{top.length ? <onl-chart type="hbar" aria-label="Most downloaded blocks and sites" data={json(top)} /> : <p className="onl-text-sm onl-text-muted">Your most used blocks and sites will show here.</p>}</div></div>
-            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Library explored</h2></div><div className="onl-card__body"><onl-chart type="radial" max="100" format="percent" aria-label="Share of the Pro library you have used" data={json([{ label: "Premium blocks", value: Math.round((usedBlocks / Math.max(1, proBlocks.length)) * 100) }, { label: "Site templates", value: Math.round((usedSites / Math.max(1, SITES.length)) * 100) }])} /></div></div>
+            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Downloads per day</h2></div><div className="onl-card__body"><Chart type="area" format="number" legend="false" aria-label="Downloads per day, last 30 days" labels={json(days.map((d) => d.slice(8) + "/" + d.slice(5, 7)))} series={json([{ name: "Downloads", data: perDay }])} /></div></div>
+            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">By framework</h2></div><div className="onl-card__body">{byFw.length ? <Chart type="donut" center-label="Downloads" aria-label="Downloads by framework" data={json(byFw)} /> : <p className="onl-text-sm onl-text-muted">No downloads yet. Open a premium block or site and download its code.</p>}</div></div>
+            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Most used</h2></div><div className="onl-card__body">{top.length ? <Chart type="hbar" aria-label="Most downloaded blocks and sites" data={json(top)} /> : <p className="onl-text-sm onl-text-muted">Your most used blocks and sites will show here.</p>}</div></div>
+            <div className="onl-card"><div className="onl-card__header"><h2 className="onl-card__title">Library explored</h2></div><div className="onl-card__body"><Chart type="radial" max="100" format="percent" aria-label="Share of the Pro library you have used" data={json([{ label: "Premium blocks", value: Math.round((usedBlocks / Math.max(1, proBlocks.length)) * 100) }, { label: "Site templates", value: Math.round((usedSites / Math.max(1, SITES.length)) * 100) }])} /></div></div>
           </div>
         </section>
       ) : (

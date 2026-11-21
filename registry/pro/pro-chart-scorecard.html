@@ -1,0 +1,17 @@
+<div class="onlp-stage">
+  <section class="onlp-card onlp-max" style="--onlp-max:1120px" aria-label="Branch scorecard">
+    <div class="onlp-card__head"><div><h3 class="onlp-title" style="font-size:17px">Branch scorecard</h3><p class="onlp-sub">October · 6 measures, scored out of 100</p></div><span class="onlp-badge onlp-badge--brand">Indiranagar leads</span></div>
+    <div class="onlp-grid" style="--onlp-min:300px;--onlp-gap:20px;padding:8px 20px 20px">
+      <div><p class="onlp-sub" style="margin-bottom:6px">Indiranagar vs Koramangala</p>
+        <onl-chart type="radar" max="100" height="300" aria-label="Scores by measure for two branches" labels='["Sales","Service","Speed","Stock","Reviews","Repeat"]' series='[{"name":"Indiranagar","data":[88,82,74,91,86,78]},{"name":"Koramangala","data":[76,90,81,72,79,84]}]'></onl-chart>
+      </div>
+      <div><p class="onlp-sub" style="margin-bottom:10px">Overall score, all branches</p>
+        <onl-chart type="hbar" aria-label="Overall score by branch" data='[{"label":"Indiranagar","value":83},{"label":"Koramangala","value":80},{"label":"HSR Layout","value":76},{"label":"Whitefield","value":71},{"label":"Jayanagar","value":68},{"label":"Malleshwaram","value":62}]'></onl-chart>
+        <div class="onlp-grid" style="--onlp-min:140px;--onlp-gap:12px;margin-top:14px">
+          <div><onl-chart type="donut" height="150" legend="false" center-label="Reviews" aria-label="Review stars" data='[{"label":"5 stars","value":612},{"label":"4 stars","value":248},{"label":"3 or less","value":96}]'></onl-chart></div>
+          <div><onl-chart type="gauge" value="78" max="100" height="150" center-label="Target" aria-label="Network score against target 78 of 100"></onl-chart></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

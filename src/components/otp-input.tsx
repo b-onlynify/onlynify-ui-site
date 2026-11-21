@@ -9,7 +9,7 @@
 import { useEffect, useRef } from "react";
 
 const CSS = `
-.otp{display:grid;grid-template-columns:repeat(var(--otp-n,6),minmax(0,1fr));gap:8px;margin:0;padding:0;border:0;min-width:0}
+.otp{display:grid;grid-template-columns:repeat(var(--otp-n,6),minmax(0,1fr));gap:8px;margin-inline:0;padding:0;border:0;min-width:0}
 .otp[data-split]{grid-template-columns:repeat(3,minmax(0,1fr)) 10px repeat(3,minmax(0,1fr))}
 .otp__sep{align-self:center;justify-self:center;width:8px;height:2px;border-radius:2px;background:var(--line-strong,var(--line,#d0d6df))}
 .otp__box{width:100%;min-width:0;height:56px;margin:0;border:1px solid var(--line-strong,var(--line,#d0d6df));border-radius:12px;background:var(--surface,#fff);color:var(--fg,#0a0f1a);text-align:center;font:600 22px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;caret-color:var(--brand,#1449a0);outline:0;transition:border-color .15s,box-shadow .15s,background-color .15s}

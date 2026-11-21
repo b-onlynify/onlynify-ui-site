@@ -384,3 +384,11 @@ a:hover { text-decoration: underline; }
   --muted: var(--onl-muted);
   --danger: var(--onl-danger);
 }
+
+/* ---- Charts guide: live showcase (charts animate in as they scroll into view) */
+.site-chart-showcase { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; margin-block: 20px 8px; }
+.site-chart-showcase__card { margin: 0; padding: 16px 18px; min-width: 0; }
+.site-chart-showcase__card--wide { grid-column: 1 / -1; }
+.site-chart-showcase__card figcaption { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; font-size: var(--onl-text-sm); color: var(--onl-muted); }
+.site-chart-showcase__card figcaption b { font-size: 22px; letter-spacing: -0.02em; color: var(--onl-fg); font-variant-numeric: tabular-nums; }
+.site-chart-showcase__up { color: var(--onl-success); font-weight: 600; font-size: 12px; }

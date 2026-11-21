@@ -7,6 +7,7 @@ import { UiInit } from "@/components/client";
 import { Icon } from "@/components/icon";
 import { currentUser } from "@/lib/auth.ts";
 import { ActivityBar } from "@/components/onlyn-loader";
+import { CookieConsent } from "@/components/cookie-consent";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3600"),
@@ -103,6 +104,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </div>
         </footer>
         <ActivityBar watchFetch />
+        <CookieConsent privacyHref="/privacy" appName="Onlyn.ify UI" />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Chart } from "@/components/chart";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ICON_ALIASES, ICON_GROUPS, ICON_NAMES, iconSetAliases, iconSets } from "onlynify-ui";
@@ -367,7 +368,36 @@ function Grid() {
 function Charts() {
   return (
     <>
-      <p className="onl-lead"><code>&lt;onl-chart&gt;</code> is a dependency-free SVG Web Component.</p>
+      <p className="onl-lead">
+        <code>&lt;onl-chart&gt;</code> is our own dependency-free SVG Web Component: 18 chart types that animate in when they scroll into view, follow your theme and work in every framework.
+      </p>
+      <div className="site-chart-showcase">
+        <figure className="onl-card site-chart-showcase__card site-chart-showcase__card--wide">
+          <figcaption><span>Revenue</span><b>₹84.2L</b><span className="site-chart-showcase__up">▲ 18.2%</span></figcaption>
+          <Chart type="area" format="compact" height="220" aria-label="Monthly revenue, this year and last year" labels='["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]' series='[{"name":"This year","data":[520000,560000,540000,610000,650000,690000,720000,700000,760000,820000,960000,880000]},{"name":"Last year","data":[480000,470000,500000,530000,540000,560000,590000,600000,610000,640000,720000,690000]}]' />
+        </figure>
+        <figure className="onl-card site-chart-showcase__card">
+          <figcaption><span>Fee collection</span></figcaption>
+          <Chart type="donut" height="190" center-label="Collected" format="compact" aria-label="Fees by status" data='[{"label":"Paid","value":1840000},{"label":"Due","value":420000},{"label":"Overdue","value":160000}]' />
+        </figure>
+        <figure className="onl-card site-chart-showcase__card">
+          <figcaption><span>Orders by month</span></figcaption>
+          <Chart type="bar" height="200" aria-label="Orders by month, online and in store" labels='["Jun","Jul","Aug","Sep","Oct","Nov"]' series='[{"name":"Online","data":[320,360,410,390,520,480]},{"name":"In store","data":[210,230,220,260,300,280]}]' />
+        </figure>
+        <figure className="onl-card site-chart-showcase__card">
+          <figcaption><span>Quarter goal</span></figcaption>
+          <Chart type="gauge" value="86" max="100" center-label="Revenue goal" aria-label="Revenue goal 86 of 100" />
+        </figure>
+        <figure className="onl-card site-chart-showcase__card">
+          <figcaption><span>Team progress</span></figcaption>
+          <Chart type="radial" max="100" format="percent" height="190" aria-label="Goal progress by team" data='[{"label":"Sales","value":86},{"label":"Support","value":72},{"label":"Ops","value":58}]' />
+        </figure>
+        <figure className="onl-card site-chart-showcase__card">
+          <figcaption><span>Top branches</span></figcaption>
+          <Chart type="hbar" aria-label="Score by branch" data='[{"label":"Indiranagar","value":83},{"label":"Koramangala","value":80},{"label":"HSR Layout","value":76},{"label":"Whitefield","value":71},{"label":"Jayanagar","value":68}]' />
+        </figure>
+      </div>
+      <h2 id="usage">Usage</h2>
       <CodeBlock code={`<onl-chart type="bar" stacked format="compact" aria-label="Revenue by product"\n  labels='["Jun","Jul","Aug"]'\n  series='[{"name":"School","data":[210000,240000,232000]},{"name":"Shop","data":[120000,131000,148000]}]'>\n</onl-chart>`} />
       <table>
         <thead><tr><th>Attribute / property</th><th>Values</th></tr></thead>
@@ -382,10 +412,19 @@ function Charts() {
           <tr><td><code>total-label</code></td><td>waterfall total bar (<code>"false"</code> hides it)</td></tr>
           <tr><td><code>format</code></td><td>number · inr · currency · compact (12.5K / 12.5L / 2.5Cr) · percent</td></tr>
           <tr><td><code>stacked</code>, <code>legend="false"</code>, <code>grid="false"</code>, <code>height</code>, <code>center-label</code></td><td>display options</td></tr>
+          <tr><td><code>animate="false"</code></td><td>turns off the entrance animation for that chart</td></tr>
         </tbody>
       </table>
+      <h2 id="motion">Motion</h2>
+      <ul>
+        <li>Each chart animates in once, the first time it scrolls into view: bars grow from the baseline, lines draw from left to right, areas rise with a soft gradient, donut, radial and gauge rings sweep open, the gauge needle swings into place, points and heatmap cells pop in, and centre values count up.</li>
+        <li>Resizing, theme or brand changes and new data redraw instantly without replaying the entrance, so live dashboards stay calm.</li>
+        <li>Sparklines show a gentle pulse on the latest point.</li>
+        <li>Visitors who prefer reduced motion get static charts automatically.</li>
+      </ul>
+      <p>Pro adds ready-made chart cards for dashboards, like <Link href="/pro/pro-chart-pulse">Live store pulse</Link> and <Link href="/pro/pro-chart-scorecard">Branch scorecard</Link>.</p>
       <h2>In frameworks</h2>
-      <CodeBlock code={`// React\nref.current.config = { labels, series };\n\n<!-- Vue -->\n<onl-chart type="line" :labels.prop="labels" :series.prop="series" />\n\n<!-- Angular -->\n<onl-chart type="line" [labels]="labels" [series]="series"></onl-chart>`} />
+      <CodeBlock code={`// React\nref.current.config = { labels, series };\n\n<!-- Vue -->\n<Chart type="line" :labels.prop="labels" :series.prop="series" />\n\n<!-- Angular -->\n<Chart type="line" [labels]="labels" [series]="series"></onl-chart>`} />
       <p>Colours come from <code>--onl-series-1…6</code> and follow the theme. Every chart also renders a visually hidden data table for screen readers.</p>
       <p><Link href="/docs/components/charts">See every chart type →</Link></p>
     </>
@@ -418,7 +457,7 @@ function License() {
   return (
     <>
       <h2>Onlyn.ify UI (core): MIT</h2>
-      <p>The stylesheet, Web Components, tokens, CLI and every component on this site are MIT licensed. You can use them in personal, commercial and client projects for free, with no attribution required beyond keeping the licence file.</p>
+      <p>The stylesheet, Web Components, tokens, CLI and every component on this site are MIT licensed. You can use them in personal, commercial and client projects for free, with no attribution required beyond keeping the LICENSE and THIRD-PARTY-NOTICES.txt files.</p>
       <h2>Onlyn.ify UI Pro</h2>
       <ul>
         <li><b>Pro</b> covers one developer and unlimited projects, including commercial ones.</li>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Chart } from "@/components/chart";
 import { CopyButton } from "@/components/client";
 import { Icon } from "@/components/icon";
 import { BLOCKS, COMPONENTS } from "@/lib/registry.ts";
@@ -69,7 +70,7 @@ export default function Home() {
             <p className="onl-stat__foot">
               <span className="onl-trend onl-trend--up">12.5%</span> vs last month
             </p>
-            <onl-chart type="sparkline" aria-label="Revenue trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Revenue","data":[42,48,45,52,58,55,63,61,70,76]}]' />
+            <Chart type="sparkline" aria-label="Revenue trend" labels='["1","2","3","4","5","6","7","8","9","10"]' series='[{"name":"Revenue","data":[42,48,45,52,58,55,63,61,70,76]}]' />
           </div>
 
           <div className="onl-card">
@@ -80,7 +81,7 @@ export default function Home() {
               </div>
             </div>
             <div className="onl-card__body">
-              <onl-chart
+              <Chart
                 type="bar"
                 stacked
                 aria-label="Weekly orders"
@@ -138,7 +139,7 @@ export default function Home() {
               <h3 className="onl-card__title">Plans</h3>
             </div>
             <div className="onl-card__body">
-              <onl-chart type="donut" center-label="Tenants" aria-label="Tenants by plan" data='[{"label":"Starter","value":64},{"label":"Growth","value":49},{"label":"Enterprise","value":15}]' />
+              <Chart type="donut" center-label="Tenants" aria-label="Tenants by plan" data='[{"label":"Starter","value":64},{"label":"Growth","value":49},{"label":"Enterprise","value":15}]' />
             </div>
           </div>
 

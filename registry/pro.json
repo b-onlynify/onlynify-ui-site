@@ -1,58 +1,755 @@
 [
-  { "slug": "pro-buttons", "title": "Buttons", "category": "Actions", "tier": "pro", "height": 440, "components": ["Button", "Button Group", "Spinner", "Kbd"], "description": "Gradient, shine, dark, outline and soft buttons, split buttons, keyboard hints, loading dots and app-store buttons." },
-  { "slug": "pro-badges", "title": "Badges, status & avatars", "category": "Display", "tier": "pro", "height": 460, "components": ["Badge", "Avatar", "Tooltip"], "description": "Gradient and tinted badges, live status pulses, counters, deltas, gradient avatars with presence and hover-spread stacks." },
-  { "slug": "pro-cards", "title": "Cards", "category": "Display", "tier": "pro", "height": 600, "components": ["Card", "Aspect Ratio", "Item"], "description": "Glow-border feature card, media card with hover zoom, profile card and a glass integration card." },
-  { "slug": "pro-kpi", "title": "KPI tiles", "category": "Data", "tier": "pro", "height": 400, "components": ["Stat / KPI", "Progress"], "description": "Four dashboard KPI tiles: edge-to-edge sparkline, accent gradient tile, segmented share bar and a goal ring." },
-  { "slug": "pro-form-fields", "title": "Form fields", "category": "Forms", "tier": "pro", "height": 660, "components": ["Input", "Input Group", "Field", "Label", "Textarea", "Floating Label", "Native Select"], "description": "Icon inputs, inline validation, floating labels, add-on groups, a character counter and a polished textarea." },
-  { "slug": "pro-select", "title": "Rich select & combobox", "category": "Forms", "tier": "pro", "height": 560, "components": ["Select", "Combobox", "Tags Input", "Popover"], "description": "Searchable option list with groups, avatars and checkmarks, plus a multi-select chip field." },
-  { "slug": "pro-date-range", "title": "Date range picker", "category": "Forms", "tier": "pro", "height": 520, "components": ["Date Picker", "Calendar"], "description": "Two-month range picker with presets, today marker and a summary footer." },
-  { "slug": "pro-auth-otp", "title": "Verification & password", "category": "Forms", "tier": "pro", "height": 620, "components": ["Input OTP", "Password Strength"], "description": "Six-digit code card with resend timer, and a new-password field with a four-step meter and rule checklist." },
-  { "slug": "pro-upload", "title": "Upload manager", "category": "Forms", "tier": "pro", "height": 580, "components": ["File Drop Zone", "Attachment", "Progress"], "description": "Drop zone with file-type tiles, live progress, completed and failed states with retry." },
-  { "slug": "pro-settings", "title": "Settings controls", "category": "Forms", "tier": "pro", "height": 700, "components": ["Switch", "Checkbox", "Radio Group", "Choice Cards", "Toggle", "Toggle Group", "Segmented Control", "Direction (RTL)"], "description": "Setting rows with icon tiles and gradient toggles, radio plan cards and a segmented view switch." },
-  { "slug": "pro-sliders", "title": "Sliders, rating & swatches", "category": "Forms", "tier": "pro", "height": 440, "components": ["Slider", "Rating", "Colour Swatches"], "description": "Filled range slider with live value, emoji rating, ring swatches and a price range card." },
-  { "slug": "pro-tabs", "title": "Tabs, steps & pagination", "category": "Navigation", "tier": "pro", "height": 680, "components": ["Tabs", "Steps", "Breadcrumb", "Pagination"], "description": "Gradient underline tabs with counts, vertical tabs, a described stepper, progress steps, pill breadcrumb and pager." },
-  { "slug": "pro-sidebar", "title": "App sidebar", "category": "Navigation", "tier": "team", "height": 800, "components": ["Sidebar", "Navigation Menu", "Separator"], "description": "Workspace switcher, search with shortcut, grouped links with counts, a usage card and the signed-in user." },
-  { "slug": "pro-navbar", "title": "Navbar with mega menu", "category": "Navigation", "tier": "pro", "height": 560, "components": ["Menubar", "Navigation Menu", "Hover Card"], "description": "Frosted top bar with a three-column mega menu and featured panel." },
-  { "slug": "pro-command", "title": "Command palette", "category": "Overlays", "tier": "pro", "height": 580, "components": ["Command Palette", "Kbd"], "description": "Spotlight-style search with grouped results, icon tiles, shortcuts and a key-hint footer." },
-  { "slug": "pro-menus", "title": "Menus", "category": "Overlays", "tier": "pro", "height": 540, "components": ["Dropdown Menu", "Context Menu", "Popover"], "description": "Account menu with profile header, inline toggle and shortcuts, plus a row actions menu with a danger zone." },
-  { "slug": "pro-dialogs", "title": "Dialogs & sheets", "category": "Overlays", "tier": "pro", "height": 640, "components": ["Dialog", "Alert Dialog", "Drawer", "Sheet"], "description": "Destructive confirm with typed check, feature announcement dialog and a record detail sheet." },
-  { "slug": "pro-notifications", "title": "Toasts & notification centre", "category": "Feedback", "tier": "pro", "height": 640, "components": ["Toast", "Notification", "Alert"], "description": "Action toasts with a timer bar, callouts, a gradient banner and a tabbed notification inbox." },
-  { "slug": "pro-empty", "title": "Empty & loading states", "category": "Feedback", "tier": "pro", "height": 540, "components": ["Empty State", "Skeleton", "Spinner"], "description": "Illustrated empty state with orbit rings, shimmer skeleton feed and a gradient spinner." },
-  { "slug": "pro-data-table", "title": "Data table", "category": "Data", "tier": "team", "height": 680, "components": ["Table", "Data Table", "Resizable", "Scroll Area"], "description": "Search, filter chips, people cells, status pills, inline progress, row selection, bulk bar and pager." },
-  { "slug": "pro-activity", "title": "Activity feed", "category": "Data", "tier": "pro", "height": 600, "components": ["Timeline", "Trace", "Collapsible"], "description": "Mixed activity timeline with avatars, system events, quoted comments and attachments." },
-  { "slug": "pro-chat", "title": "Chat", "category": "Apps", "tier": "pro", "height": 680, "components": ["Message", "Message Scroller", "Bubble"], "description": "Conversation with gradient bubbles, image message, reactions, typing indicator and composer." },
-  { "slug": "pro-kanban", "title": "Kanban board", "category": "Apps", "tier": "team", "height": 640, "components": ["Kanban"], "description": "Three-column board with coloured labels, due dates, comments, assignee stacks and progress." },
-  { "slug": "pro-survey", "title": "Survey", "category": "Apps", "tier": "pro", "height": 600, "components": ["Questionnaire"], "description": "Progress steps, 0–10 score scale, emoji mood picker and an open answer." },
-  { "slug": "pro-hero", "title": "Hero", "category": "Marketing", "tier": "pro", "height": 900, "components": ["Hero", "Announcement", "Call to Action", "Logo Marquee"], "description": "Grid-glow hero with announcement pill, gradient headline, proof row, product frame and scrolling logos." },
-  { "slug": "pro-features", "title": "Bento features", "category": "Marketing", "tier": "pro", "height": 820, "components": ["Bento Grid", "Feature Grid"], "description": "Six-cell bento with a live chart cell, stat cell and feature cards." },
-  { "slug": "pro-pricing", "title": "Pricing", "category": "Marketing", "tier": "pro", "height": 820, "components": ["Pricing"], "description": "Monthly/yearly switch (pure CSS), lifted featured tier with glow border and tick lists." },
-  { "slug": "pro-testimonials", "title": "Testimonials & FAQ", "category": "Marketing", "tier": "pro", "height": 980, "components": ["Testimonial", "FAQ", "Accordion"], "description": "Masonry testimonial wall with a featured quote, an animated plus/minus FAQ and a closing CTA." },
-  { "slug": "pro-article", "title": "Article & code", "category": "Content", "tier": "pro", "height": 820, "components": ["Typography", "Code Block", "Marker"], "description": "Long-form article layout with sticky contents, gradient quote rule, highlights and a highlighted code window." },
-  { "slug": "pro-gallery", "title": "Media gallery", "category": "Content", "tier": "pro", "height": 480, "components": ["Carousel", "Aspect Ratio"], "description": "Featured mosaic gallery with frosted captions and hover zoom." },
-  { "slug": "pro-auth", "title": "Sign-in screen", "category": "Forms", "tier": "pro", "height": 640, "components": ["Input", "Field", "Checkbox", "Button", "Separator"], "description": "Split sign-in with a testimonial panel, SSO and OTP buttons, validated email, password reveal and a keep-me-signed-in option." },
-  { "slug": "pro-checkout", "title": "Checkout", "category": "Commerce", "tier": "pro", "height": 880, "components": ["Radio Group", "Input Group", "Item", "Steps"], "description": "Address form with phone add-on, selectable payment method cards, sticky order summary with coupon, GST and total." },
-  { "slug": "pro-products", "title": "Product cards", "category": "Commerce", "tier": "pro", "height": 540, "components": ["Card", "Badge", "Rating", "Toggle"], "description": "Shop grid with sale and stock badges, wishlist toggle, ratings, colour dots, struck-through prices and add-to-cart states." },
-  { "slug": "pro-invoice", "title": "Invoice", "category": "Commerce", "tier": "pro", "height": 840, "components": ["Table", "Badge", "Typography"], "description": "Print-ready GST invoice: parties, HSN line items, tax totals, a paid stamp and print/download actions." },
-  { "slug": "pro-tracking", "title": "Order tracking", "category": "Commerce", "tier": "pro", "height": 560, "components": ["Timeline", "Steps", "Avatar"], "description": "Five-stage delivery tracker with a pulsing current step, animated route map, courier card, delivery code and update feed." },
-  { "slug": "pro-profile", "title": "Profile page", "category": "Display", "tier": "pro", "height": 600, "components": ["Avatar", "Tabs", "Card", "Badge"], "description": "Cover banner, large avatar with presence, verified name, follow actions, stat strip, tabs, skills and details list." },
-  { "slug": "pro-scheduler", "title": "Week scheduler", "category": "Apps", "tier": "team", "height": 640, "components": ["Calendar", "Avatar", "Scroll Area"], "description": "Team week view with hour grid, colour-coded multi-hour events with attendees, today marker and a live now-line." },
-  { "slug": "pro-files", "title": "File manager", "category": "Apps", "tier": "pro", "height": 770, "components": ["Table", "Breadcrumb", "Progress", "Item"], "description": "Folder path, search, folder tiles, recent files table with type badges and owners, and a split storage meter." },
-  { "slug": "pro-onboarding", "title": "Onboarding checklist", "category": "Feedback", "tier": "pro", "height": 590, "components": ["Collapsible", "Progress", "Steps"], "description": "Expandable setup tasks with done states, a progress ring and bar, a tour card and a live help card." },
-  { "slug": "pro-team", "title": "Team members", "category": "Data", "tier": "team", "height": 720, "components": ["Table", "Native Select", "Avatar", "Input Group"], "description": "Invite bar with role picker, seat usage, filters and a members table with inline role selects, 2FA status and pending invites." },
-  { "slug": "pro-footer", "title": "Footer & newsletter", "category": "Marketing", "tier": "pro", "height": 680, "components": ["Call to Action", "Input Group", "Segmented Control"], "description": "Gradient newsletter band, four-column site footer with status line, hiring badge, theme switch and icon links." },
-  { "slug": "pro-chart-revenue", "title": "Revenue trend", "category": "Charts", "tier": "pro", "height": 470, "components": ["Chart"], "chart": true, "description": "Area chart card with headline value, delta, range switch, annotation and summary footer." },
-  { "slug": "pro-chart-target", "title": "Actual vs target", "category": "Charts", "tier": "pro", "height": 460, "components": ["Chart"], "chart": true, "description": "Combo bars with a target line, legend chips and variance stats." },
-  { "slug": "pro-chart-breakdown", "title": "Breakdown", "category": "Charts", "tier": "pro", "height": 440, "components": ["Chart"], "chart": true, "description": "Donut with a ranked list of channels, coloured progress bars and shares." },
-  { "slug": "pro-chart-goals", "title": "Goal gauges", "category": "Charts", "tier": "pro", "height": 400, "components": ["Chart"], "chart": true, "description": "Three gauges and a radial chart for quarterly goals." },
-  { "slug": "pro-chart-heatmap", "title": "Activity heatmap", "category": "Charts", "tier": "pro", "height": 460, "components": ["Chart"], "chart": true, "description": "Weekday by hour heatmap with peak callout and range switch." },
-  { "slug": "pro-chart-funnel", "title": "Conversion funnel", "category": "Charts", "tier": "pro", "height": 500, "components": ["Chart"], "chart": true, "description": "Funnel next to a step table with drop-off percentages." },
-  { "slug": "pro-chart-waterfall", "title": "Profit bridge", "category": "Charts", "tier": "pro", "height": 470, "components": ["Chart"], "chart": true, "description": "Waterfall from revenue to net profit with margin stats." },
-  { "slug": "pro-chart-segments", "title": "Customer segments", "category": "Charts", "tier": "pro", "height": 480, "components": ["Chart"], "chart": true, "description": "Bubble chart of segments by size and margin, with a scatter of spend versus orders." },
-  { "slug": "pro-chart-compare", "title": "Compare & share", "category": "Charts", "tier": "pro", "height": 480, "components": ["Chart"], "chart": true, "description": "Radar comparison and a category treemap side by side." },
-  { "slug": "pro-chart-dashboard", "title": "Analytics dashboard", "category": "Charts", "tier": "team", "height": 1180, "components": ["Chart", "Stat / KPI"], "chart": true, "description": "Complete analytics page: KPI row, revenue trend, channel breakdown, top products, heatmap and goals." },
-  { "slug": "pro-chart-traffic", "title": "Traffic by channel", "category": "Charts", "tier": "pro", "chart": true, "height": 600, "components": ["Chart"], "description": "Multi-line channel chart with metric switch, chip legend, top pages ranking, annotation and a stats footer." },
-  { "slug": "pro-chart-stacked", "title": "Stacked regions", "category": "Charts", "tier": "pro", "chart": true, "height": 780, "components": ["Chart", "Table"], "description": "Stacked quarterly bars by region with a breakdown table of share, growth and per-row sparklines." },
-  { "slug": "pro-chart-mix", "title": "Expense mix & budget", "category": "Charts", "tier": "pro", "chart": true, "height": 500, "components": ["Chart"], "description": "Pie chart with a percentage legend beside a radial budget-used chart per team and a warning callout." },
-  { "slug": "pro-chart-uptime", "title": "Service health", "category": "Charts", "tier": "pro", "chart": true, "height": 720, "components": ["Chart", "Stat / KPI"], "description": "Status page: KPI strip, per-service latency sparklines and 45-day uptime bars coloured by incident level." },
-  { "slug": "pro-chart-analytics", "title": "Product analytics", "category": "Charts", "tier": "team", "chart": true, "height": 1430, "components": ["Chart", "Stat / KPI", "Progress"], "description": "Full analytics page: KPI tiles, sign-up combo chart, adoption ranking, cohort heatmap, bubble chart and drop-off funnel with insights." }
+  {
+    "slug": "pro-buttons",
+    "title": "Buttons",
+    "category": "Actions",
+    "tier": "pro",
+    "height": 440,
+    "components": [
+      "Button",
+      "Button Group",
+      "Spinner",
+      "Kbd"
+    ],
+    "description": "Gradient, shine, dark, outline and soft buttons, split buttons, keyboard hints, loading dots and app-store buttons."
+  },
+  {
+    "slug": "pro-badges",
+    "title": "Badges, status & avatars",
+    "category": "Display",
+    "tier": "pro",
+    "height": 460,
+    "components": [
+      "Badge",
+      "Avatar",
+      "Tooltip"
+    ],
+    "description": "Gradient and tinted badges, live status pulses, counters, deltas, gradient avatars with presence and hover-spread stacks."
+  },
+  {
+    "slug": "pro-cards",
+    "title": "Cards",
+    "category": "Display",
+    "tier": "pro",
+    "height": 600,
+    "components": [
+      "Card",
+      "Aspect Ratio",
+      "Item"
+    ],
+    "description": "Glow-border feature card, media card with hover zoom, profile card and a glass integration card."
+  },
+  {
+    "slug": "pro-kpi",
+    "title": "KPI tiles",
+    "category": "Data",
+    "tier": "pro",
+    "height": 400,
+    "components": [
+      "Stat / KPI",
+      "Progress"
+    ],
+    "description": "Four dashboard KPI tiles: edge-to-edge sparkline, accent gradient tile, segmented share bar and a goal ring."
+  },
+  {
+    "slug": "pro-form-fields",
+    "title": "Form fields",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 660,
+    "components": [
+      "Input",
+      "Input Group",
+      "Field",
+      "Label",
+      "Textarea",
+      "Floating Label",
+      "Native Select"
+    ],
+    "description": "Icon inputs, inline validation, floating labels, add-on groups, a character counter and a polished textarea."
+  },
+  {
+    "slug": "pro-select",
+    "title": "Rich select & combobox",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 560,
+    "components": [
+      "Select",
+      "Combobox",
+      "Tags Input",
+      "Popover"
+    ],
+    "description": "Searchable option list with groups, avatars and checkmarks, plus a multi-select chip field."
+  },
+  {
+    "slug": "pro-date-range",
+    "title": "Date range picker",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 520,
+    "components": [
+      "Date Picker",
+      "Calendar"
+    ],
+    "description": "Two-month range picker with presets, today marker and a summary footer."
+  },
+  {
+    "slug": "pro-auth-otp",
+    "title": "Verification & password",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 620,
+    "components": [
+      "Input OTP",
+      "Password Strength"
+    ],
+    "description": "Six-digit code card with resend timer, and a new-password field with a four-step meter and rule checklist."
+  },
+  {
+    "slug": "pro-upload",
+    "title": "Upload manager",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 580,
+    "components": [
+      "File Drop Zone",
+      "Attachment",
+      "Progress"
+    ],
+    "description": "Drop zone with file-type tiles, live progress, completed and failed states with retry."
+  },
+  {
+    "slug": "pro-settings",
+    "title": "Settings controls",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 700,
+    "components": [
+      "Switch",
+      "Checkbox",
+      "Radio Group",
+      "Choice Cards",
+      "Toggle",
+      "Toggle Group",
+      "Segmented Control",
+      "Direction (RTL)"
+    ],
+    "description": "Setting rows with icon tiles and gradient toggles, radio plan cards and a segmented view switch."
+  },
+  {
+    "slug": "pro-sliders",
+    "title": "Sliders, rating & swatches",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 440,
+    "components": [
+      "Slider",
+      "Rating",
+      "Colour Swatches"
+    ],
+    "description": "Filled range slider with live value, emoji rating, ring swatches and a price range card."
+  },
+  {
+    "slug": "pro-tabs",
+    "title": "Tabs, steps & pagination",
+    "category": "Navigation",
+    "tier": "pro",
+    "height": 680,
+    "components": [
+      "Tabs",
+      "Steps",
+      "Breadcrumb",
+      "Pagination"
+    ],
+    "description": "Gradient underline tabs with counts, vertical tabs, a described stepper, progress steps, pill breadcrumb and pager."
+  },
+  {
+    "slug": "pro-sidebar",
+    "title": "App sidebar",
+    "category": "Navigation",
+    "tier": "team",
+    "height": 800,
+    "components": [
+      "Sidebar",
+      "Navigation Menu",
+      "Separator"
+    ],
+    "description": "Workspace switcher, search with shortcut, grouped links with counts, a usage card and the signed-in user."
+  },
+  {
+    "slug": "pro-navbar",
+    "title": "Navbar with mega menu",
+    "category": "Navigation",
+    "tier": "pro",
+    "height": 560,
+    "components": [
+      "Menubar",
+      "Navigation Menu",
+      "Hover Card"
+    ],
+    "description": "Frosted top bar with a three-column mega menu and featured panel."
+  },
+  {
+    "slug": "pro-command",
+    "title": "Command palette",
+    "category": "Overlays",
+    "tier": "pro",
+    "height": 580,
+    "components": [
+      "Command Palette",
+      "Kbd"
+    ],
+    "description": "Spotlight-style search with grouped results, icon tiles, shortcuts and a key-hint footer."
+  },
+  {
+    "slug": "pro-menus",
+    "title": "Menus",
+    "category": "Overlays",
+    "tier": "pro",
+    "height": 540,
+    "components": [
+      "Dropdown Menu",
+      "Context Menu",
+      "Popover"
+    ],
+    "description": "Account menu with profile header, inline toggle and shortcuts, plus a row actions menu with a danger zone."
+  },
+  {
+    "slug": "pro-dialogs",
+    "title": "Dialogs & sheets",
+    "category": "Overlays",
+    "tier": "pro",
+    "height": 640,
+    "components": [
+      "Dialog",
+      "Alert Dialog",
+      "Drawer",
+      "Sheet"
+    ],
+    "description": "Destructive confirm with typed check, feature announcement dialog and a record detail sheet."
+  },
+  {
+    "slug": "pro-notifications",
+    "title": "Toasts & notification centre",
+    "category": "Feedback",
+    "tier": "pro",
+    "height": 640,
+    "components": [
+      "Toast",
+      "Notification",
+      "Alert"
+    ],
+    "description": "Action toasts with a timer bar, callouts, a gradient banner and a tabbed notification inbox."
+  },
+  {
+    "slug": "pro-empty",
+    "title": "Empty & loading states",
+    "category": "Feedback",
+    "tier": "pro",
+    "height": 540,
+    "components": [
+      "Empty State",
+      "Skeleton",
+      "Spinner"
+    ],
+    "description": "Illustrated empty state with orbit rings, shimmer skeleton feed and a gradient spinner."
+  },
+  {
+    "slug": "pro-data-table",
+    "title": "Data table",
+    "category": "Data",
+    "tier": "team",
+    "height": 680,
+    "components": [
+      "Table",
+      "Data Table",
+      "Resizable",
+      "Scroll Area"
+    ],
+    "description": "Search, filter chips, people cells, status pills, inline progress, row selection, bulk bar and pager."
+  },
+  {
+    "slug": "pro-activity",
+    "title": "Activity feed",
+    "category": "Data",
+    "tier": "pro",
+    "height": 600,
+    "components": [
+      "Timeline",
+      "Trace",
+      "Collapsible"
+    ],
+    "description": "Mixed activity timeline with avatars, system events, quoted comments and attachments."
+  },
+  {
+    "slug": "pro-chat",
+    "title": "Chat",
+    "category": "Apps",
+    "tier": "pro",
+    "height": 680,
+    "components": [
+      "Message",
+      "Message Scroller",
+      "Bubble"
+    ],
+    "description": "Conversation with gradient bubbles, image message, reactions, typing indicator and composer."
+  },
+  {
+    "slug": "pro-kanban",
+    "title": "Kanban board",
+    "category": "Apps",
+    "tier": "team",
+    "height": 640,
+    "components": [
+      "Kanban"
+    ],
+    "description": "Three-column board with coloured labels, due dates, comments, assignee stacks and progress."
+  },
+  {
+    "slug": "pro-survey",
+    "title": "Survey",
+    "category": "Apps",
+    "tier": "pro",
+    "height": 600,
+    "components": [
+      "Questionnaire"
+    ],
+    "description": "Progress steps, 0–10 score scale, emoji mood picker and an open answer."
+  },
+  {
+    "slug": "pro-hero",
+    "title": "Hero",
+    "category": "Marketing",
+    "tier": "pro",
+    "height": 900,
+    "components": [
+      "Hero",
+      "Announcement",
+      "Call to Action",
+      "Logo Marquee"
+    ],
+    "description": "Grid-glow hero with announcement pill, gradient headline, proof row, product frame and scrolling logos."
+  },
+  {
+    "slug": "pro-features",
+    "title": "Bento features",
+    "category": "Marketing",
+    "tier": "pro",
+    "height": 820,
+    "components": [
+      "Bento Grid",
+      "Feature Grid"
+    ],
+    "description": "Six-cell bento with a live chart cell, stat cell and feature cards."
+  },
+  {
+    "slug": "pro-pricing",
+    "title": "Pricing",
+    "category": "Marketing",
+    "tier": "pro",
+    "height": 820,
+    "components": [
+      "Pricing"
+    ],
+    "description": "Monthly/yearly switch (pure CSS), lifted featured tier with glow border and tick lists."
+  },
+  {
+    "slug": "pro-testimonials",
+    "title": "Testimonials & FAQ",
+    "category": "Marketing",
+    "tier": "pro",
+    "height": 980,
+    "components": [
+      "Testimonial",
+      "FAQ",
+      "Accordion"
+    ],
+    "description": "Masonry testimonial wall with a featured quote, an animated plus/minus FAQ and a closing CTA."
+  },
+  {
+    "slug": "pro-article",
+    "title": "Article & code",
+    "category": "Content",
+    "tier": "pro",
+    "height": 820,
+    "components": [
+      "Typography",
+      "Code Block",
+      "Marker"
+    ],
+    "description": "Long-form article layout with sticky contents, gradient quote rule, highlights and a highlighted code window."
+  },
+  {
+    "slug": "pro-gallery",
+    "title": "Media gallery",
+    "category": "Content",
+    "tier": "pro",
+    "height": 480,
+    "components": [
+      "Carousel",
+      "Aspect Ratio"
+    ],
+    "description": "Featured mosaic gallery with frosted captions and hover zoom."
+  },
+  {
+    "slug": "pro-auth",
+    "title": "Sign-in screen",
+    "category": "Forms",
+    "tier": "pro",
+    "height": 640,
+    "components": [
+      "Input",
+      "Field",
+      "Checkbox",
+      "Button",
+      "Separator"
+    ],
+    "description": "Split sign-in with a testimonial panel, SSO and OTP buttons, validated email, password reveal and a keep-me-signed-in option."
+  },
+  {
+    "slug": "pro-checkout",
+    "title": "Checkout",
+    "category": "Commerce",
+    "tier": "pro",
+    "height": 880,
+    "components": [
+      "Radio Group",
+      "Input Group",
+      "Item",
+      "Steps"
+    ],
+    "description": "Address form with phone add-on, selectable payment method cards, sticky order summary with coupon, GST and total."
+  },
+  {
+    "slug": "pro-products",
+    "title": "Product cards",
+    "category": "Commerce",
+    "tier": "pro",
+    "height": 540,
+    "components": [
+      "Card",
+      "Badge",
+      "Rating",
+      "Toggle"
+    ],
+    "description": "Shop grid with sale and stock badges, wishlist toggle, ratings, colour dots, struck-through prices and add-to-cart states."
+  },
+  {
+    "slug": "pro-invoice",
+    "title": "Invoice",
+    "category": "Commerce",
+    "tier": "pro",
+    "height": 840,
+    "components": [
+      "Table",
+      "Badge",
+      "Typography"
+    ],
+    "description": "Print-ready GST invoice: parties, HSN line items, tax totals, a paid stamp and print/download actions."
+  },
+  {
+    "slug": "pro-tracking",
+    "title": "Order tracking",
+    "category": "Commerce",
+    "tier": "pro",
+    "height": 560,
+    "components": [
+      "Timeline",
+      "Steps",
+      "Avatar"
+    ],
+    "description": "Five-stage delivery tracker with a pulsing current step, animated route map, courier card, delivery code and update feed."
+  },
+  {
+    "slug": "pro-profile",
+    "title": "Profile page",
+    "category": "Display",
+    "tier": "pro",
+    "height": 600,
+    "components": [
+      "Avatar",
+      "Tabs",
+      "Card",
+      "Badge"
+    ],
+    "description": "Cover banner, large avatar with presence, verified name, follow actions, stat strip, tabs, skills and details list."
+  },
+  {
+    "slug": "pro-scheduler",
+    "title": "Week scheduler",
+    "category": "Apps",
+    "tier": "team",
+    "height": 640,
+    "components": [
+      "Calendar",
+      "Avatar",
+      "Scroll Area"
+    ],
+    "description": "Team week view with hour grid, colour-coded multi-hour events with attendees, today marker and a live now-line."
+  },
+  {
+    "slug": "pro-files",
+    "title": "File manager",
+    "category": "Apps",
+    "tier": "pro",
+    "height": 770,
+    "components": [
+      "Table",
+      "Breadcrumb",
+      "Progress",
+      "Item"
+    ],
+    "description": "Folder path, search, folder tiles, recent files table with type badges and owners, and a split storage meter."
+  },
+  {
+    "slug": "pro-onboarding",
+    "title": "Onboarding checklist",
+    "category": "Feedback",
+    "tier": "pro",
+    "height": 590,
+    "components": [
+      "Collapsible",
+      "Progress",
+      "Steps"
+    ],
+    "description": "Expandable setup tasks with done states, a progress ring and bar, a tour card and a live help card."
+  },
+  {
+    "slug": "pro-team",
+    "title": "Team members",
+    "category": "Data",
+    "tier": "team",
+    "height": 720,
+    "components": [
+      "Table",
+      "Native Select",
+      "Avatar",
+      "Input Group"
+    ],
+    "description": "Invite bar with role picker, seat usage, filters and a members table with inline role selects, 2FA status and pending invites."
+  },
+  {
+    "slug": "pro-footer",
+    "title": "Footer & newsletter",
+    "category": "Marketing",
+    "tier": "pro",
+    "height": 680,
+    "components": [
+      "Call to Action",
+      "Input Group",
+      "Segmented Control"
+    ],
+    "description": "Gradient newsletter band, four-column site footer with status line, hiring badge, theme switch and icon links."
+  },
+  {
+    "slug": "pro-chart-revenue",
+    "title": "Revenue trend",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 470,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Area chart card with headline value, delta, range switch, annotation and summary footer."
+  },
+  {
+    "slug": "pro-chart-target",
+    "title": "Actual vs target",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 460,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Combo bars with a target line, legend chips and variance stats."
+  },
+  {
+    "slug": "pro-chart-breakdown",
+    "title": "Breakdown",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 440,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Donut with a ranked list of channels, coloured progress bars and shares."
+  },
+  {
+    "slug": "pro-chart-goals",
+    "title": "Goal gauges",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 400,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Three gauges and a radial chart for quarterly goals."
+  },
+  {
+    "slug": "pro-chart-heatmap",
+    "title": "Activity heatmap",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 460,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Weekday by hour heatmap with peak callout and range switch."
+  },
+  {
+    "slug": "pro-chart-funnel",
+    "title": "Conversion funnel",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 500,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Funnel next to a step table with drop-off percentages."
+  },
+  {
+    "slug": "pro-chart-waterfall",
+    "title": "Profit bridge",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 470,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Waterfall from revenue to net profit with margin stats."
+  },
+  {
+    "slug": "pro-chart-segments",
+    "title": "Customer segments",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 480,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Bubble chart of segments by size and margin, with a scatter of spend versus orders."
+  },
+  {
+    "slug": "pro-chart-compare",
+    "title": "Compare & share",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 480,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Radar comparison and a category treemap side by side."
+  },
+  {
+    "slug": "pro-chart-dashboard",
+    "title": "Analytics dashboard",
+    "category": "Charts",
+    "tier": "team",
+    "height": 1180,
+    "components": [
+      "Chart",
+      "Stat / KPI"
+    ],
+    "chart": true,
+    "description": "Complete analytics page: KPI row, revenue trend, channel breakdown, top products, heatmap and goals."
+  },
+  {
+    "slug": "pro-chart-traffic",
+    "title": "Traffic by channel",
+    "category": "Charts",
+    "tier": "pro",
+    "chart": true,
+    "height": 600,
+    "components": [
+      "Chart"
+    ],
+    "description": "Multi-line channel chart with metric switch, chip legend, top pages ranking, annotation and a stats footer."
+  },
+  {
+    "slug": "pro-chart-stacked",
+    "title": "Stacked regions",
+    "category": "Charts",
+    "tier": "pro",
+    "chart": true,
+    "height": 780,
+    "components": [
+      "Chart",
+      "Table"
+    ],
+    "description": "Stacked quarterly bars by region with a breakdown table of share, growth and per-row sparklines."
+  },
+  {
+    "slug": "pro-chart-mix",
+    "title": "Expense mix & budget",
+    "category": "Charts",
+    "tier": "pro",
+    "chart": true,
+    "height": 500,
+    "components": [
+      "Chart"
+    ],
+    "description": "Pie chart with a percentage legend beside a radial budget-used chart per team and a warning callout."
+  },
+  {
+    "slug": "pro-chart-uptime",
+    "title": "Service health",
+    "category": "Charts",
+    "tier": "pro",
+    "chart": true,
+    "height": 720,
+    "components": [
+      "Chart",
+      "Stat / KPI"
+    ],
+    "description": "Status page: KPI strip, per-service latency sparklines and 45-day uptime bars coloured by incident level."
+  },
+  {
+    "slug": "pro-chart-pulse",
+    "title": "Live store pulse",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 720,
+    "components": [
+      "Chart",
+      "Stat / KPI"
+    ],
+    "chart": true,
+    "description": "Live KPI tiles with pulsing sparklines over an hourly bars-and-line comparison."
+  },
+  {
+    "slug": "pro-chart-scorecard",
+    "title": "Branch scorecard",
+    "category": "Charts",
+    "tier": "pro",
+    "height": 620,
+    "components": [
+      "Chart"
+    ],
+    "chart": true,
+    "description": "Radar comparison, ranked bars, review donut and a target gauge for multi-branch businesses."
+  },
+  {
+    "slug": "pro-chart-analytics",
+    "title": "Product analytics",
+    "category": "Charts",
+    "tier": "team",
+    "chart": true,
+    "height": 1430,
+    "components": [
+      "Chart",
+      "Stat / KPI",
+      "Progress"
+    ],
+    "description": "Full analytics page: KPI tiles, sign-up combo chart, adoption ranking, cohort heatmap, bubble chart and drop-off funnel with insights."
+  }
 ]
